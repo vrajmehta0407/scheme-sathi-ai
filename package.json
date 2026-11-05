@@ -1,0 +1,17 @@
+{
+  "name": "scheme-sathi-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --filter @schemesathi/web dev",
+    "build:web": "pnpm --filter @schemesathi/web build",
+    "lint:web": "pnpm --filter @schemesathi/web lint",
+    "build:shared": "pnpm --filter @schemesathi/shared build",
+    "test:api": "cd services/api && pytest",
+    "lint": "pnpm --filter @schemesathi/web lint",
+    "typecheck": "pnpm --recursive exec tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
