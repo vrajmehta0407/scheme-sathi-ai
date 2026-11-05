@@ -21,3 +21,4 @@ def admin_update_scheme_status(
     if not updated:
         raise HTTPException(status_code=404, detail="Scheme not found")
     return {"status": "success", "scheme_id": scheme_id, "new_status": status}
+

@@ -90,3 +90,4 @@ class SchemeCreateUpdateModel(BaseModel):
     documents: List[SchemeDocumentModel] = Field(default_factory=list)
     rules: List[EligibilityRuleModel] = Field(default_factory=list)
     is_demo: bool = True
+

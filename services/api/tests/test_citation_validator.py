@@ -39,3 +39,4 @@ def test_citation_validator_redacts_hallucinated_urls():
     assert validated.was_grounded is True
     assert len(validated.citations) == 1
     assert validated.citations[0].source_org == "Ministry of Agriculture"
+

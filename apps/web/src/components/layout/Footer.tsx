@@ -109,3 +109,4 @@ export const Footer: React.FC<FooterProps> = ({ language, onOpenFeedback }) => {
     </footer>
   );
 };
+

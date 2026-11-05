@@ -27,3 +27,4 @@ def sanitize_profile_for_logging(data: dict) -> dict:
         else:
             sanitized[k] = v
     return sanitized
+

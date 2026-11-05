@@ -100,3 +100,4 @@ def test_geographic_state_mismatch(sample_scheme):
     result = EligibilityEngine.evaluate_scheme(sample_scheme, profile)
     assert result.match_status == "does_not_match"
     assert "mismatch" in result.confidence_label_en.lower()
+

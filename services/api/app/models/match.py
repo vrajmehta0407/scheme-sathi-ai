@@ -34,3 +34,4 @@ class MatchRequestModel(BaseModel):
     profile: Optional[dict] = None
     state_filter: Optional[str] = None
     category_filter: Optional[str] = None
+

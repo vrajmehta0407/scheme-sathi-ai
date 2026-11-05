@@ -418,3 +418,4 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
     </div>
   );
 };
+

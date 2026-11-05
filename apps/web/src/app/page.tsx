@@ -20,6 +20,7 @@ import {
   saveStoredLanguage
 } from '../lib/storage';
 import { Navbar } from '../components/layout/Navbar';
+import { MobileBottomNav } from '../components/layout/MobileBottomNav';
 import { Footer } from '../components/layout/Footer';
 import { SchemeCard } from '../components/schemes/SchemeCard';
 import { ProfileModal } from '../components/profile/ProfileModal';
@@ -151,7 +152,7 @@ export default function HomePage() {
         savedCount={savedSchemeIds.length}
       />
 
-      <main className="flex-1">
+      <main className="flex-1 pb-16 md:pb-0">
         {/* Editorial Hero Section */}
         <section className="relative overflow-hidden hero-pattern pt-12 pb-16 md:pt-20 md:pb-24 px-4 sm:px-6 lg:px-8 border-b border-editorial-border/60">
           {/* Subtle floating abstract paper illustrations */}
@@ -504,6 +505,17 @@ export default function HomePage() {
         onClose={() => setIsAdminOpen(false)}
         language={language}
       />
+
+      {/* Mobile Bottom Navigation */}
+      <MobileBottomNav
+        language={language}
+        onOpenProfile={() => setIsProfileOpen(true)}
+        onOpenSaved={() => setIsCompareOpen(true)}
+        onOpenChat={() => setIsChatOpen(true)}
+        hasProfile={hasActiveProfile}
+        savedCount={savedSchemeIds.length}
+      />
     </div>
   );
 }
+

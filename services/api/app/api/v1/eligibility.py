@@ -38,3 +38,4 @@ def evaluate_matches(request: MatchRequestModel):
     results.sort(key=lambda r: order.get(r.match_status, 99))
 
     return results
+

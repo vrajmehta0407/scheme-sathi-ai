@@ -32,3 +32,4 @@ class FeedbackModel(BaseModel):
     is_outdated_report: bool = False
     comment: Optional[str] = Field(None, max_length=1000)
     page_url: Optional[str] = None
+

@@ -28,3 +28,4 @@ def get_scheme_by_id(scheme_id: str):
     if not scheme:
         raise HTTPException(status_code=404, detail="Scheme not found")
     return scheme
+

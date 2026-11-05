@@ -163,3 +163,4 @@ export const CompareModal: React.FC<CompareModalProps> = ({
     </div>
   );
 };
+

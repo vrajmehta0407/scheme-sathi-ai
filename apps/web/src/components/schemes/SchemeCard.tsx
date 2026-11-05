@@ -153,6 +153,18 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
           </div>
         </div>
 
+        {/* Why it may fit link */}
+        <button
+          type="button"
+          onClick={() => onOpenDetails(scheme)}
+          className="text-left text-[11px] font-semibold text-primary hover:text-primary-hover hover:underline transition-colors flex items-center justify-between"
+        >
+          <span>{t.whyFit}</span>
+          <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-primary-soft text-primary font-bold">
+            {matchedCount > 0 ? `${matchedCount} criteria met` : 'Inspect rules'}
+          </span>
+        </button>
+
         {/* CTA Button */}
         <button
           onClick={() => onOpenDetails(scheme)}
@@ -165,3 +177,4 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
     </div>
   );
 };
+
