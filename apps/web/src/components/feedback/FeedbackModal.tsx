@@ -41,17 +41,20 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/40 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy/40 backdrop-blur-md animate-fade-in">
       <div
-        className="w-full max-w-md bg-surface rounded-editorial p-6 shadow-2xl border border-editorial-border relative space-y-4"
+        className="w-full max-w-md bg-white/95 backdrop-blur-xl rounded-3xl p-6 shadow-[0_25px_60px_-15px_rgba(11,25,44,0.2)] border border-editorial-border relative overflow-hidden space-y-4"
         role="dialog"
         aria-modal="true"
       >
-        <div className="flex items-center justify-between pb-3 border-b border-editorial-border">
-          <h3 className="font-bold text-base text-ink">{t.title}</h3>
+        {/* Luminous Top Accent Line */}
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-navy via-coral to-coral-light" />
+
+        <div className="flex items-center justify-between pb-3 border-b border-editorial-border mt-1">
+          <h3 className="font-bold text-base text-navy">{t.title}</h3>
           <button
             onClick={onClose}
-            className="p-1 rounded-full text-ink-muted hover:bg-black/5"
+            className="p-1 rounded-full text-ink-muted hover:text-navy hover:bg-black/5"
             aria-label="Close"
           >
             <X className="w-5 h-5" />
@@ -117,7 +120,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
                 placeholder={t.commentPlaceholder}
-                className="w-full p-3 rounded-xl border border-editorial-border bg-canvas focus:ring-2 focus:ring-primary focus:outline-none"
+                className="w-full p-3 rounded-xl border border-editorial-border bg-canvas text-navy focus:ring-2 focus:ring-coral focus:border-coral focus:outline-none"
               />
             </div>
 
@@ -125,13 +128,13 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="px-4 py-2 rounded-xl text-ink hover:bg-black/5"
+                className="px-4 py-2 rounded-xl text-ink-muted hover:text-navy hover:bg-black/5"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="px-5 py-2.5 rounded-full bg-primary hover:bg-primary-hover text-white font-bold shadow-sm active:scale-95 transition-all"
+                className="px-5 py-2.5 rounded-full bg-gradient-to-r from-coral to-rose-600 hover:from-coral-hover hover:to-rose-700 text-white font-bold shadow-glow-coral active:scale-95 transition-all"
               >
                 {t.submit}
               </button>

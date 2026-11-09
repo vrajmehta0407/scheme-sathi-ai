@@ -9,43 +9,66 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        canvas: '#FFFDF9',
+        canvas: '#FAF7F2', // Editorial Warm Cream Canvas
         surface: '#FFFFFF',
+        cream: {
+          DEFAULT: '#FAF7F2',
+          light: '#FFFDF9',
+          warm: '#F5ECE1',
+          biscuit: '#EFE3D3',
+        },
+        navy: {
+          DEFAULT: '#0B192C', // Deep Luxury Midnight Navy
+          deep: '#060E18',
+          light: '#1E3E62',
+          slate: '#2B4865',
+          muted: '#4E6178',
+          soft: 'rgba(11, 25, 44, 0.08)',
+          glow: 'rgba(11, 25, 44, 0.35)',
+        },
+        coral: {
+          DEFAULT: '#FF6542', // Luminous Sunset Coral
+          hover: '#E8502D',
+          light: '#FF876C',
+          rose: '#F43F5E',
+          soft: 'rgba(255, 101, 66, 0.12)',
+          glow: 'rgba(255, 101, 66, 0.40)',
+        },
         ink: {
-          DEFAULT: '#141D2E',
-          light: '#28374F',
-          muted: '#52627A',
+          DEFAULT: '#0B192C', // Navy as primary ink
+          light: '#1E3E62',
+          muted: '#52667E',
         },
         primary: {
-          DEFAULT: '#5457EB',
-          hover: '#4346E0',
-          soft: 'rgba(84, 87, 235, 0.09)',
-          glow: 'rgba(84, 87, 235, 0.35)',
+          DEFAULT: '#0B192C', // Luxury Navy
+          hover: '#1E3E62',
+          soft: 'rgba(11, 25, 44, 0.08)',
+          glow: 'rgba(11, 25, 44, 0.35)',
         },
         secondary: {
-          DEFAULT: '#0EA584',
-          hover: '#0C8F72',
-          soft: 'rgba(14, 165, 132, 0.09)',
-          glow: 'rgba(14, 165, 132, 0.35)',
+          DEFAULT: '#FF6542', // Electric Coral
+          hover: '#E8502D',
+          soft: 'rgba(255, 101, 66, 0.12)',
+          glow: 'rgba(255, 101, 66, 0.40)',
         },
         radiant: {
-          indigo: '#6366F1',
-          violet: '#8B5CF6',
-          emerald: '#10B981',
+          navy: '#0B192C',
+          coral: '#FF6542',
           amber: '#F59E0B',
-          coral: '#F43F5E',
-          cyan: '#06B6D4',
-          fuchsia: '#D946EF',
+          teal: '#134E4A',
+          rose: '#FF7E67',
+          terracotta: '#E05A47',
+          cream: '#FAF7F2',
         },
         accent: {
-          coral: '#FF6B6B',
-          'coral-soft': 'rgba(255, 107, 107, 0.12)',
-          mango: '#FFAA00',
-          'mango-soft': 'rgba(255, 170, 0, 0.14)',
+          coral: '#FF6542',
+          'coral-soft': 'rgba(255, 101, 66, 0.12)',
+          navy: '#0B192C',
+          'navy-soft': 'rgba(11, 25, 44, 0.08)',
+          mango: '#F59E0B',
+          'mango-soft': 'rgba(245, 158, 11, 0.12)',
           sky: '#38BDF8',
-          'sky-soft': 'rgba(56, 189, 248, 0.14)',
-          lavender: '#C084FC',
-          'lavender-soft': 'rgba(192, 132, 252, 0.16)',
+          'sky-soft': 'rgba(56, 189, 248, 0.12)',
         },
         status: {
           success: '#10B981',
@@ -56,9 +79,9 @@ const config: Config = {
           'error-soft': 'rgba(239, 68, 68, 0.12)',
         },
         editorial: {
-          border: 'rgba(20, 29, 46, 0.08)',
-          'border-hover': 'rgba(84, 87, 235, 0.28)',
-          glass: 'rgba(255, 255, 255, 0.82)',
+          border: 'rgba(11, 25, 44, 0.09)',
+          'border-hover': 'rgba(255, 101, 66, 0.35)',
+          glass: 'rgba(250, 247, 242, 0.88)',
         }
       },
       fontFamily: {
@@ -71,10 +94,12 @@ const config: Config = {
         'editorial-lg': '36px',
       },
       boxShadow: {
-        'paper': '0 8px 30px -4px rgba(20, 29, 46, 0.05), 0 2px 6px -1px rgba(20, 29, 46, 0.02)',
-        'paper-hover': '0 24px 50px -10px rgba(84, 87, 235, 0.14), 0 8px 16px -4px rgba(20, 29, 46, 0.04)',
-        'hologram': '0 20px 50px -10px rgba(99, 102, 241, 0.28), 0 0 25px rgba(6, 182, 212, 0.18)',
-        'glass': '0 12px 36px 0 rgba(20, 29, 46, 0.06)',
+        'paper': '0 8px 30px -4px rgba(11, 25, 44, 0.06), 0 2px 6px -1px rgba(11, 25, 44, 0.03)',
+        'paper-hover': '0 24px 50px -10px rgba(11, 25, 44, 0.14), 0 8px 24px -4px rgba(255, 101, 66, 0.22)',
+        'glow-coral': '0 10px 32px -4px rgba(255, 101, 66, 0.45)',
+        'glow-navy': '0 10px 32px -4px rgba(11, 25, 44, 0.35)',
+        'hologram': '0 20px 50px -10px rgba(11, 25, 44, 0.25), 0 0 25px rgba(255, 101, 66, 0.25)',
+        'glass': '0 12px 36px 0 rgba(11, 25, 44, 0.08)',
       },
       keyframes: {
         float: {

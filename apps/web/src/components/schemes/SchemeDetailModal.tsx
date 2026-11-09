@@ -107,16 +107,16 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
                 </span>
               )}
             </div>
-            <h2 id="scheme-detail-title" className="text-xl sm:text-2xl font-display font-bold text-ink">
+            <h2 id="scheme-detail-title" className="text-xl sm:text-2xl font-display font-bold text-navy">
               {schemeTitle}
             </h2>
             <div className="flex items-center gap-4 text-xs text-ink-muted pt-1 flex-wrap">
               <span className="flex items-center gap-1">
-                <Building2 className="w-3.5 h-3.5" />
+                <Building2 className="w-3.5 h-3.5 text-navy" />
                 {scheme.source_org}
               </span>
               <span className="flex items-center gap-1">
-                <Calendar className="w-3.5 h-3.5" />
+                <Calendar className="w-3.5 h-3.5 text-coral" />
                 {t.verifiedDate}: {scheme.verified_at.split('T')[0]}
               </span>
             </div>
@@ -127,8 +127,8 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
               onClick={() => onToggleSave(scheme.id)}
               className={`p-2.5 rounded-full border transition-all ${
                 isSaved
-                  ? 'bg-primary text-white border-primary shadow-xs'
-                  : 'bg-white text-ink border-editorial-border hover:bg-black/5'
+                  ? 'bg-coral text-white border-coral shadow-glow-coral'
+                  : 'bg-white text-navy border-editorial-border hover:bg-coral-soft'
               }`}
               title={isSaved ? 'Saved locally' : 'Save Scheme'}
               aria-label="Bookmark scheme"
@@ -137,7 +137,7 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
             </button>
             <button
               onClick={onClose}
-              className="p-2.5 rounded-full hover:bg-black/5 text-ink-muted transition-colors"
+              className="p-2.5 rounded-full hover:bg-black/5 text-ink-muted hover:text-navy transition-colors"
               aria-label="Close dialog"
             >
               <X className="w-5 h-5" />
@@ -162,8 +162,8 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
                 onClick={() => setActiveTab(tab.id as any)}
                 className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all shrink-0 ${
                   isActive
-                    ? 'bg-ink text-white shadow-xs'
-                    : 'text-ink-muted hover:text-ink hover:bg-black/5'
+                    ? 'bg-navy text-white shadow-xs'
+                    : 'text-ink-muted hover:text-navy hover:bg-black/5'
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -380,7 +380,7 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
 
           <button
             onClick={handleApplyClick}
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs font-bold bg-primary hover:bg-primary-hover text-white shadow-md active:scale-95 transition-all"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs font-bold bg-gradient-to-r from-coral to-rose-600 hover:from-coral-hover hover:to-rose-700 text-white shadow-glow-coral active:scale-95 transition-all"
           >
             <span>{t.applyOfficialBtn}</span>
             <ExternalLink className="w-4 h-4" />
@@ -389,30 +389,30 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
 
         {/* Departure Confirmation Dialog */}
         {showDepartureDialog && (
-          <div className="absolute inset-0 bg-ink/70 backdrop-blur-md flex items-center justify-center p-6 z-60 animate-fade-in">
-            <div className="bg-surface rounded-2xl p-6 max-w-md w-full shadow-2xl border border-editorial-border space-y-4">
-              <div className="w-10 h-10 rounded-full bg-status-caution-soft flex items-center justify-center text-status-caution">
+          <div className="absolute inset-0 bg-navy/70 backdrop-blur-md flex items-center justify-center p-6 z-60 animate-fade-in">
+            <div className="bg-white rounded-3xl p-6 max-w-md w-full shadow-2xl border border-editorial-border space-y-4">
+              <div className="w-10 h-10 rounded-full bg-coral-soft flex items-center justify-center text-coral">
                 <AlertTriangle className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bold text-base text-ink">Visiting Official Government Portal</h3>
+                <h3 className="font-bold text-base text-navy">Visiting Official Government Portal</h3>
                 <p className="text-xs text-ink-muted mt-2 leading-relaxed">
                   {t.departureWarning}
                 </p>
-                <div className="mt-3 p-2.5 rounded-xl bg-canvas text-xs font-mono text-primary truncate">
+                <div className="mt-3 p-2.5 rounded-xl bg-canvas text-xs font-mono text-navy truncate border border-editorial-border">
                   {scheme.official_application_url}
                 </div>
               </div>
               <div className="flex items-center justify-end gap-2 pt-2">
                 <button
                   onClick={() => setShowDepartureDialog(false)}
-                  className="px-4 py-2 rounded-xl text-xs font-semibold text-ink hover:bg-black/5"
+                  className="px-4 py-2 rounded-xl text-xs font-semibold text-ink-muted hover:text-navy hover:bg-black/5"
                 >
                   Cancel
                 </button>
                 <button
                   onClick={handleConfirmDeparture}
-                  className="px-5 py-2.5 rounded-full text-xs font-bold bg-primary text-white shadow-sm hover:bg-primary-hover"
+                  className="px-5 py-2.5 rounded-full text-xs font-bold bg-coral text-white shadow-glow-coral hover:bg-coral-hover transition-colors"
                 >
                   Proceed to Official Portal
                 </button>

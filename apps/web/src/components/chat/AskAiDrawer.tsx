@@ -94,20 +94,20 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-end bg-ink/40 backdrop-blur-xs animate-fade-in">
-      <div className="w-full max-w-lg bg-white/95 backdrop-blur-xl h-full shadow-[0_0_60px_rgba(0,0,0,0.15)] border-l border-editorial-border flex flex-col justify-between relative overflow-hidden">
-        {/* Luminous Top Gradient Line */}
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-secondary to-accent-coral z-10" />
+    <div className="fixed inset-0 z-50 flex justify-end bg-navy/40 backdrop-blur-xs animate-fade-in">
+      <div className="w-full max-w-lg bg-white/95 backdrop-blur-xl h-full shadow-[0_0_60px_rgba(11,25,44,0.2)] border-l border-editorial-border flex flex-col justify-between relative overflow-hidden">
+        {/* Luminous Top Gradient Line in Navy & Coral */}
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-navy via-coral to-coral-light z-10" />
 
         {/* Drawer Header */}
-        <div className="p-4 sm:p-5 border-b border-editorial-border bg-canvas/60 backdrop-blur-md flex items-center justify-between mt-1">
+        <div className="p-4 sm:p-5 border-b border-editorial-border bg-canvas/70 backdrop-blur-md flex items-center justify-between mt-1">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary to-indigo-600 flex items-center justify-center text-white shadow-glow-indigo">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-coral to-rose-600 flex items-center justify-center text-white shadow-glow-coral">
               <Sparkles className="w-4 h-4 animate-spin-slow" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="font-bold text-base text-ink">{t.title}</h3>
+                <h3 className="font-bold text-base text-navy">{t.title}</h3>
                 <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-status-success-soft text-status-success border border-status-success/20">
                   Grounded
                 </span>
@@ -118,7 +118,7 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
 
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-black/5 text-ink-muted hover:text-ink transition-colors"
+            className="p-2 rounded-full hover:bg-black/5 text-ink-muted hover:text-navy transition-colors"
             aria-label="Close assistant"
           >
             <X className="w-5 h-5" />
@@ -135,7 +135,7 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
               }`}
             >
               {m.sender === 'assistant' && (
-                <div className="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-navy-soft text-navy flex items-center justify-center shrink-0 mt-0.5">
                   <Bot className="w-4 h-4" />
                 </div>
               )}
@@ -144,8 +144,8 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
                 <div
                   className={`p-3.5 rounded-2xl leading-relaxed whitespace-pre-line ${
                     m.sender === 'user'
-                      ? 'bg-primary text-white rounded-tr-none shadow-sm font-medium'
-                      : 'bg-white border border-editorial-border text-ink rounded-tl-none shadow-paper'
+                      ? 'bg-navy text-white rounded-tr-none shadow-sm font-medium'
+                      : 'bg-white border border-editorial-border text-navy rounded-tl-none shadow-paper'
                   }`}
                 >
                   {m.text}
@@ -154,19 +154,19 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
                 {/* Grounded Citations & Sources */}
                 {m.citations && m.citations.length > 0 && (
                   <div className="p-3 rounded-xl bg-canvas border border-editorial-border space-y-2 text-[11px]">
-                    <div className="font-bold text-ink uppercase tracking-wider flex items-center gap-1.5 text-[10px]">
-                      <ShieldCheck className="w-3.5 h-3.5 text-secondary" />
+                    <div className="font-bold text-navy uppercase tracking-wider flex items-center gap-1.5 text-[10px]">
+                      <ShieldCheck className="w-3.5 h-3.5 text-coral" />
                       <span>{t.citationsHeading}</span>
                     </div>
                     {m.citations.map((c) => (
                       <div key={c.citation_id} className="border-t border-editorial-border/60 pt-1.5">
-                        <div className="font-bold text-ink">{c.scheme_name}</div>
+                        <div className="font-bold text-navy">{c.scheme_name}</div>
                         <div className="text-ink-muted text-[10px]">{c.source_org}</div>
                         <a
                           href={c.source_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-primary hover:underline font-medium text-[10px] mt-0.5"
+                          className="inline-flex items-center gap-1 text-coral hover:underline font-medium text-[10px] mt-0.5"
                         >
                           Official Portal Link <ExternalLink className="w-2.5 h-2.5" />
                         </a>
@@ -181,7 +181,7 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
               </div>
 
               {m.sender === 'user' && (
-                <div className="w-7 h-7 rounded-full bg-secondary text-white flex items-center justify-center shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-coral text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
                   <User className="w-4 h-4" />
                 </div>
               )}
@@ -190,10 +190,10 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
 
           {loading && (
             <div className="flex gap-3 text-xs items-center text-ink-muted">
-              <div className="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 animate-pulse">
+              <div className="w-7 h-7 rounded-full bg-navy-soft text-navy flex items-center justify-center shrink-0 animate-pulse">
                 <Bot className="w-4 h-4" />
               </div>
-              <div className="p-3 rounded-2xl bg-white border border-editorial-border italic">
+              <div className="p-3 rounded-2xl bg-white border border-editorial-border italic text-navy">
                 Verifying scheme records & citations...
               </div>
             </div>
@@ -211,7 +211,7 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
                 key={i}
                 type="button"
                 onClick={() => handleSend(sug)}
-                className="px-2.5 py-1 rounded-full bg-white border border-editorial-border hover:border-primary/40 text-ink text-[11px] whitespace-nowrap transition-colors"
+                className="px-2.5 py-1 rounded-full bg-white border border-editorial-border hover:border-coral/50 hover:text-coral hover:bg-coral-soft/30 text-navy text-[11px] whitespace-nowrap transition-colors"
               >
                 {sug}
               </button>
@@ -233,12 +233,12 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               placeholder={t.inputPlaceholder}
-              className="flex-1 p-3 rounded-2xl border border-editorial-border bg-canvas text-xs focus:ring-2 focus:ring-primary focus:outline-none placeholder:text-ink-muted"
+              className="flex-1 p-3 rounded-2xl border border-editorial-border bg-canvas text-xs text-navy focus:ring-2 focus:ring-coral focus:border-coral focus:outline-none placeholder:text-ink-muted"
             />
             <button
               type="submit"
               disabled={loading || !inputText.trim()}
-              className="w-11 h-11 rounded-2xl bg-gradient-to-r from-primary to-indigo-600 hover:from-primary-hover hover:to-indigo-700 shadow-glow-indigo disabled:opacity-40 text-white flex items-center justify-center transition-all shrink-0 active:scale-95"
+              className="w-11 h-11 rounded-2xl bg-gradient-to-r from-coral to-rose-600 hover:from-coral-hover hover:to-rose-700 shadow-glow-coral disabled:opacity-40 text-white flex items-center justify-center transition-all shrink-0 active:scale-95"
               aria-label={t.send}
             >
               <Send className="w-4 h-4" />

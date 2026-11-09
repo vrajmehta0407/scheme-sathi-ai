@@ -112,12 +112,12 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
             : 'rotateX(0deg) rotateY(0deg) translateY(0px) scale3d(1, 1, 1)',
         }}
       >
-        {/* Interactive Specular Radial Spotlight */}
+        {/* Interactive Specular Radial Spotlight in Warm Coral */}
         {isHovered && (
           <div
             className="absolute inset-0 pointer-events-none rounded-[28px] opacity-60 transition-opacity duration-300"
             style={{
-              background: `radial-gradient(circle 280px at ${glowPos.x}px ${glowPos.y}px, rgba(255, 255, 255, 0.8), rgba(84, 87, 235, 0.08) 40%, transparent 80%)`,
+              background: `radial-gradient(circle 280px at ${glowPos.x}px ${glowPos.y}px, rgba(255, 255, 255, 0.85), rgba(255, 101, 66, 0.08) 45%, transparent 80%)`,
             }}
           />
         )}
@@ -125,7 +125,7 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
         {/* Top Accent Color Strip with Ambient Glow */}
         <div
           className="absolute top-0 left-0 right-0 h-1.5 opacity-90 transition-opacity"
-          style={{ backgroundColor: cat?.color || '#5457EB' }}
+          style={{ backgroundColor: cat?.color || '#0B192C' }}
         />
 
         {/* Top Header Row */}
@@ -135,8 +135,8 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
               <span
                 className="px-3 py-1 rounded-full text-[11px] font-bold tracking-wide uppercase transition-transform"
                 style={{
-                  backgroundColor: `${cat?.color || '#5457EB'}18`,
-                  color: cat?.color || '#5457EB',
+                  backgroundColor: `${cat?.color || '#0B192C'}14`,
+                  color: cat?.color || '#0B192C',
                 }}
               >
                 {categoryLabel}
@@ -153,10 +153,10 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
                 e.stopPropagation();
                 onToggleSave(scheme.id);
               }}
-              className={`w-9 h-9 rounded-full flex items-center justify-center transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+              className={`w-9 h-9 rounded-full flex items-center justify-center transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-navy ${
                 isSaved
-                  ? 'bg-primary text-white shadow-md shadow-primary/25 scale-105'
-                  : 'bg-black/5 text-ink-muted hover:text-ink hover:bg-black/10'
+                  ? 'bg-coral text-white shadow-glow-coral scale-105'
+                  : 'bg-black/5 text-ink-muted hover:text-coral hover:bg-coral-soft'
               }`}
               aria-label={isSaved ? t.saved : t.save}
               title={isSaved ? t.saved : t.save}
@@ -168,7 +168,7 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
           {/* Scheme Title */}
           <h3
             onClick={() => onOpenDetails(scheme)}
-            className="text-base sm:text-lg font-bold font-display text-ink hover:text-primary transition-colors leading-snug line-clamp-2"
+            className="text-base sm:text-lg font-bold font-display text-navy hover:text-coral transition-colors leading-snug line-clamp-2"
           >
             {schemeTitle}
           </h3>
@@ -184,16 +184,16 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
           </p>
 
           {/* Highlight Benefit Box */}
-          <div className="mt-4 p-3.5 rounded-2xl bg-canvas border border-editorial-border shadow-2xs group-hover:border-primary/20 transition-colors">
+          <div className="mt-4 p-3.5 rounded-2xl bg-canvas border border-editorial-border shadow-2xs group-hover:border-coral/20 transition-colors">
             <div className="text-[10px] font-bold uppercase tracking-wider text-ink-muted mb-1 flex items-center justify-between">
               <span>Benefit Overview</span>
               {scheme.benefit_amount_text_en && (
-                <span className="text-primary font-bold">
+                <span className="text-coral font-bold">
                   {language === 'gu' ? scheme.benefit_amount_text_gu : scheme.benefit_amount_text_en}
                 </span>
               )}
             </div>
-            <div className="text-xs font-semibold text-ink line-clamp-2">
+            <div className="text-xs font-semibold text-navy line-clamp-2">
               {benefitSummary}
             </div>
           </div>
@@ -210,7 +210,7 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
               className="flex items-center gap-1 text-[11px] font-medium text-ink-muted"
               title={`Verified: ${scheme.verified_at.split('T')[0]}`}
             >
-              <ShieldCheck className="w-3.5 h-3.5 text-secondary" />
+              <ShieldCheck className="w-3.5 h-3.5 text-coral" />
               <span>Verified Source</span>
             </div>
           </div>
@@ -219,10 +219,10 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
           <button
             type="button"
             onClick={() => onOpenDetails(scheme)}
-            className="text-left text-[11px] font-semibold text-primary hover:text-primary-hover hover:underline transition-colors flex items-center justify-between py-0.5 focus:outline-none"
+            className="text-left text-[11px] font-semibold text-navy hover:text-coral transition-colors flex items-center justify-between py-0.5 focus:outline-none"
           >
             <span>{t.whyFit}</span>
-            <span className="text-[10px] px-2 py-0.5 rounded-md bg-primary/10 text-primary font-bold">
+            <span className="text-[10px] px-2 py-0.5 rounded-md bg-navy-soft text-navy font-bold">
               {matchedCount > 0 ? `${matchedCount} rules met` : 'Inspect requirements'}
             </span>
           </button>
@@ -231,10 +231,10 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
           <button
             type="button"
             onClick={() => onOpenDetails(scheme)}
-            className="w-full mt-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-bold bg-white hover:bg-primary hover:text-white text-primary border border-primary/30 transition-all shadow-xs active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="w-full mt-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-bold bg-white hover:bg-navy hover:text-white text-navy border border-navy/20 hover:border-navy transition-all shadow-xs active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-navy group"
           >
             <span>{t.viewDetails}</span>
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-4 h-4 text-coral group-hover:text-coral-light transition-colors" />
           </button>
         </div>
       </div>

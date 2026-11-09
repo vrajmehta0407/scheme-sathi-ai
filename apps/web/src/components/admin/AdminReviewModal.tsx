@@ -75,12 +75,14 @@ export const AdminReviewModal: React.FC<AdminReviewModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-ink/50 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-navy/50 backdrop-blur-md animate-fade-in">
       <div
-        className="w-full max-w-5xl bg-surface rounded-editorial p-6 sm:p-8 shadow-2xl border border-editorial-border relative overflow-hidden flex flex-col max-h-[92vh]"
+        className="w-full max-w-5xl bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-[0_25px_60px_-15px_rgba(11,25,44,0.25)] border border-editorial-border relative overflow-hidden flex flex-col max-h-[92vh]"
         role="dialog"
         aria-modal="true"
       >
+        {/* Luminous Top Accent Line */}
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-navy via-coral to-coral-light" />
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-editorial-border">
           <div className="flex items-center gap-2.5">

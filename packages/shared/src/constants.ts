@@ -1,13 +1,13 @@
 import { SchemeCategory, Language } from './types';
 
 export const SCHEME_CATEGORIES: { id: SchemeCategory; label_en: string; label_gu: string; color: string }[] = [
-  { id: 'education', label_en: 'Education & Scholarships', label_gu: 'શિક્ષણ અને શિષ્યવૃત્તિ', color: '#6366F1' },
-  { id: 'agriculture', label_en: 'Farmer & Agriculture', label_gu: 'ખેડૂત અને કૃષિ સહાય', color: '#10B981' },
-  { id: 'women_family', label_en: 'Women & Family Welfare', label_gu: 'મહિલા અને પારિવારિક કલ્યાણ', color: '#F43F5E' },
-  { id: 'employment', label_en: 'Employment & Skill Development', label_gu: 'રોજગાર અને કૌશલ્ય વિકાસ', color: '#F59E0B' },
-  { id: 'housing', label_en: 'Housing & Rural Support', label_gu: 'આવાસ અને ગ્રામીણ સહાય', color: '#06B6D4' },
-  { id: 'health', label_en: 'Health & Medical Aid', label_gu: 'આરોગ્ય અને તબીબી સહાય', color: '#8B5CF6' },
-  { id: 'social_security', label_en: 'Social Security & Pension', label_gu: 'સામાજિક સુરક્ષા અને પેન્શન', color: '#EC4899' },
+  { id: 'education', label_en: 'Education & Scholarships', label_gu: 'શિક્ષણ અને શિષ્યવૃત્તિ', color: '#0B192C' },
+  { id: 'agriculture', label_en: 'Farmer & Agriculture', label_gu: 'ખેડૂત અને કૃષિ સહાય', color: '#134E4A' },
+  { id: 'women_family', label_en: 'Women & Family Welfare', label_gu: 'મહિલા અને પારિવારિક કલ્યાણ', color: '#FF6542' },
+  { id: 'employment', label_en: 'Employment & Skill Development', label_gu: 'રોજગાર અને કૌશલ્ય વિકાસ', color: '#E05A47' },
+  { id: 'housing', label_en: 'Housing & Rural Support', label_gu: 'આવાસ અને ગ્રામીણ સહાય', color: '#1E3E62' },
+  { id: 'health', label_en: 'Health & Medical Aid', label_gu: 'આરોગ્ય અને તબીબી સહાય', color: '#FF7E67' },
+  { id: 'social_security', label_en: 'Social Security & Pension', label_gu: 'સામાજિક સુરક્ષા અને પેન્શન', color: '#2B4865' },
 ];
 
 export const AGE_BANDS = [

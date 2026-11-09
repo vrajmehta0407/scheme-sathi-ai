@@ -155,28 +155,28 @@ export default function HomePage() {
 
       <main className="flex-1 pb-20 md:pb-0">
         {/* Editorial 3D Hero Section */}
-        <section className="relative overflow-hidden hero-3d-grid pt-10 pb-16 md:pt-16 md:pb-20 px-4 sm:px-6 lg:px-8 border-b border-editorial-border/60 bg-gradient-to-b from-[#FFFDF9] via-canvas to-[#FFF6E9]">
-          {/* Ambient Blurred Colored Light Flares */}
-          <div className="absolute top-1/4 left-10 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none -z-10" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-mango/15 rounded-full blur-[100px] pointer-events-none -z-10" />
+        <section className="relative overflow-hidden hero-3d-grid pt-10 pb-16 md:pt-16 md:pb-20 px-4 sm:px-6 lg:px-8 border-b border-editorial-border/60 bg-gradient-to-b from-[#FFFDF9] via-canvas to-[#F5ECE1]">
+          {/* Ambient Blurred Colored Light Flares in Navy & Coral */}
+          <div className="absolute top-1/4 left-10 w-96 h-96 bg-navy/8 rounded-full blur-[100px] pointer-events-none -z-10" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-coral/15 rounded-full blur-[100px] pointer-events-none -z-10" />
 
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
               {/* Left Column: Editorial Typography & Actions */}
               <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
                 {/* Top Pill Badge */}
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-editorial-border shadow-xs text-xs font-bold text-ink backdrop-blur-md">
-                  <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 border border-coral/30 shadow-xs text-xs font-bold text-navy backdrop-blur-md">
+                  <span className="w-2.5 h-2.5 rounded-full bg-coral animate-pulse" />
                   <span>{t.hero.badge}</span>
                 </div>
 
                 {/* Main Display Headline */}
-                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-ink leading-[1.12]">
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-navy leading-[1.12]">
                   {t.hero.title}
                 </h1>
 
                 {/* Narrative Subtitle */}
-                <p className="text-sm sm:text-base md:text-lg text-ink-light max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                <p className="text-sm sm:text-base md:text-lg text-ink-muted max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
                   {t.hero.subtitle}
                 </p>
 
@@ -184,7 +184,7 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
                   <button
                     onClick={() => setIsProfileOpen(true)}
-                    className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-bold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 active:scale-95 transition-all"
+                    className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-coral to-rose-600 hover:from-coral-hover hover:to-rose-700 text-white text-sm font-bold shadow-glow-coral hover:scale-105 active:scale-95 transition-all"
                   >
                     <span>{t.hero.ctaFind}</span>
                     <ArrowRight className="w-4 h-4" />
@@ -192,24 +192,24 @@ export default function HomePage() {
 
                   <a
                     href="#discover"
-                    className="w-full sm:w-auto px-7 py-4 rounded-full bg-white hover:bg-canvas text-ink text-sm font-bold border border-editorial-border shadow-xs transition-all text-center"
+                    className="w-full sm:w-auto px-7 py-4 rounded-full bg-white hover:bg-cream-warm text-navy text-sm font-bold border border-editorial-border hover:border-navy shadow-xs transition-all text-center"
                   >
                     {t.hero.ctaBrowse}
                   </a>
                 </div>
 
                 {/* Trust Pillars */}
-                <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs font-semibold text-ink-light">
-                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 border border-editorial-border shadow-2xs backdrop-blur-sm">
-                    <Shield className="w-4 h-4 text-primary" />
+                <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs font-semibold text-ink-muted">
+                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 border border-editorial-border shadow-2xs backdrop-blur-sm">
+                    <Shield className="w-4 h-4 text-navy" />
                     <span>{t.hero.trustPill1}</span>
                   </div>
-                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 border border-editorial-border shadow-2xs backdrop-blur-sm">
-                    <FileCheck className="w-4 h-4 text-secondary" />
+                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 border border-editorial-border shadow-2xs backdrop-blur-sm">
+                    <FileCheck className="w-4 h-4 text-coral" />
                     <span>{t.hero.trustPill2}</span>
                   </div>
-                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 border border-editorial-border shadow-2xs backdrop-blur-sm">
-                    <Building className="w-4 h-4 text-accent-coral" />
+                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 border border-editorial-border shadow-2xs backdrop-blur-sm">
+                    <Building className="w-4 h-4 text-navy" />
                     <span>{t.hero.trustPill3}</span>
                   </div>
                 </div>
@@ -223,20 +223,20 @@ export default function HomePage() {
 
             {/* Live Telemetry Ribbon */}
             <div className="mt-12 pt-6 border-t border-editorial-border/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-primary/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
-                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-primary to-indigo-700 bg-clip-text text-transparent group-hover:scale-105 transition-transform">₹10 Lakh</div>
+              <div className="p-3.5 rounded-2xl bg-white/80 hover:bg-white border border-editorial-border/80 hover:border-coral/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-coral to-rose-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform">₹10 Lakh</div>
                 <div className="text-[11px] font-semibold text-ink-muted mt-0.5">Max Health Cover (PM-JAY)</div>
               </div>
-              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-secondary/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
-                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-secondary to-teal-700 bg-clip-text text-transparent group-hover:scale-105 transition-transform">100%</div>
+              <div className="p-3.5 rounded-2xl bg-white/80 hover:bg-white border border-editorial-border/80 hover:border-navy/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-navy to-navy-light bg-clip-text text-transparent group-hover:scale-105 transition-transform">100%</div>
                 <div className="text-[11px] font-semibold text-ink-muted mt-0.5">Deterministic Rule Engine</div>
               </div>
-              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-accent-coral/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
-                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-accent-coral to-rose-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform">0 PII</div>
+              <div className="p-3.5 rounded-2xl bg-white/80 hover:bg-white border border-editorial-border/80 hover:border-coral/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-coral to-amber-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform">0 PII</div>
                 <div className="text-[11px] font-semibold text-ink-muted mt-0.5">No Aadhaar / OTP Stored</div>
               </div>
-              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-accent-amber/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
-                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform">.gov.in</div>
+              <div className="p-3.5 rounded-2xl bg-white/80 hover:bg-white border border-editorial-border/80 hover:border-navy/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-navy to-navy-deep bg-clip-text text-transparent group-hover:scale-105 transition-transform">.gov.in</div>
                 <div className="text-[11px] font-semibold text-ink-muted mt-0.5">Verified Official Links</div>
               </div>
             </div>
@@ -246,10 +246,10 @@ export default function HomePage() {
         {/* How it Works 3 Steps */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-12 space-y-2">
-            <span className="text-[11px] font-extrabold tracking-widest text-primary uppercase bg-primary-soft/80 px-3 py-1 rounded-full border border-primary/20">
+            <span className="text-[11px] font-extrabold tracking-widest text-coral uppercase bg-coral-soft px-3 py-1 rounded-full border border-coral/30">
               Guaranteed Transparency
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold font-display text-ink mt-2">
+            <h2 className="text-2xl sm:text-3xl font-extrabold font-display text-navy mt-2">
               {t.howItWorks.title}
             </h2>
             <p className="text-xs sm:text-sm text-ink-muted max-w-xl mx-auto">
@@ -258,28 +258,28 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-7 bg-white/80 hover:bg-white rounded-3xl border border-editorial-border hover:border-primary/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(99,102,241,0.25)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-700 text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-indigo-300/60 group-hover:scale-110 transition-transform">
+            <div className="p-7 bg-white/90 hover:bg-white rounded-3xl border border-editorial-border hover:border-navy/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(11,25,44,0.2)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-navy to-navy-light text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-navy/30 group-hover:scale-110 transition-transform">
                 01
               </div>
-              <h3 className="font-bold text-base text-ink group-hover:text-primary transition-colors">{t.howItWorks.step1Title}</h3>
-              <p className="text-xs text-ink-light leading-relaxed">{t.howItWorks.step1Desc}</p>
+              <h3 className="font-bold text-base text-navy group-hover:text-coral transition-colors">{t.howItWorks.step1Title}</h3>
+              <p className="text-xs text-ink-muted leading-relaxed">{t.howItWorks.step1Desc}</p>
             </div>
 
-            <div className="p-7 bg-white/80 hover:bg-white rounded-3xl border border-editorial-border hover:border-secondary/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.25)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-emerald-300/60 group-hover:scale-110 transition-transform">
+            <div className="p-7 bg-white/90 hover:bg-white rounded-3xl border border-editorial-border hover:border-coral/40 shadow-paper hover:shadow-glow-coral transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-coral to-rose-600 text-white font-display font-extrabold flex items-center justify-center text-sm shadow-glow-coral group-hover:scale-110 transition-transform">
                 02
               </div>
-              <h3 className="font-bold text-base text-ink group-hover:text-secondary transition-colors">{t.howItWorks.step2Title}</h3>
-              <p className="text-xs text-ink-light leading-relaxed">{t.howItWorks.step2Desc}</p>
+              <h3 className="font-bold text-base text-navy group-hover:text-coral transition-colors">{t.howItWorks.step2Title}</h3>
+              <p className="text-xs text-ink-muted leading-relaxed">{t.howItWorks.step2Desc}</p>
             </div>
 
-            <div className="p-7 bg-white/80 hover:bg-white rounded-3xl border border-editorial-border hover:border-accent-coral/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(244,63,94,0.25)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-rose-500 to-amber-600 text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-rose-300/60 group-hover:scale-110 transition-transform">
+            <div className="p-7 bg-white/90 hover:bg-white rounded-3xl border border-editorial-border hover:border-navy/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(11,25,44,0.2)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-navy to-navy-slate text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-navy/30 group-hover:scale-110 transition-transform">
                 03
               </div>
-              <h3 className="font-bold text-base text-ink group-hover:text-accent-coral transition-colors">{t.howItWorks.step3Title}</h3>
-              <p className="text-xs text-ink-light leading-relaxed">{t.howItWorks.step3Desc}</p>
+              <h3 className="font-bold text-base text-navy group-hover:text-coral transition-colors">{t.howItWorks.step3Title}</h3>
+              <p className="text-xs text-ink-muted leading-relaxed">{t.howItWorks.step3Desc}</p>
             </div>
           </div>
         </section>
@@ -289,7 +289,7 @@ export default function HomePage() {
           {/* Header + Active Profile Strip */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-4 border-b border-editorial-border">
             <div>
-              <h2 className="text-2xl font-bold font-display text-ink">
+              <h2 className="text-2xl font-bold font-display text-navy">
                 {t.results.heading}
               </h2>
               <p className="text-xs sm:text-sm text-ink-muted mt-1">
@@ -301,12 +301,12 @@ export default function HomePage() {
             {hasActiveProfile ? (
               <div className="flex items-center gap-2 p-2 px-3 rounded-full bg-white border border-editorial-border shadow-xs text-xs">
                 <span className="w-2.5 h-2.5 rounded-full bg-status-success animate-pulse" />
-                <span className="text-ink font-semibold">
+                <span className="text-navy font-semibold">
                   {userProfile.state || 'Pan-India'} • {userProfile.occupation || 'Any Role'}
                 </span>
                 <button
                   onClick={() => setIsProfileOpen(true)}
-                  className="text-primary hover:underline font-bold ml-1"
+                  className="text-coral hover:underline font-bold ml-1"
                 >
                   Edit
                 </button>
@@ -321,9 +321,9 @@ export default function HomePage() {
             ) : (
               <button
                 onClick={() => setIsProfileOpen(true)}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-editorial-border hover:border-primary/40 text-xs font-semibold text-ink shadow-xs"
+                className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-editorial-border hover:border-coral/40 text-xs font-semibold text-navy shadow-xs transition-colors"
               >
-                <SlidersHorizontal className="w-3.5 h-3.5 text-primary" />
+                <SlidersHorizontal className="w-3.5 h-3.5 text-coral" />
                 <span>Filter by Personal Profile</span>
               </button>
             )}
@@ -340,12 +340,12 @@ export default function HomePage() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder={t.results.searchPlaceholder}
-                  className="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-editorial-border text-xs text-ink placeholder:text-ink-muted focus:ring-2 focus:ring-primary focus:outline-none shadow-xs"
+                  className="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-editorial-border text-xs text-navy placeholder:text-ink-muted focus:ring-2 focus:ring-coral focus:border-coral focus:outline-none shadow-xs"
                 />
                 {searchQuery && (
                   <button
                     onClick={() => setSearchQuery('')}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-ink-muted hover:text-ink text-xs px-2 py-1"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-ink-muted hover:text-navy text-xs px-2 py-1"
                   >
                     Clear
                   </button>
@@ -357,7 +357,7 @@ export default function HomePage() {
                 <button
                   onClick={() => setSelectedLevel('')}
                   className={`px-3 py-1.5 rounded-xl transition-all ${
-                    selectedLevel === '' ? 'bg-ink text-white' : 'text-ink-muted hover:text-ink'
+                    selectedLevel === '' ? 'bg-navy text-white shadow-xs' : 'text-ink-muted hover:text-navy'
                   }`}
                 >
                   All Schemes
@@ -365,7 +365,7 @@ export default function HomePage() {
                 <button
                   onClick={() => setSelectedLevel('central')}
                   className={`px-3 py-1.5 rounded-xl transition-all ${
-                    selectedLevel === 'central' ? 'bg-ink text-white' : 'text-ink-muted hover:text-ink'
+                    selectedLevel === 'central' ? 'bg-navy text-white shadow-xs' : 'text-ink-muted hover:text-navy'
                   }`}
                 >
                   {t.results.centralOnly}
@@ -373,7 +373,7 @@ export default function HomePage() {
                 <button
                   onClick={() => setSelectedLevel('state')}
                   className={`px-3 py-1.5 rounded-xl transition-all ${
-                    selectedLevel === 'state' ? 'bg-ink text-white' : 'text-ink-muted hover:text-ink'
+                    selectedLevel === 'state' ? 'bg-navy text-white shadow-xs' : 'text-ink-muted hover:text-navy'
                   }`}
                 >
                   {t.results.stateOnly}
@@ -387,8 +387,8 @@ export default function HomePage() {
                 onClick={() => setSelectedCategory('')}
                 className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-300 border active:scale-95 ${
                   selectedCategory === ''
-                    ? 'bg-gradient-to-r from-primary to-secondary text-white border-transparent shadow-[0_6px_20px_-3px_rgba(99,102,241,0.5)] scale-105'
-                    : 'bg-white/80 hover:bg-white text-ink border-editorial-border hover:border-editorial-border-hover'
+                    ? 'bg-gradient-to-r from-navy to-navy-light text-white border-transparent shadow-glow-navy scale-105'
+                    : 'bg-white/90 hover:bg-white text-navy border-editorial-border hover:border-editorial-border-hover'
                 }`}
               >
                 {t.results.allCategories}
@@ -412,7 +412,7 @@ export default function HomePage() {
                     className={`px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-300 border flex items-center gap-2 active:scale-95 ${
                       isSelected
                         ? 'text-white border-transparent scale-105'
-                        : 'bg-white/80 hover:bg-white text-ink border-editorial-border hover:border-editorial-border-hover hover:shadow-xs'
+                        : 'bg-white/90 hover:bg-white text-navy border-editorial-border hover:border-editorial-border-hover hover:shadow-xs'
                     }`}
                   >
                     <span

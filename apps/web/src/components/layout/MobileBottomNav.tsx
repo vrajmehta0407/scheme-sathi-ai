@@ -33,7 +33,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
         {/* Discover */}
         <a
           href="#discover"
-          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-ink-muted hover:text-primary transition-colors"
+          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-ink-muted hover:text-coral transition-colors"
         >
           <Compass className="w-5 h-5" />
           <span className="text-[10px] font-semibold mt-0.5">Discover</span>
@@ -42,7 +42,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
         {/* My Profile */}
         <button
           onClick={onOpenProfile}
-          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-ink-muted hover:text-primary transition-colors relative"
+          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-ink-muted hover:text-navy transition-colors relative"
         >
           <User className="w-5 h-5" />
           <span className="text-[10px] font-semibold mt-0.5">{t.myProfile}</span>
@@ -54,23 +54,23 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
         {/* Ask AI (Central Highlight) */}
         <button
           onClick={onOpenChat}
-          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-primary transition-all active:scale-95"
+          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-coral transition-all active:scale-95"
         >
-          <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-primary to-indigo-600 flex items-center justify-center text-white shadow-md shadow-primary/25">
-            <Sparkles className="w-4 h-4 text-accent-mango" />
+          <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-coral to-rose-600 flex items-center justify-center text-white shadow-glow-coral">
+            <Sparkles className="w-4 h-4 text-cream-light" />
           </div>
-          <span className="text-[10px] font-bold text-primary mt-0.5">{t.askAi}</span>
+          <span className="text-[10px] font-bold text-coral mt-0.5">{t.askAi}</span>
         </button>
 
         {/* Saved */}
         <button
           onClick={onOpenSaved}
-          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-ink-muted hover:text-primary transition-colors relative"
+          className="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-ink-muted hover:text-coral transition-colors relative"
         >
           <Bookmark className="w-5 h-5" />
           <span className="text-[10px] font-semibold mt-0.5">{t.saved}</span>
           {savedCount > 0 && (
-            <span className="absolute top-1 right-2.5 w-3.5 h-3.5 rounded-full bg-accent-coral text-white text-[9px] font-bold flex items-center justify-center shadow-xs">
+            <span className="absolute top-1 right-2.5 w-4 h-4 rounded-full bg-coral text-white text-[9px] font-extrabold flex items-center justify-center shadow-xs">
               {savedCount}
             </span>
           )}

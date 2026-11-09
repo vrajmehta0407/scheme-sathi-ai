@@ -61,26 +61,26 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/40 backdrop-blur-md animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy/40 backdrop-blur-md animate-fade-in">
       <div
-        className="w-full max-w-xl bg-white/95 backdrop-blur-xl rounded-3xl p-6 md:p-8 shadow-[0_25px_60px_-15px_rgba(99,102,241,0.25)] border border-editorial-border relative overflow-hidden flex flex-col max-h-[90vh] transition-all"
+        className="w-full max-w-xl bg-white/95 backdrop-blur-xl rounded-3xl p-6 md:p-8 shadow-[0_25px_60px_-15px_rgba(11,25,44,0.25)] border border-editorial-border relative overflow-hidden flex flex-col max-h-[90vh] transition-all"
         role="dialog"
         aria-modal="true"
         aria-labelledby="profile-heading"
       >
         {/* Luminous Top Accent Line */}
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-secondary to-accent-coral" />
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-navy via-coral to-coral-light" />
 
         {/* Top Header with Progress */}
         <div className="flex items-center justify-between pb-4 border-b border-editorial-border mt-1">
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-primary px-2.5 py-0.5 rounded-full bg-primary-soft border border-primary/20">
+              <span className="text-xs font-bold uppercase tracking-wider text-coral px-2.5 py-0.5 rounded-full bg-coral-soft border border-coral/30">
                 {t.step} {step} {t.of} {totalSteps}
               </span>
               <span className="text-xs text-ink-muted">Optional Guided Profile</span>
             </div>
-            <h2 id="profile-heading" className="text-lg md:text-xl font-bold font-display text-ink mt-1.5">
+            <h2 id="profile-heading" className="text-lg md:text-xl font-bold font-display text-navy mt-1.5">
               {step === 1 && t.q1Title}
               {step === 2 && t.q2Title}
               {step === 3 && t.q3Title}
@@ -91,7 +91,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
 
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/5 text-ink-muted hover:text-ink transition-colors"
+            className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/5 text-ink-muted hover:text-navy transition-colors"
             aria-label="Close"
           >
             <X className="w-5 h-5" />
@@ -101,7 +101,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
         {/* Progress Bar */}
         <div className="w-full bg-editorial-border/40 h-2 rounded-full mt-3 overflow-hidden p-0.5">
           <div
-            className="bg-gradient-to-r from-primary to-secondary h-full transition-all duration-500 rounded-full shadow-[0_0_12px_rgba(99,102,241,0.5)]"
+            className="bg-gradient-to-r from-navy to-coral h-full transition-all duration-500 rounded-full shadow-glow-coral"
             style={{ width: `${(step / totalSteps) * 100}%` }}
           />
         </div>
@@ -351,7 +351,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
             </button>
             <button
               onClick={handleNext}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold bg-gradient-to-r from-primary to-indigo-600 hover:from-primary-hover hover:to-indigo-700 text-white shadow-glow-indigo active:scale-95 transition-all duration-300"
+              className="flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold bg-gradient-to-r from-coral to-rose-600 hover:from-coral-hover hover:to-rose-700 text-white shadow-glow-coral active:scale-95 transition-all duration-300"
             >
               <span>{step === totalSteps ? t.finish : t.next}</span>
               <ArrowRight className="w-3.5 h-3.5" />
