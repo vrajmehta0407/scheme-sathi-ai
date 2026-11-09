@@ -22,6 +22,7 @@ import {
 import { Navbar } from '../components/layout/Navbar';
 import { MobileBottomNav } from '../components/layout/MobileBottomNav';
 import { Footer } from '../components/layout/Footer';
+import { Hero3DVisual } from '../components/home/Hero3DVisual';
 import { SchemeCard } from '../components/schemes/SchemeCard';
 import { ProfileModal } from '../components/profile/ProfileModal';
 import { SchemeDetailModal } from '../components/schemes/SchemeDetailModal';
@@ -152,70 +153,103 @@ export default function HomePage() {
         savedCount={savedSchemeIds.length}
       />
 
-      <main className="flex-1 pb-16 md:pb-0">
-        {/* Editorial Hero Section */}
-        <section className="relative overflow-hidden hero-pattern pt-12 pb-16 md:pt-20 md:pb-24 px-4 sm:px-6 lg:px-8 border-b border-editorial-border/60">
-          {/* Subtle floating abstract paper illustrations */}
-          <div className="absolute top-10 right-6 md:right-24 w-64 h-64 bg-accent-lavender-soft rounded-full filter blur-3xl -z-10 animate-float-slow opacity-70 pointer-events-none" />
-          <div className="absolute bottom-6 left-6 md:left-20 w-72 h-72 bg-accent-mango-soft rounded-full filter blur-3xl -z-10 animate-float-medium opacity-60 pointer-events-none" />
+      <main className="flex-1 pb-20 md:pb-0">
+        {/* Editorial 3D Hero Section */}
+        <section className="relative overflow-hidden hero-3d-grid pt-10 pb-16 md:pt-16 md:pb-20 px-4 sm:px-6 lg:px-8 border-b border-editorial-border/60 bg-gradient-to-b from-[#FFFDF9] via-canvas to-[#FFF6E9]">
+          {/* Ambient Blurred Colored Light Flares */}
+          <div className="absolute top-1/4 left-10 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none -z-10" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-mango/15 rounded-full blur-[100px] pointer-events-none -z-10" />
 
-          <div className="max-w-5xl mx-auto text-center space-y-6">
-            {/* Top pill badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-editorial-border shadow-xs text-xs font-bold text-ink">
-              <span className="w-2 h-2 rounded-full bg-primary" />
-              <span>{t.hero.badge}</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+              {/* Left Column: Editorial Typography & Actions */}
+              <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+                {/* Top Pill Badge */}
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-editorial-border shadow-xs text-xs font-bold text-ink backdrop-blur-md">
+                  <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
+                  <span>{t.hero.badge}</span>
+                </div>
+
+                {/* Main Display Headline */}
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-ink leading-[1.12]">
+                  {t.hero.title}
+                </h1>
+
+                {/* Narrative Subtitle */}
+                <p className="text-sm sm:text-base md:text-lg text-ink-light max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                  {t.hero.subtitle}
+                </p>
+
+                {/* CTA Group */}
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                  <button
+                    onClick={() => setIsProfileOpen(true)}
+                    className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-bold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 active:scale-95 transition-all"
+                  >
+                    <span>{t.hero.ctaFind}</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+
+                  <a
+                    href="#discover"
+                    className="w-full sm:w-auto px-7 py-4 rounded-full bg-white hover:bg-canvas text-ink text-sm font-bold border border-editorial-border shadow-xs transition-all text-center"
+                  >
+                    {t.hero.ctaBrowse}
+                  </a>
+                </div>
+
+                {/* Trust Pillars */}
+                <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs font-semibold text-ink-light">
+                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 border border-editorial-border shadow-2xs backdrop-blur-sm">
+                    <Shield className="w-4 h-4 text-primary" />
+                    <span>{t.hero.trustPill1}</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 border border-editorial-border shadow-2xs backdrop-blur-sm">
+                    <FileCheck className="w-4 h-4 text-secondary" />
+                    <span>{t.hero.trustPill2}</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 border border-editorial-border shadow-2xs backdrop-blur-sm">
+                    <Building className="w-4 h-4 text-accent-coral" />
+                    <span>{t.hero.trustPill3}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Interactive 3D Holographic Card Stage */}
+              <div className="lg:col-span-5 flex items-center justify-center">
+                <Hero3DVisual language={language} />
+              </div>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-ink leading-[1.15] max-w-4xl mx-auto">
-              {t.hero.title}
-            </h1>
-
-            {/* Subcopy */}
-            <p className="text-sm sm:text-base md:text-lg text-ink-light max-w-2xl mx-auto leading-relaxed">
-              {t.hero.subtitle}
-            </p>
-
-            {/* CTA Group */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
-              <button
-                onClick={() => setIsProfileOpen(true)}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-bold shadow-paper-hover active:scale-95 transition-all"
-              >
-                <span>{t.hero.ctaFind}</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-
-              <a
-                href="#discover"
-                className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white hover:bg-canvas text-ink text-sm font-bold border border-editorial-border shadow-xs transition-all text-center"
-              >
-                {t.hero.ctaBrowse}
-              </a>
-            </div>
-
-            {/* 3 Trust Pillars */}
-            <div className="pt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs font-semibold text-ink-light">
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/70 border border-editorial-border">
-                <Shield className="w-4 h-4 text-primary" />
-                <span>{t.hero.trustPill1}</span>
+            {/* Live Telemetry Ribbon */}
+            <div className="mt-12 pt-6 border-t border-editorial-border/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-primary/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-primary to-indigo-700 bg-clip-text text-transparent group-hover:scale-105 transition-transform">₹10 Lakh</div>
+                <div className="text-[11px] font-semibold text-ink-muted mt-0.5">Max Health Cover (PM-JAY)</div>
               </div>
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/70 border border-editorial-border">
-                <FileCheck className="w-4 h-4 text-secondary" />
-                <span>{t.hero.trustPill2}</span>
+              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-secondary/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-secondary to-teal-700 bg-clip-text text-transparent group-hover:scale-105 transition-transform">100%</div>
+                <div className="text-[11px] font-semibold text-ink-muted mt-0.5">Deterministic Rule Engine</div>
               </div>
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/70 border border-editorial-border">
-                <Building className="w-4 h-4 text-accent-coral" />
-                <span>{t.hero.trustPill3}</span>
+              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-accent-coral/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-accent-coral to-rose-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform">0 PII</div>
+                <div className="text-[11px] font-semibold text-ink-muted mt-0.5">No Aadhaar / OTP Stored</div>
+              </div>
+              <div className="p-3.5 rounded-2xl bg-white/70 hover:bg-white border border-editorial-border/80 hover:border-accent-amber/40 backdrop-blur-md shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group">
+                <div className="text-xl sm:text-2xl font-black font-display bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform">.gov.in</div>
+                <div className="text-[11px] font-semibold text-ink-muted mt-0.5">Verified Official Links</div>
               </div>
             </div>
           </div>
         </section>
 
         {/* How it Works 3 Steps */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-          <div className="text-center mb-10 space-y-2">
-            <h2 className="text-xl sm:text-2xl font-bold font-display text-ink">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="text-center mb-12 space-y-2">
+            <span className="text-[11px] font-extrabold tracking-widest text-primary uppercase bg-primary-soft/80 px-3 py-1 rounded-full border border-primary/20">
+              Guaranteed Transparency
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold font-display text-ink mt-2">
               {t.howItWorks.title}
             </h2>
             <p className="text-xs sm:text-sm text-ink-muted max-w-xl mx-auto">
@@ -224,27 +258,27 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="editorial-card p-6 bg-white space-y-3">
-              <div className="w-10 h-10 rounded-2xl bg-primary-soft text-primary font-display font-extrabold flex items-center justify-center text-sm">
+            <div className="p-7 bg-white/80 hover:bg-white rounded-3xl border border-editorial-border hover:border-primary/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(99,102,241,0.25)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-700 text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-indigo-300/60 group-hover:scale-110 transition-transform">
                 01
               </div>
-              <h3 className="font-bold text-base text-ink">{t.howItWorks.step1Title}</h3>
+              <h3 className="font-bold text-base text-ink group-hover:text-primary transition-colors">{t.howItWorks.step1Title}</h3>
               <p className="text-xs text-ink-light leading-relaxed">{t.howItWorks.step1Desc}</p>
             </div>
 
-            <div className="editorial-card p-6 bg-white space-y-3">
-              <div className="w-10 h-10 rounded-2xl bg-secondary-soft text-secondary font-display font-extrabold flex items-center justify-center text-sm">
+            <div className="p-7 bg-white/80 hover:bg-white rounded-3xl border border-editorial-border hover:border-secondary/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.25)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-emerald-300/60 group-hover:scale-110 transition-transform">
                 02
               </div>
-              <h3 className="font-bold text-base text-ink">{t.howItWorks.step2Title}</h3>
+              <h3 className="font-bold text-base text-ink group-hover:text-secondary transition-colors">{t.howItWorks.step2Title}</h3>
               <p className="text-xs text-ink-light leading-relaxed">{t.howItWorks.step2Desc}</p>
             </div>
 
-            <div className="editorial-card p-6 bg-white space-y-3">
-              <div className="w-10 h-10 rounded-2xl bg-accent-coral-soft text-accent-coral font-display font-extrabold flex items-center justify-center text-sm">
+            <div className="p-7 bg-white/80 hover:bg-white rounded-3xl border border-editorial-border hover:border-accent-coral/40 shadow-paper hover:shadow-[0_20px_40px_-15px_rgba(244,63,94,0.25)] transition-all duration-300 hover:-translate-y-1.5 space-y-4 group">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-rose-500 to-amber-600 text-white font-display font-extrabold flex items-center justify-center text-sm shadow-md shadow-rose-300/60 group-hover:scale-110 transition-transform">
                 03
               </div>
-              <h3 className="font-bold text-base text-ink">{t.howItWorks.step3Title}</h3>
+              <h3 className="font-bold text-base text-ink group-hover:text-accent-coral transition-colors">{t.howItWorks.step3Title}</h3>
               <p className="text-xs text-ink-light leading-relaxed">{t.howItWorks.step3Desc}</p>
             </div>
           </div>
@@ -348,13 +382,13 @@ export default function HomePage() {
             </div>
 
             {/* Category Chips Scroll */}
-            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-2">
               <button
                 onClick={() => setSelectedCategory('')}
-                className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all border ${
+                className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-300 border active:scale-95 ${
                   selectedCategory === ''
-                    ? 'bg-primary text-white border-primary shadow-xs'
-                    : 'bg-white text-ink border-editorial-border hover:border-editorial-border-hover'
+                    ? 'bg-gradient-to-r from-primary to-secondary text-white border-transparent shadow-[0_6px_20px_-3px_rgba(99,102,241,0.5)] scale-105'
+                    : 'bg-white/80 hover:bg-white text-ink border-editorial-border hover:border-editorial-border-hover'
                 }`}
               >
                 {t.results.allCategories}
@@ -366,15 +400,26 @@ export default function HomePage() {
                   <button
                     key={cat.id}
                     onClick={() => setSelectedCategory(isSelected ? '' : cat.id)}
-                    className={`px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all border flex items-center gap-1.5 ${
+                    style={
                       isSelected
-                        ? 'bg-ink text-white border-ink shadow-xs'
-                        : 'bg-white text-ink border-editorial-border hover:border-editorial-border-hover'
+                        ? {
+                            backgroundColor: cat.color,
+                            borderColor: cat.color,
+                            boxShadow: `0 8px 24px -4px ${cat.color}66`,
+                          }
+                        : undefined
+                    }
+                    className={`px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-300 border flex items-center gap-2 active:scale-95 ${
+                      isSelected
+                        ? 'text-white border-transparent scale-105'
+                        : 'bg-white/80 hover:bg-white text-ink border-editorial-border hover:border-editorial-border-hover hover:shadow-xs'
                     }`}
                   >
                     <span
-                      className="w-2 h-2 rounded-full shrink-0"
-                      style={{ backgroundColor: cat.color }}
+                      className={`w-2.5 h-2.5 rounded-full shrink-0 transition-transform ${
+                        isSelected ? 'bg-white shadow-[0_0_8px_white] scale-110' : ''
+                      }`}
+                      style={isSelected ? undefined : { backgroundColor: cat.color }}
                     />
                     <span>{language === 'gu' ? cat.label_gu : cat.label_en}</span>
                   </button>

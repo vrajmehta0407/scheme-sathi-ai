@@ -46,6 +46,10 @@ coverage.xml
 .env.*.local
 !.env.example
 
+# Skills (local only, do not commit)
+.skills/
+vendor/
+
 # IDE / OS
 .idea/
 .vscode/

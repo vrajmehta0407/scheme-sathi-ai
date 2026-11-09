@@ -95,12 +95,15 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-ink/40 backdrop-blur-xs animate-fade-in">
-      <div className="w-full max-w-lg bg-surface h-full shadow-2xl border-l border-editorial-border flex flex-col justify-between">
+      <div className="w-full max-w-lg bg-white/95 backdrop-blur-xl h-full shadow-[0_0_60px_rgba(0,0,0,0.15)] border-l border-editorial-border flex flex-col justify-between relative overflow-hidden">
+        {/* Luminous Top Gradient Line */}
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-secondary to-accent-coral z-10" />
+
         {/* Drawer Header */}
-        <div className="p-4 sm:p-5 border-b border-editorial-border bg-canvas/60 flex items-center justify-between">
+        <div className="p-4 sm:p-5 border-b border-editorial-border bg-canvas/60 backdrop-blur-md flex items-center justify-between mt-1">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-white shadow-sm">
-              <Sparkles className="w-4 h-4" />
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary to-indigo-600 flex items-center justify-center text-white shadow-glow-indigo">
+              <Sparkles className="w-4 h-4 animate-spin-slow" />
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -115,7 +118,7 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
 
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-black/5 text-ink-muted transition-colors"
+            className="p-2 rounded-full hover:bg-black/5 text-ink-muted hover:text-ink transition-colors"
             aria-label="Close assistant"
           >
             <X className="w-5 h-5" />
@@ -235,7 +238,7 @@ export const AskAiDrawer: React.FC<AskAiDrawerProps> = ({
             <button
               type="submit"
               disabled={loading || !inputText.trim()}
-              className="w-10 h-10 rounded-2xl bg-primary hover:bg-primary-hover disabled:opacity-40 text-white flex items-center justify-center transition-all shrink-0 active:scale-95"
+              className="w-11 h-11 rounded-2xl bg-gradient-to-r from-primary to-indigo-600 hover:from-primary-hover hover:to-indigo-700 shadow-glow-indigo disabled:opacity-40 text-white flex items-center justify-center transition-all shrink-0 active:scale-95"
               aria-label={t.send}
             >
               <Send className="w-4 h-4" />
