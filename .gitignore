@@ -1,61 +1,14 @@
-# Dependencies
 node_modules/
-.pnpm-store/
-
-# Next.js build
+apps/web/node_modules/
 .next/
-out/
-build/
-dist/
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-coverage.xml
-
-# Environment variables
+apps/web/.next/
 .env
 .env.local
-.env.*.local
-!.env.example
-
-# Skills (local only, do not commit)
-.skills/
-vendor/
-
-# IDE / OS
-.idea/
-.vscode/
-*.swp
-*.swo
-Thumbs.db
-Desktop.ini
+apps/web/.env.local
+db/*.db
+db/*.db-shm
+db/*.db-wal
+*.tsbuildinfo
+playwright-report/
+test-results/
 .DS_Store
-

@@ -1,0 +1,17 @@
+{
+  "name": "Scheme Sathi AI",
+  "short_name": "Scheme Sathi",
+  "description": "Find Indian welfare schemes in 2 minutes. Offline-ready, zero API keys.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0F6FF",
+  "theme_color": "#1479FF",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

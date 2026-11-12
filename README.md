@@ -1,143 +1,129 @@
-# SchemeSathi AI — Generative AI Government Scheme Eligibility Assistant
+# Scheme Sathi AI — योजना साथी AI · યોજના સાથી AI
 
-**SchemeSathi AI** is a citizen-first, generative AI-powered welfare discovery assistant for Indian central and Gujarat state government schemes. It demystifies bureaucratic guidelines, evaluates eligibility through a **deterministic rule engine**, provides grounded plain-language explanations with **verified citations**, and safely guides citizens to official government portals (`.gov.in` / `.nic.in`).
+A local-first, offline-capable web application that helps Indian citizens discover welfare schemes they may qualify for, inspect transparent eligibility reasoning, organize required documents, track applications, simulate "What-If" life changes, and explore synthetic policy analytics — **with zero API keys, zero cloud AI calls, and 100% deterministic local engines**.
 
----
-
-## 🌟 Key Features
-
-* **Warm Editorial Discovery Experience:** Art-directed, Pinterest-inspired cards, warm ivory canvas (`#FFF9F1`), vivid category accents, subtle glassmorphism, and smooth microinteractions. Strictly no generic dark themes or plain gray clones.
-* **Guided Profile Intake:** A private 5-step questionnaire asking one question at a time. Supports skipping, provides field explanations, allows review/edit, and features an instant **Reset Profile** trigger.
-* **Deterministic Rule Matching:** Hard business rules (`eq`, `in`, `gte`, `lte`, `between`, `boolean`, `contains`) evaluate whether you match, do not match, or need more information. Unknown user fields evaluate strictly to `unknown`, never inferring or guessing.
-* **Grounded AI Assistant ("Ask SchemeSathi"):** AI explanation layer strictly constrained to approved scheme guidelines and excerpts. Redacts hallucinated URLs and unsupported claims.
-* **Comprehensive Scheme Breakdown:**
-  * Criterion-by-criterion status (`Matched`, `Not Met`, `Need to Confirm`).
-  * Verified benefit overview and target demographics.
-  * Mandatory document checklist.
-  * Step-by-step application procedure.
-  * External departure warning gate to prevent online fraud.
-* **Saved & Side-by-Side Comparison:** Compare up to 3 saved schemes side-by-side on benefits, conditions, documents, and source freshness. Kept in client-side storage with zero cross-user leakage.
-* **Bilingual English & Gujarati (ગુજરાતી):** Complete UI localization, typography fallbacks, and high line-height handling for Gujarati glyphs.
-* **Admin Review & Source Freshness Audit:** Role-protected internal workspace (`X-Admin-Secret`) to audit source URLs, verification stamps, and transition lifecycle states (`draft`, `reviewed`, `published`, `needs_verification`).
-* **Privacy & Safety Guarantees:** Never asks for Aadhaar number, OTP, bank PIN, or passwords. Logs are sanitized automatically.
+> **Important Sample & Synthetic Data Notice:** All bundled schemes in `data/schemes.sample.json` and `data/rules.sample.json` are **SAMPLE prototype data** (`is_sample: true`) intended for demonstration and local testing. Always **verify exact eligibility, benefits, and deadlines on the official portal** before applying. All population metrics on the Analytics dashboard come from **20,000 locally seeded synthetic households** (`is_synthetic: true`), not real citizen records.
 
 ---
 
-## 🏗️ Repository Architecture
+## Quick Start
 
-```text
-scheme-sathi-ai/
-├── apps/
-│   └── web/                               # Next.js 14 App Router, TypeScript, Tailwind, Lucide
-│       ├── src/
-│       │   ├── app/                       # App Router routes and global styles
-│       │   ├── components/                # Modular UI (Navbar, SchemeCard, Modals, Chat)
-│       │   └── lib/                       # API clients, local storage, bilingual i18n
-├── services/
-│   └── api/                               # FastAPI (Python 3.11+ / 3.14)
-│       ├── app/
-│       │   ├── api/v1/                    # Endpoints (schemes, eligibility, assistant, feedback, admin)
-│       │   ├── core/                      # Config, security, logging sanitizer
-│       │   ├── models/                    # Pydantic v2 schemas
-│       │   └── services/                  # EligibilityEngine, CitationValidator, RAGService
-│       └── tests/                         # Pytest test suite (100% passing)
-├── packages/
-│   └── shared/                            # Shared TypeScript contracts & schemas
-├── data/
-│   └── seed_demo/                         # Seed demo fixtures labeled DEMO — NOT VERIFIED
-├── docker-compose.yml                     # Local PostgreSQL and container definitions
-├── .env.example                           # Blueprint environment configuration
-└── README.md
-```
-
----
-
-## 🚀 Quickstart Guide
-
-### Prerequisites
-* **Node.js** v18+ (tested on Node v25.4.0)
-* **pnpm** v9+ (tested on pnpm v11.6.0)
-* **Python** 3.11+ (tested on Python 3.14.0)
-
-### 1. Clone & Install Dependencies
+**Requirements:** Node.js 22+ (uses built-in `node:sqlite`), npm 10+.
 
 ```bash
-# Clone the repository
-git clone <repo-url>
-cd "scheme sathi ai"
+# 1. Install workspace dependencies
+npm install
 
-# Install Node & frontend packages
-pnpm install
+# 2. One-command setup: generates AUTH_SECRET, creates SQLite DB, seeds 54 sample schemes,
+#    16 canonical documents, and 20,000 synthetic households, then runs Admin Quality checks
+npm run setup
 
-# Build shared TypeScript package
-pnpm build:shared
+# 3. Start the local app (http://localhost:3000)
+npm run dev
 ```
-
-### 2. Backend Setup & Test Runner
-
-```bash
-# Set up Python virtual environment
-cd services/api
-python -m venv .venv
-
-# Activate virtual environment (Windows PowerShell)
-.\.venv\Scripts\Activate.ps1
-# (Linux / macOS: source .venv/bin/activate)
-
-# Install requirements
-pip install -r requirements.txt
-
-# Run backend unit test suite
-pytest -c pytest.ini tests -v
-
-# Start FastAPI development server
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-```
-
-Backend will be available at `http://localhost:8000` (Interactive Swagger docs at `http://localhost:8000/docs`).
-
-### 3. Frontend Setup
-
-In another terminal:
-
-```bash
-# Start Next.js development server
-pnpm dev:web
-```
-
-Frontend will be available at `http://localhost:3000`.
 
 ---
 
-## 🧪 Testing & Validation
+## Available Scripts
 
-* **Typechecking:**
-  ```bash
-  pnpm typecheck
-  ```
-* **Frontend Production Build:**
-  ```bash
-  pnpm build:web
-  ```
-* **Backend Unit & Integration Tests:**
-  ```bash
-  .\services\api\.venv\Scripts\pytest -c services/api/pytest.ini services/api/tests -v
-  ```
-  * `test_eligibility.py`: Full match, unknown profile handling, exclusion rules, and geographic state mismatch.
-  * `test_citation_validator.py`: Verification that unapproved/hallucinated external URLs are redacted and that citations reference approved source records.
-  * `test_api_endpoints.py`: Tests for `/schemes`, `/eligibility/matches`, `/assistant/chat`, and admin authorization security.
+| Command | Description |
+|---|---|
+| `npm run setup` | Generates `apps/web/.env.local`, initializes `db/schemesathi.db`, seeds schemes + population, validates rules |
+| `npm run dev` | Starts Next.js development server on port 3000 |
+| `npm run build` | Builds the production Next.js bundle |
+| `npm run start` | Runs the built production server on port 3000 |
+| `npm run typecheck` | Runs TypeScript checks (`tsc --noEmit`) |
+| `npm test` | Runs Vitest unit, golden (162 assertions), property, benefit, and analytics reconciliation tests |
+| `npm run test:e2e` | Runs Playwright end-to-end tests |
+| `npm run seed:schemes` | Re-seeds `data/schemes.sample.json`, `data/rules.sample.json`, and `data/documents.json` |
+| `npm run seed:population` | Re-generates 20,000 synthetic households in `db/schemesathi.db` |
+| `npm run validate:rules` | Runs the deterministic Admin Quality Agent checks across all rule trees and metadata |
 
 ---
 
-## 🛡️ Anti-Hallucination & Provenance Policy
+## Architecture & Offline Design
 
-1. **Eligibility is Deterministic:** The rule engine evaluates criteria with mathematical certainty. The LLM only explains and translates findings.
-2. **Missing Information = Unknown:** If an applicant does not provide an income bracket, the system states *"Information for this criterion was not provided"* instead of assuming eligibility.
-3. **Citation Validation:** Every factual response links back to the source organization, official domain, and verification date.
-4. **Demo Data Transparency:** Seed demonstration records carry clear `DEMO — NOT VERIFIED` badges.
+- **Zero Cloud AI / Zero External Network Calls:** Enforced by Next.js Content-Security-Policy (`default-src 'self'`) in `apps/web/next.config.ts`. All fonts (`Sora`, `Manrope`, `IBM Plex Mono`, `Noto Sans Devanagari`, `Noto Sans Gujarati`) and the India state TopoJSON (`apps/web/public/india-topo.json`) are bundled locally.
+- **11 Local Deterministic Engines (`apps/web/lib/`):**
+  - `profile/index.ts` — Zod validation, income-band interval normalization, next-best question selection
+  - `rules/index.ts` — Tri-state JSON rule tree evaluator (`all`/`any`/`none`), near-miss distance & What-If simulator, rule-tree trace debugger
+  - `benefits/index.ts` — 5 deterministic benefit formulas, mutual-exclusivity & optimal bundle solver, What-If sensitivity cliffs, Household Matrix
+  - `recommender/index.ts` — Composite scoring (`benefit`, `ease`, `urgency`, `level`, `popularity`)
+  - `explain/index.ts` — Trilingual EN/HI/GU template explanation engine & offline jargon glossary
+  - `documents/index.ts` — Union/dedupe checklist builder, "next best document" unlock ranker, readiness %, time-to-apply estimator, renewal tracker & `.ics` generator
+  - `tracker/index.ts` — Application state machine + 14-day deadline & 30-day stale reminders
+  - `analytics/index.ts` — Synthetic cohort analytics (`n < 30` small-cell suppression), two-proportion z-test, Lorenz/Gini disparity, Insight Writer pins
+  - `admin/index.ts` — Satisfiability, stale-date (>180 days), translation, and fuzzy duplicate validator
+  - `orchestrator/index.ts` — Coordinates profile, eligibility, recommender, explainer, benefits, and documents with cache
+- **Trilingual UI (EN / HI / GU):** Instant language switching via `apps/web/messages/{en,hi,gu}.json`.
+- **Three-Colour Civic Glass Design System:** Built strictly around Civic Blue (`#1479FF`), Sunbeam Yellow (`#FFC20E`), and Parrot Green (`#12B76A`) on Frost White (`#FFFFFF`) / Sky Mist (`#F0F6FF`) with Midnight Navy (`#0A1A3C`) ink.
 
 ---
 
-## 📄 License
-Public Service Informational Project. Built for Indian citizens and students.
+## 50+ Integrated Citizen, Financial, Analytics & Admin Features
+
+1. **Offline Voice-Assisted Wizard Input** — Local Web Speech API dictation (`en-IN`, `hi-IN`, `gu-IN`) in `/wizard`.
+2. **Offline Profile Snapshot Token (`SATHI1:...`)** — Portable Base64 profile export/import string in `/wizard`.
+3. **CSC / Volunteer Multi-Citizen Kiosk Mode** — Rapid citizen profile queue switcher (`VLE` counter workflow) in the header & `/wizard`.
+4. **1-Tap Life-Event Quick Bundles** — Instant preset starter profiles on `/`.
+5. **Mutual-Exclusivity & Optimal Benefit Bundle Solver** — Automatically skips conflicting schemes and computes the maximum annual ₹ stack.
+6. **Document Expiry & Renewal Tracker + `.ics` Export** — Tracks expiring certificates and generates offline `.ics` calendar reminders.
+7. **Offline Jargon Glossary Drawer + Search Filter** — Instant searchable EN/HI/GU definitions for BPL, EWS, SECC, AAY, OBC-NCL, and NPCI seeding.
+8. **Family Benefit Planner (Household Matrix)** — Deduplicates per-family schemes vs per-person schemes across saved profiles on `/dashboard`.
+9. **Client-Side Printable Citizen Dossier PDF** — Multi-page PDF packet generated 100% offline using `pdf-lib` on `/documents`.
+10. **What-If Sensitivity Curves ("Eligibility Cliffs")** — Plots eligible & likely scheme counts across income, age, and land thresholds on `/what-if`.
+11. **Time-to-Apply Readiness Estimator** — Calculates `daysToReady` from missing document turnaround days.
+12. **AES-256-GCM Password-Protected Local Backup** — Client-side Web Crypto PBKDF2 + AES-GCM encrypted `.json` backup/restore on `/settings`.
+13. **Analytics Custom Cohort Builder & Saved Views** — Compare Cohort A vs Cohort B with two-proportion z-test (`z`, `p`, 95% significance) and SQLite saved views.
+14. **Rural / Semi-Urban / Urban Disparity & Lorenz/Gini Inspector** — Quantifies synthetic benefit distribution inequality across district tiers on `/analytics`.
+15. **Guided Rule-Tree Debugger Sandbox** — Node-by-node `ALL`/`ANY`/`NONE`/leaf tri-state inspector inside `/admin`.
+16. **Local Browser Text-to-Speech ("Listen Aloud")** — Reads scheme eligibility & summary in `en-IN`, `hi-IN`, or `gu-IN` on `/schemes/[slug]`.
+17. **Multi-Sort Explorer** — Sort schemes by Best Recommender Score, Highest Benefit ₹, Fewest Missing Docs, Fastest Ready Days, or Earliest Deadline.
+18. **Offline Grievance / RTI Sec 6(1) / Follow-Up Letter Composer** — Generates EN/HI/GU template letters with 1-click copy & `.txt` download on `/schemes/[slug]`.
+19. **Smart Hinglish & Gujarati Phonetic Search** — Expands terms like `kisan`, `vidhwa`, `chhatravritti`, `awas`, `bima`, `rozgar` via `expandSmartQuery`.
+20. **Offline QR-Style Citizen Benefit Pass** — Deterministic SVG matrix & printable Citizen Pass card on `/dashboard`.
+21. **Deadline Urgency & Countdown Badges** — Flags `Closing in Xd`, `≤45d`, and `Rolling / Open` cycles on Scheme Pins.
+22. **Quick Zero-Missing-Docs & Closing-Soon Filter Chips** — 1-tap eligibility & document readiness filters on `/schemes`.
+23. **1-Step "Unlock Next Scheme" Gap Roadmap** — Ranks single-gap / single-unknown schemes by potential annual ₹ gain on `/dashboard`.
+24. **Printable 1-Page Official Portal Prep Sheet** — Print trigger on `/schemes/[slug]`.
+25. **Bookmarked Schemes Quick-Copy Summary** — Copy bookmarked scheme bundle list in 1 click on `/schemes`.
+26. **5-Year Nominal vs Inflation-Adjusted Benefit Projection** — Interactive CPI inflation slider & bar chart on `/dashboard`.
+27. **Student Net Education Cost & Scholarship Offset Calculator** — Computes out-of-pocket tuition minus matched scholarships on `/what-if`.
+28. **Farmer Input, PM-KISAN & Crop Insurance Subsidy Estimator** — Computes annual farm support by land hectares on `/what-if`.
+29. **Senior / Widow Monthly Pension Adequacy Meter** — Measures monthly pension coverage % against household expenses on `/what-if`.
+30. **MSME Loan & Interest Subsidy EMI Calculator** — Compares standard vs subsidized EMI and margin grant on `/what-if`.
+31. **Non-Cash In-Kind Benefit Equivalent Breakdown** — Summarizes Health Cover, Ration, LPG, and Accident Cover on `/dashboard`.
+32. **Income Welfare-Cap Cliff Alert** — Warns which income thresholds drop eligible schemes on `/what-if`.
+33. **Document Pre-Flight Verification Checklist** — Per-document rejection prevention checks (NPCI DBT seeding, Tehsildar QR, e-KYC) on `/documents`.
+34. **Offline Issuing Office & CSC Directory** — Trilingual EN/HI/GU directory of issuing offices, fees, and turnaround days on `/documents`.
+35. **Accessible Large-Text Reading Mode (`Aa Large / Std`)** — Header toggle for comfortable high-legibility typography.
+36. **Application Portal Reference Number Tracking** — Persist portal reference IDs alongside application stages on `/documents`.
+37. **Batch RFC-4180 CSV Export** — Export filtered schemes on `/schemes` and tracked applications on `/documents`.
+38. **Offline Plain-Text SMS / WhatsApp Summary Composer** — Compact EN/HI/GU summary ready to copy for family members on `/dashboard`.
+39. **State Readiness Scorecard (Grade A–D)** — Synthesizes state document readiness & eligibility index (with `n < 30` suppression) on `/analytics`.
+40. **Blocker Action ROI Intervention Hints** — Actionable policy recommendations for top near-miss criteria on `/analytics`.
+41. **Category Inclusion & Unclaimed-per-Household Equity Table** — Breakdown across `General`, `OBC`, `SC`, `ST`, `EWS` on `/analytics`.
+42. **Official `.gov.in` / `.nic.in` Domain & EN/HI/GU Completeness Audit** — Live catalogue health counters in `/admin`.
+43. **Rule-Tree Complexity & Depth Inspector** — Measures rule depth, leaf count, and negation usage (`inspectRuleComplexity`).
+44. **Expanded Multi-Archetype Admin Regression Suite Runner** — Verifies canonical citizen archetypes live inside `/admin`.
+45. **One-Click Catalogue Snapshot JSON Export** — Download the full active scheme & rule catalogue from `/admin`.
+46. **Clone Active Citizen Profile** — Duplicate a household profile for rapid family/CSC entry on `/settings`.
+47. **Local Storage & Cache Diagnostics Cards** — View saved profiles, cached schemes, and tracked apps count on `/settings`.
+48. **Print Blank Paper Intake Sheet** — Print an offline intake sheet for rural/camp data collection on `/wizard`.
+49. **Side-by-Side Scheme Comparison Matrix** — Compare up to 3 schemes across benefit, readiness, and mutual exclusivity on `/schemes`.
+50. **Custom Cohort Z-Test Comparison (`z`, `p`, 95% Significance)** — Statistical significance testing across filtered synthetic cohorts on `/analytics`.
+51. **Interactive India State Coverage-Gap Choropleth** — Offline TopoJSON map with state drill-down on `/analytics`.
+52. **Virtualised 20,000-Row Synthetic Household Explorer** — Smooth `@tanstack/react-virtual` table on `/analytics`.
+
+---
+
+## How to Add or Edit a Scheme
+
+1. **Via Admin Console (`/admin`):** Open the **Admin Console**, edit an existing scheme or use **+ New Scheme**, test its JSON rule tree live inside the **Guided Rule-Tree Debugger Sandbox**, and click **Publish**. The Admin Quality Agent validates required fields, translations (`en`/`hi`/`gu`), URL, `last_verified` recency, duplicate similarity, and rule-tree satisfiability before persisting to `db/schemesathi.db`.
+2. **Via Seed Files:** Add the scheme metadata entry to `data/schemes.sample.json` and matching rule tree (keyed by `scheme_id`) to `data/rules.sample.json`, then run:
+   ```bash
+   npm run validate:rules
+   npm run seed:schemes
+   ```
+   Re-run `npm test` afterwards to verify golden cases and rule invariants remain green.
 

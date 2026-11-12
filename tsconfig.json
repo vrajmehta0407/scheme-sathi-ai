@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@db/*": ["db/*"],
+      "@data/*": ["data/*"]
+    }
+  },
+  "exclude": ["node_modules", "apps/web/.next"]
+}
+

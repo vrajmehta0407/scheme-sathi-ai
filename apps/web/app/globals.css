@@ -1,0 +1,165 @@
+@import '@fontsource/sora/700.css';
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/noto-sans-devanagari/400.css';
+@import '@fontsource/noto-sans-devanagari/600.css';
+@import '@fontsource/noto-sans-gujarati/400.css';
+@import '@fontsource/noto-sans-gujarati/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ss-blue: #1479ff;
+  --ss-yellow: #ffc20e;
+  --ss-green: #12b76a;
+  --ss-ink: #0a1a3c;
+  --ss-mist: #f0f6ff;
+  --ss-white: #ffffff;
+}
+
+html,
+body {
+  background-color: var(--ss-mist);
+  color: var(--ss-ink);
+  font-family: 'Manrope', 'Noto Sans Devanagari', 'Noto Sans Gujarati', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: 'Sora', 'Noto Sans Devanagari', 'Noto Sans Gujarati', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-mono-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glass surfaces per design.md */
+.glass {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  box-shadow: 0 10px 34px rgba(20, 121, 255, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-radius: 26px;
+}
+
+@supports not (backdrop-filter: blur(18px)) {
+  .glass {
+    background: rgba(255, 255, 255, 0.93);
+  }
+}
+
+.glass-blue {
+  background: rgba(20, 121, 255, 0.12);
+  border: 1px solid rgba(20, 121, 255, 0.28);
+}
+
+.glass-yellow {
+  background: rgba(255, 194, 14, 0.22);
+  border: 1px solid rgba(255, 194, 14, 0.5);
+}
+
+.glass-green {
+  background: rgba(18, 183, 106, 0.14);
+  border: 1px solid rgba(18, 183, 106, 0.32);
+}
+
+/* WCAG focus ring: 3px blue with white offset */
+*:focus-visible {
+  outline: 3px solid #1479ff;
+  outline-offset: 2px;
+}
+
+/* Jaali drift + Rangoli slow rotation */
+@keyframes jaaliDrift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-24px, -16px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rangoliSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-jaali {
+  animation: jaaliDrift 36s ease-in-out infinite;
+}
+
+.animate-rangoli {
+  animation: rangoliSpin 120s linear infinite;
+}
+
+.animate-marquee {
+  animation: marqueeScroll 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-jaali,
+  .animate-rangoli,
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+/* Pinterest masonry columns */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 20px;
+}
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .masonry-grid {
+    column-count: 4;
+  }
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+/* Near-miss tape ribbon */
+.near-miss-tape {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 194, 14, 0.3),
+    rgba(255, 194, 14, 0.3) 10px,
+    rgba(255, 194, 14, 0.16) 10px,
+    rgba(255, 194, 14, 0.16) 20px
+  );
+  border: 1px dashed rgba(20, 121, 255, 0.35);
+}
+

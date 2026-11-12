@@ -1,98 +1,104 @@
-# SchemeSathi AI — Agent Roles & Workflow (Combined)
-This file defines the AI-assisted engineering workflow for Antigravity. Agents are collaborators with scoped responsibilities; they must not invent scheme data or bypass source review.
+# Scheme Sathi AI: Agents (agents.md)
 
-## 1. Orchestrator / Product Lead
-**Owns:** scope, task sequencing, integration, acceptance criteria.
-- Read PRD, design, and architecture before coding.
-- Break work into vertical milestones.
-- Keep MVP scope tight; track blockers.
-- Require evidence (tests, screenshots, working flows) before marking tasks done.
-- Do not declare completion if build, tests, or core paths fail.
+**No API keys, no cloud AI.** In Scheme Sathi, an "agent" is a local, deterministic engine with a clear job, inputs, outputs and tests. Plain-language text is produced from templates over computed facts, so every sentence is traceable and works offline. (An optional on-device model can be added later behind a feature flag, off by default.)
 
-## 2. UX/UI Design Agent
-**Owns:** visual language, information hierarchy, responsive interaction.
-- Follow `design.md` exactly as direction, while improving craft.
-- Build light, colorful, editorial/Pinterest-inspired interface with subtle glass and polished animation.
-- Avoid dark theme, generic AI dashboard, overuse of gradients, emoji-only iconography.
-- Check mobile, tablet, desktop, keyboard, reduced-motion, Gujarati text rendering.
-- Deliver component states: default, hover, focus, loading, empty, error, disabled.
+## 0. Orchestrator
+- **Role:** Coordinates the engines for each user event (answer given, what-if changed, document ticked, filter changed, admin edit).
+- **Behaviour:** runs independent engines in parallel, debounces rapid changes, caches results by input hash, and surfaces errors as friendly messages.
 
-## 3. Frontend Agent
-**Owns:** Next.js application and user-facing flows.
-- Implement landing, profile intake, results, scheme details, Ask AI, saved, and admin review screens.
-- Use TypeScript; typed API contracts; accessible semantic controls.
-- Use reusable components and design tokens.
-- Integrate API with loading/error/empty states.
-- Do not hardcode invented official scheme claims. Demo fixtures must be visibly labeled.
-- Implement animations with reduced-motion fallback.
+## 1. Profile Agent
+- **Goal:** Collect and normalise the citizen profile.
+- **Inputs:** wizard answers. **Outputs:** validated profile object (Zod schema) with `known` and `unknown` fields.
+- **Rules:** income bands convert to midpoints and ranges; missing fields stay `unknown` (never guessed); derives fields (age group, senior flag, BPL-like flags only if the user states them).
+- **Next-question logic:** picks the next question that would split the most remaining candidate schemes (information gain), so users answer the fewest questions.
 
-## 4. Backend / API Agent
-**Owns:** FastAPI, data models, API contracts, authorization.
-- Implement versioned endpoints described in architecture.
-- Use Pydantic validation and consistent error formats.
-- Apply pagination, rate limiting, safe logging, and RBAC for admin.
-- Keep user profile processing ephemeral unless consent is given.
-- Write unit/integration tests.
+## 2. Eligibility Agent (Rules Engine)
+- **Goal:** Decide Eligible / Likely / Not eligible for every scheme.
+- **Method:** evaluates each scheme's JSON rule tree against the profile (see architecture.md); unknown fields produce "Likely".
+- **Output per scheme:**
+```json
+{
+  "scheme_id": "sample-farmer-income-support",
+  "status": "likely",
+  "criteria": [
+    {"field":"occupation","passed":true},
+    {"field":"land_hectares","passed":null,"hint":"Add your land size to confirm"}
+  ],
+  "near_miss": null,
+  "confidence": 0.8
+}
+```
+- **Guardrails:** never says "guaranteed"; always includes "verify on the official portal"; unknown is never treated as pass.
 
-## 5. Eligibility & Data Agent
-**Owns:** normalized scheme schema, deterministic matching, source provenance.
-- Represent criteria as explicit typed rules.
-- Unknown profile data must result in unknown, never inferred.
-- Hard exclusion rules must be respected.
-- Every published record needs source URL, source organization, review state, and verification date.
-- No fabricated official records, benefits, deadlines, documents, or application URLs.
-- Create demo data only with explicit DEMO labels.
+## 3. Near-Miss and What-if Agent
+- **Goal:** Show how close a citizen is and what would change the result.
+- **Method:** for "Not eligible" schemes with exactly one failed criterion, compute the distance (e.g. income over cap by Rs. 20,000, age short by 8 months). The what-if mode re-runs the Eligibility Agent on modified copies of the profile and diffs the outputs.
+- **Output:** "gained" and "lost" scheme lists with the criterion that changed.
+- **Guardrail:** what-if results are labelled as hypothetical.
 
-## 6. RAG / AI Agent
-**Owns:** retrieval, grounded response orchestration, citations.
-- Retrieve only approved source records.
-- Send exact excerpts and IDs to the model.
-- Require structured response with citation IDs.
-- Validate all citations and unsupported factual claims.
-- Explain uncertainty in plain language.
-- AI must never override deterministic eligibility outcomes or imply guaranteed approval.
+## 4. Recommender Agent
+- **Goal:** Order the matched schemes sensibly.
+- **Score:** `0.35*benefit_value + 0.25*ease(documents held) + 0.20*deadline_urgency + 0.10*level_fit + 0.10*popularity_prior`
+- **Also:** flags schemes that cannot be combined (mutually exclusive) and groups stackable ones into a "benefit bundle".
 
-## 7. QA / Accessibility Agent
-**Owns:** test strategy and release gate.
-- Unit-test eligibility operators, bounds, unknown handling, geographic scope.
-- Test API validation, citation validation, permissions, and privacy redaction.
-- E2E-test the user journey: landing -> profile -> matches -> detail -> official source.
-- Test English and Gujarati layout, responsive widths, keyboard access, reduced motion, contrast.
-- Report reproducible defects; block release on critical issues.
+## 5. Explainer Agent (template language engine)
+- **Goal:** Produce clear sentences in English, Hindi or Gujarati.
+- **Method:** ICU-style message templates plus the computed facts, e.g. "You are eligible because your annual income is below Rs. {cap} and you are a {occupation}." Each criterion has a reusable phrase in each language.
+- **Guardrails:** only states facts present in the rule results; unknown translations fall back to English with a marker; reading level kept simple.
 
-## 8. Security & Privacy Agent
-**Owns:** threat model and privacy controls.
-- Ensure no Aadhaar, OTP, passwords, bank PINs, or sensitive credentials are requested.
-- Inspect prompt injection, XSS, CSRF, SSRF, unsafe URL handling, auth and secret management.
-- Verify user data is not written to logs or analytics.
-- Admin content publishing requires authorization and audit trail.
-- Flag unsafe or misleading language.
+## 6. Benefit Calculator Agent
+- **Goal:** Estimate money value.
+- **Method:** per-scheme formula types: `fixed_per_year`, `fixed_per_month`, `one_time`, `percent_of_cost` (with cap), `slab`. Sums yearly and lifetime totals for the selected bundle, avoiding double counting.
+- **Guardrail:** shows the formula inputs, labels results "estimate".
 
-## 9. Agent handoff protocol
-Every agent task must include:
-- Objective and files to touch.
-- Relevant requirement IDs.
-- Constraints / assumptions.
-- Deliverables.
-- Tests or validation evidence.
-- Known gaps and handoff notes.
+## 7. Document Agent
+- **Goal:** Build the shortest path to being application-ready.
+- **Method:** unions required documents across chosen schemes, dedupes, orders by how many schemes need each, shows readiness percent, and suggests the next best document to obtain ("Getting an income certificate unlocks 4 more schemes").
+- **Output:** checklist, printable PDF, per-document "where to get it" hints.
 
-## 10. Suggested milestone sequence
-1. Repository scaffold, shared types, design tokens, lint/test baseline.
-2. Frontend shell and landing page with visual polish.
-3. Guided profile and client-side flow.
-4. Scheme catalog schema, demo fixtures clearly marked.
-5. Eligibility engine and tests.
-6. Search, results, details, and source presentation.
-7. RAG assistant and citation validator.
-8. Admin review workflow and permissions.
-9. Localization, accessibility, security hardening.
-10. End-to-end tests, README, environment setup, final quality review.
+## 8. Application Tracker Agent
+- **Goal:** Keep applications on track.
+- **Method:** state machine (not started, documents ready, applied, approved, rejected) with allowed transitions; computes reminder dates from deadlines; in-app notifications only (no external sends).
+- **Insights:** applications stuck over 30 days, schemes with deadlines inside 14 days.
 
-## 11. Definition of done
-- Relevant requirements implemented.
-- No broken routes or console errors in core flows.
-- Lint, typecheck, tests, and production build pass.
-- Source and demo status are transparent.
-- Responsive and accessibility checks completed.
-- README includes setup, environment, run/test commands, architecture summary, and known limitations.
+## 9. Analytics Agent
+- **Goal:** Turn the synthetic population and catalogue into decisions.
+- **Computes:**
+  | Analysis | Description |
+  |---|---|
+  | Eligibility rate | Share of households eligible per scheme, by state, category, occupation, income band |
+  | Coverage gap | Eligible but without required documents, mapped by state |
+  | Top blockers | Criteria that fail most often across near-eligible households |
+  | Unclaimed benefit | Estimated Rs. by region and group if all eligible households claimed |
+  | Cohort comparison | Group A vs group B differences with simple significance (two-proportion z-test) |
+  | Overlap matrix | Pairwise co-eligibility between schemes |
+  | Funnel | Profile, eligible, documents ready, applied, approved (simulated rates, labelled) |
+- **Guardrails:** always shows sample size; hides cells with fewer than 30 households; labels "Synthetic data"; no causal claims.
+
+## 10. Insight Writer Agent (templates)
+- **Goal:** Create the one-line "insight pins" on dashboards.
+- **Method:** rank statistics by effect size and rarity, then fill templates such as "{group} in {state} are {x} points less likely to have documents ready than the national average."
+- **Guardrail:** every sentence links back to the underlying chart and numbers.
+
+## 11. Admin Quality Agent
+- **Goal:** Keep catalogue data healthy.
+- **Checks:** every scheme has rules, documents, steps, source URL and `last_verified` within 180 days; rule trees are satisfiable (no contradictory criteria); translations present; duplicate detection (fuzzy name match); regression test run on edits against golden profiles.
+- **Output:** validation report shown in the Admin Console, blocks publishing on errors.
+
+## Shared Rules
+1. No external network calls, no API keys, ever.
+2. Every statement shown to a citizen is traceable to a rule result, calculator output or catalogue field.
+3. Unknown is not "yes": uncertainty is displayed as "Likely".
+4. Sample and synthetic data are always labelled.
+5. Every engine is a pure function with unit tests and golden cases.
+6. Performance budgets: rules under 5 ms for the full catalogue, analytics queries under 500 ms with cache.
+
+## Agent Interaction Map
+```
+Wizard answer -> Profile Agent -> Eligibility Agent -> Recommender -> Board
+                                       |-> Near-Miss / What-if
+                                       |-> Explainer ("Why?")
+                    Selected schemes -> Benefit Calculator, Document Agent -> Tracker
+Filters -> Analytics Agent -> Insight Writer -> Dashboard pins
+Admin edits -> Admin Quality Agent -> (pass) -> publish new catalogue version
+```

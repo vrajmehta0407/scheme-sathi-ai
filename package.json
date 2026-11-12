@@ -1,18 +1,26 @@
 {
-  "name": "scheme-sathi-ai-monorepo",
+  "name": "scheme-sathi-ai",
   "version": "1.0.0",
   "private": true,
+  "description": "Scheme Sathi AI — Local-first, zero-API-key Indian welfare scheme discovery, eligibility, checklist, and analytics platform",
+  "workspaces": [
+    "apps/web"
+  ],
   "scripts": {
-    "dev:web": "pnpm --filter @schemesathi/web dev",
-    "build:web": "pnpm --filter @schemesathi/web build",
-    "lint:web": "pnpm --filter @schemesathi/web lint",
-    "build:shared": "pnpm --filter @schemesathi/shared build",
-    "test:api": "cd services/api && pytest",
-    "lint": "pnpm --filter @schemesathi/web lint",
-    "typecheck": "pnpm --recursive exec tsc --noEmit"
+    "setup": "tsx scripts/setup.ts",
+    "dev": "npm --workspace=apps/web run dev",
+    "build": "npm --workspace=apps/web run build",
+    "start": "npm --workspace=apps/web run start",
+    "seed:schemes": "tsx scripts/seed-schemes.ts",
+    "seed:population": "tsx scripts/generate-population.ts",
+    "validate:rules": "tsx scripts/validate-rules.ts",
+    "test": "npm --workspace=apps/web run test",
+    "test:e2e": "npm --workspace=apps/web run test:e2e",
+    "typecheck": "npm --workspace=apps/web run typecheck"
   },
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }
 

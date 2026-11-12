@@ -1,122 +1,136 @@
-# SchemeSathi AI — Product Requirements Document
-**Version:** 1.0 | **Product:** Generative AI Government Scheme Eligibility Assistant | **Primary market:** India
+# Scheme Sathi AI: Product Requirements Document
 
-## 1. Product vision
-SchemeSathi AI helps people discover relevant Indian central and state government schemes, understand eligibility in plain language, prepare a checklist of required documents, and navigate to official application sources. It should feel like a trustworthy, approachable public-service guide—not a generic chatbot.
+**Tagline:** Every scheme you deserve, found in 2 minutes. Eligibility, documents, benefits and analytics, all in one place.
+**Version:** 1.0 | **Primary market:** India | **Platform:** Responsive web app (PWA), works offline | **Languages:** English, Hindi, Gujarati
 
-## 2. Problem
-Citizens often struggle to:
-- Find schemes spread across ministries, state portals, and official notices.
-- Understand eligibility criteria written in bureaucratic language.
-- Know which documents and application steps are needed.
-- Distinguish verified official information from rumors, outdated pages, or AI-generated guesses.
-- Discover schemes relevant to their household, occupation, location, or life stage.
+---
 
-## 3. Goals and non-goals
-### Goals
-1. Deliver a guided eligibility discovery experience using user-provided profile details.
-2. Explain match results with criterion-by-criterion reasoning and source citations.
-3. Provide scheme summaries, benefit details, required documents, deadlines where verified, and official application links.
-4. Support multilingual, accessible, mobile-first use, prioritizing English and Gujarati initially; design for Hindi expansion.
-5. Maintain visible source freshness and confidence indicators.
-6. Protect personal data and minimize collection.
+## 1. Problem
+India has hundreds of central and state welfare schemes (farmers, students, women, senior citizens, workers, entrepreneurs, health, housing), but most citizens never find out which ones they qualify for. Information is scattered across portals, written in complex language, and eligibility rules vary by state, income, age, category and occupation. Result: crores of rupees in benefits go unclaimed.
 
-### Non-goals for MVP
-- Submitting applications on behalf of citizens.
-- Guaranteeing approval, benefit receipt, or eligibility.
-- Collecting Aadhaar numbers, bank credentials, OTPs, or other highly sensitive identifiers.
-- Replacing government portals, legal advice, or official scheme authorities.
-- Presenting fabricated schemes, deadlines, benefits, or links.
+## 2. Vision
+A friendly "Sathi" (companion) that asks a few simple questions, instantly shows every scheme you likely qualify for, tells you exactly which documents to gather and which steps to follow, and turns the data into clear dashboards for citizens, NGOs and analysts.
 
-## 4. Target users and jobs-to-be-done
-- **Citizen / household:** “Help me find schemes that may fit my situation and understand what to do next.”
-- **Student:** “Find scholarships and education assistance for my course, location, and household context.”
-- **Farmer / worker / self-employed person:** “Discover assistance applicable to my occupation and explain the conditions.”
-- **Community facilitator:** “Help someone navigate scheme information using clear steps and official references.”
-- **Content administrator:** “Review source records, freshness, and scheme information before publication.”
+## 3. Key Principle: No API Keys, Privacy First
+- The whole product runs with **zero external API keys and zero paid services**.
+- Eligibility, recommendations, explanations and analytics are produced by a **local rules engine, bundled datasets and templates**, not by a cloud AI service.
+- A citizen's profile stays on their own device / local database. No tracking, no third-party calls.
 
-## 5. MVP scope
-### User-facing
-- Landing page with clear CTA: “Find schemes for me.”
-- Guided profile flow with optional fields:
-  - State / district
-  - Age band (not exact DOB)
-  - Occupation / student status
-  - Household income range
-  - Social category only if needed for a scheme; optional and handled carefully
-  - Disability status, farmer status, marital / family context only when relevant and optional
-  - Education level / course
-  - Existing scheme participation (optional)
-- Scheme discovery results with match labels: Strong potential match / Possible match / More information needed.
-- Scheme details: overview, benefit, eligibility, exclusions, documents, how-to-apply steps, official link, source and “last verified” timestamp.
-- Conversational assistant for clarification and plain-language explanations.
-- Bookmark / compare schemes in session (MVP can use local client state).
-- Language selector (English / ગુજરાતી).
-- Feedback: “Was this helpful?” and report outdated information.
-- Disclaimer and privacy notice.
+## 4. Target Users
+| Persona | Need |
+|---|---|
+| Citizen (Ramesh, 45, small farmer) | Find farm, insurance and pension schemes in his language |
+| Student (Anita, 19) | Find scholarships and skill programmes |
+| Women entrepreneur (Meena, 32) | Find loans, subsidies and training schemes |
+| Senior citizen (Mr. Shah, 68) | Pension, health cover, concessions |
+| Volunteer / CSC operator | Help many people quickly, track applications |
+| NGO / analyst / policy researcher | Understand coverage gaps and unclaimed benefits by region and group |
 
-### Admin / content operations (MVP-lite)
-- Internal scheme data schema and source review workflow.
-- Draft / reviewed / published statuses.
-- Source URL, source organization, retrieval date, verification date, reviewer, validity notes.
-- Seed sample content only when clearly labeled as demo; no fabricated official claims.
+## 5. Goals and Success Metrics
+- Profile to first matched schemes in **under 90 seconds** (under 10 questions)
+- At least **8 relevant schemes** surfaced per typical profile
+- Eligibility result agrees with official criteria in **95%+** of curated test cases
+- Document checklist completeness above **90%**
+- Dashboard loads under **2 s** on 100K-row synthetic dataset
+- Week-4 retention above **30%**
 
-## 6. Functional requirements
-**FR-01 Profile intake:** Ask one clear question per step; allow skip where optional; explain why a field is requested.
-**FR-02 Eligibility matching:** Evaluate explicit rules against profile values. Unknown values must remain “unknown,” not silently pass.
-**FR-03 Match explanation:** Show matched, unmet, and unknown criteria in human-readable language.
-**FR-04 Retrieval-grounded answers:** The assistant answers scheme questions from approved scheme records and source material.
-**FR-05 Citations:** Each factual scheme claim links to an official source record. If no reliable source is available, state that verification is unavailable.
-**FR-06 Scheme detail:** Render benefits, eligibility, documents, steps, official application destination, and update metadata.
-**FR-07 Search/filter:** Search by scheme name, keyword, state, category, occupation, and benefit type.
-**FR-08 Language:** Provide UI localization and generated explanations in selected language; preserve official scheme names.
-**FR-09 Privacy:** Avoid unnecessary PII; allow profile reset; do not log sensitive profile values in analytics.
-**FR-10 Safety:** Never request Aadhaar/OTP/password/bank PIN; warn users to use official portals and beware of fees/scams.
-**FR-11 Feedback:** Capture helpfulness and outdated-content reports without exposing profile data.
-**FR-12 Responsive design:** Support phone, tablet, and desktop.
+## 6. Core Features (MVP)
+### F1. Smart Profile Wizard
+- Short, friendly steps: state and district, age, gender, income range, occupation, category (General/OBC/SC/ST/EWS), disability, family size, land holding, education, existing documents
+- Progress bar, skip-able fields, instant partial results as you answer ("12 schemes found so far")
+- Save multiple profiles (family members)
 
-## 7. Eligibility semantics
-- Use rule-based matching for structured criteria; LLMs may translate/explain, but must not invent or override rules.
-- “Potentially eligible” is not an official determination.
-- Every result must show: criteria matched, criteria not met (if known), missing details, source, verification date.
-- A scheme with stale or incomplete source data should be marked “Needs verification.”
-- Age/income thresholds must be represented as explicit inclusive/exclusive bounds and units.
-- State-specific rules must be scoped to the appropriate state / district.
+### F2. Scheme Explorer (Pinterest-style board)
+- Masonry board of scheme cards with category, benefit amount, deadline, level (Central / State)
+- Instant search and filters (category, state, benefit type, level, eligibility status)
+- Bookmark, compare up to 3 schemes side by side
 
-## 8. UX and content principles
-- Trust before cleverness: sources are prominent, not buried.
-- Plain language, friendly microcopy, no shame or assumptions.
-- Show progress during profile intake.
-- Avoid “You are eligible” wording; use “You may qualify” or “Potential match.”
-- Use visual cards, editorial collage / Pinterest-inspired composition, colorful light palette, subtle glass effects, meaningful motion.
-- Motion must respect reduced-motion settings and never block tasks.
+### F3. Eligibility Engine
+- Three states: **Eligible**, **Likely (need 1 more check)**, **Not eligible**
+- "Why?" panel: shows each rule passed or failed in plain words
+- **Near-miss insights:** "You miss this scheme by Rs. 20,000 of income" or "Turn 60 in 8 months to unlock this pension"
+- What-if simulator: change income, age, land or occupation and watch schemes appear or disappear live
 
-## 9. Success metrics
-- Profile flow completion rate.
-- Search-to-scheme-detail click-through.
-- Citation / official-link click-through.
-- Helpful response feedback.
-- Percentage of answers grounded in approved source records.
-- Outdated-data reports and correction turnaround.
-- Accessibility audit completion.
-- Do not optimize for number of schemes surfaced at the cost of precision.
+### F4. Document Checklist and Wallet
+- Per scheme and combined checklist (Aadhaar, income certificate, caste certificate, bank passbook, land record, etc.)
+- Mark documents as "have / need", with where-to-get hints
+- Printable PDF checklist
 
-## 10. Risks and mitigations
+### F5. Step-by-Step Application Guide
+- Plain-language steps: where to apply (online/offline), what to carry, typical timeline, official portal link (opens in a new tab; static link list, no API)
+- Application tracker: Not started, Documents ready, Applied, Approved, Rejected, with reminders (in-app)
+
+### F6. Benefit Calculator
+- Estimated yearly and lifetime benefit per scheme and total "money on the table"
+- Stack view: which schemes can be claimed together
+
+### F7. Citizen Dashboard
+- Total matched schemes, estimated annual benefit, claimed vs unclaimed, upcoming deadlines, document readiness, application funnel
+- Category donut, benefit-by-month timeline, "missed benefits" leaderboard
+
+### F8. Analytics Workbench (data analysis)
+- Built on a bundled **synthetic population dataset** (about 20,000 households, clearly labelled synthetic) plus the real scheme catalogue
+- Views: eligibility rate by state/category/occupation, scheme coverage gap map (India choropleth), criteria that block the most people (e.g. income cap vs missing documents), unclaimed benefit estimate by region, cohort comparison (e.g. SC women farmers vs all farmers), scheme overlap matrix
+- Filters, drill-down, sortable tables, CSV and PNG export, saved views
+- Auto-written "insight cards" generated from templates over computed stats (no AI service)
+
+### F9. Admin Console (local)
+- Add/edit schemes through a form, edit eligibility rules in a visual rule builder, bulk import via CSV/JSON, validation report, version history
+
+## 7. Post-MVP
+Voice input (offline browser speech where available), more languages, WhatsApp-style chat UI, CSC operator multi-citizen mode, real-time data sync with official catalogues, optional on-device small language model (off by default).
+
+## 8. Functional Requirements
+| ID | Requirement | Priority |
+|---|---|---|
+| FR-1 | Guest mode with local profile (no login needed) | P0 |
+| FR-2 | Optional local account (email + password) stored in local DB | P1 |
+| FR-3 | Profile wizard with live results | P0 |
+| FR-4 | Rule-based eligibility with explanations | P0 |
+| FR-5 | Near-miss and what-if simulator | P0 |
+| FR-6 | Scheme search, filters, compare, bookmark | P0 |
+| FR-7 | Document checklist and PDF export | P0 |
+| FR-8 | Application tracker with in-app reminders | P1 |
+| FR-9 | Benefit calculator | P1 |
+| FR-10 | Citizen dashboard | P0 |
+| FR-11 | Analytics workbench with filters, exports | P0 |
+| FR-12 | Language switcher (EN/HI/GU) | P0 |
+| FR-13 | Admin scheme and rule editor | P1 |
+| FR-14 | Data export and delete (privacy) | P0 |
+
+## 9. Non-Functional Requirements
+- Zero API keys; works fully offline after first load (PWA)
+- First load under 2.5 s on 4G; Lighthouse performance above 90
+- WCAG 2.2 AA, large touch targets, readable Hindi and Gujarati text
+- All personal data stays on the device or local DB; no third-party scripts or analytics
+- Scheme data versioned with "last verified" date and source link
+
+## 10. User Flows
+**Citizen:** Landing, choose language, answer wizard, see matched board, open a scheme, see why eligible, view checklist, track application, check dashboard.
+**Analyst:** Open Analytics, choose filters, explore map and charts, read insight cards, export CSV.
+**Admin:** Open Admin, add/edit scheme and rules, run validation, publish new version.
+
+## 11. Screens
+Landing, Language + Wizard, Matched Schemes Board, Scheme Detail, Compare, What-if Simulator, Document Wallet, Application Tracker, Citizen Dashboard, Analytics Workbench (Overview, Map, Funnel, Cohorts, Overlap), Admin Console, Settings/Privacy.
+
+## 12. Data Notes (important)
+- The bundled scheme catalogue (about 40 schemes: central plus a few Gujarat state ones) is **SAMPLE data** assembled for the prototype. Every scheme shows a "last verified" date and an official source link. **Users must verify with the official portal before applying.** Admins can update data from the console.
+- The population dataset is **synthetic**, generated by a seeded script; it is not real citizen data and the app labels it clearly.
+
+## 13. Risks
 | Risk | Mitigation |
 |---|---|
-| Outdated or incorrect scheme rules | Source metadata, review dates, stale flags, admin review |
-| Hallucinated eligibility | Rule engine + retrieval grounding + structured response validation |
-| Sensitive profile leakage | Data minimization, no sensitive logs, short retention, user reset |
-| Scam / impersonation concern | Official links, source badges, anti-fraud guidance |
-| Language translation error | Preserve official wording; human-review critical translated content |
-| User mistakes AI for authority | Repeated plain disclaimer and official-source handoff |
+| Outdated or wrong scheme rules | "Last verified" dates, source links, disclaimers, admin editor, validation tests |
+| Over-promising eligibility | Three-state result, "Likely" status, "verify officially" notice |
+| Low literacy / language | Simple wording, icons, EN/HI/GU, large buttons |
+| Misreading synthetic data as real | Persistent "Synthetic data" badge on analytics |
+| Sensitive data | Local-only storage, delete anytime |
 
-## 11. MVP acceptance criteria
-- A user can complete or skip the guided profile and receive relevant scheme cards.
-- Each displayed scheme has a source URL and verification metadata or is clearly marked demo/unverified.
-- Eligibility output includes match reasoning and unknown criteria.
-- Assistant refuses to invent missing benefit amounts, deadlines, or application URLs.
-- Scheme detail page includes official application link, source, required documents, and disclaimer.
-- English and Gujarati UI language selection works for core screens.
-- Layout passes keyboard navigation and basic WCAG AA contrast checks.
-- Profile reset clears client-held profile data.
+## 14. Milestones
+- **Week 1:** Scaffold, scheme schema + dataset, rule engine, wizard
+- **Week 2:** Explorer board, eligibility explanations, near-miss, what-if
+- **Week 3:** Checklist, tracker, benefit calculator, citizen dashboard
+- **Week 4:** Analytics workbench, admin console, i18n, polish, PWA
+
+## 15. Out of Scope (v1)
+Submitting applications on government portals, Aadhaar or DigiLocker integration, real citizen data, payments.

@@ -1,0 +1,31 @@
+{
+  "appName": "Scheme Sathi AI",
+  "tagline": "Every scheme you deserve, found in 2 minutes.",
+  "nav": {
+    "home": "Home",
+    "wizard": "Wizard",
+    "schemes": "Schemes",
+    "whatIf": "What-If",
+    "documents": "Documents",
+    "dashboard": "Dashboard",
+    "analytics": "Analytics",
+    "admin": "Admin",
+    "settings": "Privacy"
+  },
+  "badges": {
+    "sample": "SAMPLE DATA — verify on official portal",
+    "synthetic": "Synthetic data (20,000 households)",
+    "eligible": "Eligible",
+    "likely": "Likely (1+ check needed)",
+    "not_eligible": "Not eligible",
+    "offline": "Offline Ready • Zero API Keys"
+  },
+  "hero": {
+    "headline": "Your schemes. Found.",
+    "sub": "Answer a few simple questions in English, Hindi or Gujarati. Instantly see matched benefits, plain-language reasons, required documents, and step-by-step guidance.",
+    "ctaStart": "Start 90-sec Wizard",
+    "ctaBrowse": "Explore 54 Sample Schemes",
+    "unclaimedLabel": "Estimated annual household benefits discovered in prototype"
+  }
+}
+

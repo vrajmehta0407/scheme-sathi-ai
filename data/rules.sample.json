@@ -1,0 +1,476 @@
+[
+  {
+    "scheme_id": "pm-kisan-samman",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "land_hectares", "op": "gt", "value": 0 },
+      { "field": "income", "op": "lte", "value": 600000 }
+    ],
+    "none": [
+      { "field": "is_income_tax_payer", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "pm-fasal-bima",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "land_hectares", "op": "gt", "value": 0 }
+    ]
+  },
+  {
+    "scheme_id": "kisan-credit-card",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "age", "op": "between", "value": [18, 75] },
+      { "field": "land_hectares", "op": "gt", "value": 0 }
+    ]
+  },
+  {
+    "scheme_id": "pm-kisan-maandhan",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "age", "op": "between", "value": [18, 40] },
+      { "field": "land_hectares", "op": "between", "value": [0.01, 2.0] }
+    ],
+    "none": [
+      { "field": "is_income_tax_payer", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-khedut-tractor",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "land_hectares", "op": "gt", "value": 0 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-drip-irrigation",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "land_hectares", "op": "gte", "value": 0.2 }
+    ]
+  },
+  {
+    "scheme_id": "nsp-post-matric-sc-obc",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["student"] },
+      { "field": "category", "op": "in", "value": ["SC", "ST", "OBC", "EWS"] },
+      { "field": "income", "op": "lte", "value": 250000 },
+      { "field": "age", "op": "between", "value": [15, 35] }
+    ]
+  },
+  {
+    "scheme_id": "pm-yasasvi-scholarship",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["student"] },
+      { "field": "category", "op": "in", "value": ["OBC", "EWS"] },
+      { "field": "income", "op": "lte", "value": 250000 },
+      { "field": "age", "op": "between", "value": [14, 22] }
+    ]
+  },
+  {
+    "scheme_id": "aicte-pragati-girls",
+    "all": [
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "occupation", "op": "in", "value": ["student"] },
+      { "field": "education", "op": "in", "value": ["higher_secondary", "diploma", "graduate"] },
+      { "field": "income", "op": "lte", "value": 800000 },
+      { "field": "age", "op": "between", "value": [16, 28] }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-mysy-scholarship",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "occupation", "op": "in", "value": ["student"] },
+      { "field": "education", "op": "in", "value": ["higher_secondary", "diploma", "graduate"] },
+      { "field": "income", "op": "lte", "value": 600000 },
+      { "field": "age", "op": "between", "value": [16, 26] }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-digital-scholarship",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "occupation", "op": "in", "value": ["student"] },
+      { "field": "category", "op": "in", "value": ["SC", "ST", "OBC"] },
+      { "field": "income", "op": "lte", "value": 250000 },
+      { "field": "age", "op": "between", "value": [15, 32] }
+    ]
+  },
+  {
+    "scheme_id": "pm-kaushal-vikas",
+    "all": [
+      { "field": "age", "op": "between", "value": [15, 45] },
+      { "field": "occupation", "op": "in", "value": ["student", "unemployed", "worker"] }
+    ]
+  },
+  {
+    "scheme_id": "sukanya-samriddhi",
+    "all": [
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "lt", "value": 10 }
+    ]
+  },
+  {
+    "scheme_id": "pm-matru-vandana",
+    "all": [
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "between", "value": [19, 45] },
+      { "field": "income", "op": "lte", "value": 800000 }
+    ]
+  },
+  {
+    "scheme_id": "pm-ujjwala-yojana",
+    "all": [
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "gte", "value": 18 },
+      { "field": "income", "op": "lte", "value": 200000 }
+    ]
+  },
+  {
+    "scheme_id": "indira-gandhi-widow-pension",
+    "all": [
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "between", "value": [40, 79] },
+      { "field": "income", "op": "lte", "value": 150000 },
+      { "field": "is_bpl", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-vahli-dikri",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "lte", "value": 18 },
+      { "field": "income", "op": "lte", "value": 200000 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-ganga-swarupa",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "gte", "value": 18 },
+      { "field": "income", "op": "lte", "value": 150000 },
+      { "field": "is_widow", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "lakhpati-didi-shg",
+    "all": [
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "district_type", "op": "in", "value": ["rural", "semi_urban"] },
+      { "field": "age", "op": "between", "value": [18, 59] },
+      { "field": "income", "op": "lte", "value": 300000 }
+    ]
+  },
+  {
+    "scheme_id": "ignoaps-old-age-pension",
+    "all": [
+      { "field": "age", "op": "gte", "value": 60 },
+      { "field": "income", "op": "lte", "value": 150000 },
+      { "field": "is_bpl", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "atal-pension-yojana",
+    "all": [
+      { "field": "age", "op": "between", "value": [18, 40] }
+    ],
+    "none": [
+      { "field": "is_income_tax_payer", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "rashtriya-vayoshri-yojana",
+    "all": [
+      { "field": "age", "op": "gte", "value": 60 },
+      { "field": "income", "op": "lte", "value": 180000 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-vaya-vandana-senior",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "age", "op": "gte", "value": 60 },
+      { "field": "income", "op": "lte", "value": 150000 }
+    ]
+  },
+  {
+    "scheme_id": "senior-citizen-savings-bonus",
+    "all": [
+      { "field": "age", "op": "gte", "value": 60 }
+    ]
+  },
+  {
+    "scheme_id": "pm-shram-yogi-maandhan",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["worker", "artisan"] },
+      { "field": "age", "op": "between", "value": [18, 40] },
+      { "field": "income", "op": "lte", "value": 180000 }
+    ],
+    "none": [
+      { "field": "is_income_tax_payer", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "eshram-accident-cover",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["worker", "artisan", "farmer"] },
+      { "field": "age", "op": "between", "value": [16, 59] },
+      { "field": "income", "op": "lte", "value": 250000 }
+    ],
+    "none": [
+      { "field": "is_income_tax_payer", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "mgnrega-wage-employment",
+    "all": [
+      { "field": "district_type", "op": "in", "value": ["rural"] },
+      { "field": "age", "op": "gte", "value": 18 },
+      { "field": "occupation", "op": "in", "value": ["worker", "farmer", "unemployed"] },
+      { "field": "income", "op": "lte", "value": 250000 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-shramik-annapurna",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "occupation", "op": "in", "value": ["worker", "artisan"] },
+      { "field": "age", "op": "between", "value": [18, 60] },
+      { "field": "income", "op": "lte", "value": 250000 }
+    ]
+  },
+  {
+    "scheme_id": "pm-vishwakarma-artisan",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["artisan", "worker", "entrepreneur"] },
+      { "field": "age", "op": "gte", "value": 18 },
+      { "field": "income", "op": "lte", "value": 400000 }
+    ]
+  },
+  {
+    "scheme_id": "pm-mudra-yojana",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["entrepreneur", "artisan", "unemployed"] },
+      { "field": "age", "op": "gte", "value": 18 }
+    ]
+  },
+  {
+    "scheme_id": "pmegp-margin-subsidy",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["entrepreneur", "artisan", "unemployed"] },
+      { "field": "age", "op": "gte", "value": 18 },
+      { "field": "education", "op": "in", "value": ["secondary", "higher_secondary", "diploma", "graduate", "postgraduate"] }
+    ]
+  },
+  {
+    "scheme_id": "stand-up-india-scst-women",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["entrepreneur", "artisan"] },
+      { "field": "age", "op": "gte", "value": 18 },
+      {
+        "any": [
+          { "field": "gender", "op": "eq", "value": "female" },
+          { "field": "category", "op": "in", "value": ["SC", "ST"] }
+        ]
+      }
+    ]
+  },
+  {
+    "scheme_id": "pm-svanidhi-street-vendor",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["entrepreneur", "worker"] },
+      { "field": "district_type", "op": "in", "value": ["urban", "semi_urban"] },
+      { "field": "age", "op": "gte", "value": 18 },
+      { "field": "income", "op": "lte", "value": 300000 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-vajpayee-bankable",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "occupation", "op": "in", "value": ["entrepreneur", "artisan", "unemployed"] },
+      { "field": "age", "op": "between", "value": [18, 65] },
+      { "field": "income", "op": "lte", "value": 600000 }
+    ]
+  },
+  {
+    "scheme_id": "ayushman-bharat-pmjay",
+    "all": [
+      { "field": "income", "op": "lte", "value": 250000 },
+      {
+        "any": [
+          { "field": "is_bpl", "op": "eq", "value": true },
+          { "field": "category", "op": "in", "value": ["SC", "ST", "EWS"] },
+          { "field": "occupation", "op": "in", "value": ["worker", "farmer", "artisan"] }
+        ]
+      }
+    ]
+  },
+  {
+    "scheme_id": "pm-vaya-vandana-70-health",
+    "all": [
+      { "field": "age", "op": "gte", "value": 70 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-pmjay-ma",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "income", "op": "lte", "value": 400000 }
+    ]
+  },
+  {
+    "scheme_id": "janani-suraksha-yojana",
+    "all": [
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "between", "value": [19, 45] },
+      { "field": "income", "op": "lte", "value": 250000 }
+    ]
+  },
+  {
+    "scheme_id": "niramaya-disability-health",
+    "all": [
+      { "field": "disability", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "pmay-gramin-housing",
+    "all": [
+      { "field": "district_type", "op": "in", "value": ["rural"] },
+      { "field": "income", "op": "lte", "value": 200000 },
+      { "field": "age", "op": "gte", "value": 18 }
+    ],
+    "none": [
+      { "field": "owns_pucca_house", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "pmay-urban-housing",
+    "all": [
+      { "field": "district_type", "op": "in", "value": ["urban", "semi_urban"] },
+      { "field": "income", "op": "lte", "value": 600000 },
+      { "field": "age", "op": "gte", "value": 18 }
+    ],
+    "none": [
+      { "field": "owns_pucca_house", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "pm-surya-ghar-solar",
+    "all": [
+      { "field": "age", "op": "gte", "value": 18 },
+      { "field": "owns_pucca_house", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-ambedkar-awas",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "category", "op": "in", "value": ["SC", "ST", "OBC"] },
+      { "field": "income", "op": "lte", "value": 150000 },
+      { "field": "age", "op": "gte", "value": 18 }
+    ],
+    "none": [
+      { "field": "owns_pucca_house", "op": "eq", "value": true }
+    ]
+  },
+  {
+    "scheme_id": "swachh-bharat-toilet-grant",
+    "all": [
+      { "field": "income", "op": "lte", "value": 200000 },
+      { "field": "age", "op": "gte", "value": 18 }
+    ]
+  },
+  {
+    "scheme_id": "pm-suraksha-bima",
+    "all": [
+      { "field": "age", "op": "between", "value": [18, 70] }
+    ]
+  },
+  {
+    "scheme_id": "pm-jeevan-jyoti-bima",
+    "all": [
+      { "field": "age", "op": "between", "value": [18, 50] }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-kuvarbai-nu-mameru",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "age", "op": "between", "value": [18, 35] },
+      { "field": "category", "op": "in", "value": ["SC", "ST", "OBC", "EWS"] },
+      { "field": "income", "op": "lte", "value": 600000 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-namo-laxmi-girls",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "gender", "op": "eq", "value": "female" },
+      { "field": "occupation", "op": "in", "value": ["student"] },
+      { "field": "age", "op": "between", "value": [13, 19] },
+      { "field": "income", "op": "lte", "value": 600000 }
+    ]
+  },
+  {
+    "scheme_id": "ignps-disability-pension",
+    "all": [
+      { "field": "disability", "op": "eq", "value": true },
+      { "field": "age", "op": "between", "value": [18, 79] },
+      { "field": "income", "op": "lte", "value": 150000 }
+    ]
+  },
+  {
+    "scheme_id": "animal-husbandry-kcc",
+    "all": [
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "age", "op": "between", "value": [18, 75] }
+    ]
+  },
+  {
+    "scheme_id": "pm-daksh-skill-stipend",
+    "all": [
+      { "field": "age", "op": "between", "value": [18, 45] },
+      { "field": "category", "op": "in", "value": ["SC", "OBC", "EWS"] },
+      { "field": "income", "op": "lte", "value": 300000 },
+      { "field": "occupation", "op": "in", "value": ["student", "unemployed", "worker", "artisan"] }
+    ]
+  },
+  {
+    "scheme_id": "nfsa-antyodaya-food",
+    "all": [
+      { "field": "income", "op": "lte", "value": 180000 },
+      {
+        "any": [
+          { "field": "is_bpl", "op": "eq", "value": true },
+          { "field": "family_size", "op": "gte", "value": 3 }
+        ]
+      }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-manav-kalyan-toolkit",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "age", "op": "between", "value": [16, 60] },
+      { "field": "occupation", "op": "in", "value": ["artisan", "worker", "entrepreneur", "unemployed"] },
+      { "field": "income", "op": "lte", "value": 150000 }
+    ]
+  },
+  {
+    "scheme_id": "gujarat-kisan-sahay-crop",
+    "all": [
+      { "field": "state", "op": "eq", "value": "Gujarat" },
+      { "field": "occupation", "op": "in", "value": ["farmer"] },
+      { "field": "land_hectares", "op": "gt", "value": 0 }
+    ]
+  }
+]
+
