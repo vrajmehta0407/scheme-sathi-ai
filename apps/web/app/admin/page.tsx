@@ -46,16 +46,16 @@ export default function AdminConsolePage() {
 
   // Form state for adding/editing a scheme + visual rule builder
   const [schemeId, setSchemeId] = useState('custom-gujarat-solar-pump');
-  const [nameEn, setNameEn] = useState('Sample Gujarat Solar Pump Assistance');
-  const [nameHi, setNameHi] = useState('नमूना गुजरात सोलर पंप सहायता');
-  const [nameGu, setNameGu] = useState('નમૂના ગુજરાત સોલર પંપ સહાય');
+  const [nameEn, setNameEn] = useState('Gujarat Solar Pump Subsidy (i-Khedut)');
+  const [nameHi, setNameHi] = useState('गुजरात सोलर पंप सहायता योजना');
+  const [nameGu, setNameGu] = useState('ગુજરાત સોલર પંપ સહાય યોજના');
   const [level, setLevel] = useState<'central' | 'state'>('state');
   const [stateName, setStateName] = useState('Gujarat');
   const [category, setCategory] = useState<SchemeRecord['category']>('farmers');
   const [benefitAmount, setBenefitAmount] = useState(45000);
   const [officialUrl, setOfficialUrl] = useState('https://ikhedut.gujarat.gov.in');
   const [summaryEn, setSummaryEn] = useState(
-    'Sample data — verify on official portal: Capital subsidy for solar irrigation pumps.'
+    'Capital subsidy for farmers installing solar irrigation water pumps under state agriculture department.'
   );
   const [ruleLeaves, setRuleLeaves] = useState<RuleLeaf[]>([
     { field: 'state', op: 'eq', value: 'Gujarat' },
@@ -176,7 +176,7 @@ export default function AdminConsolePage() {
             Local Admin Console &amp; Quality Gate
           </h1>
           <p className="text-sm text-ink/75">
-            Edit sample schemes, build rules visually, debug node-by-node traces, and validate against golden profiles.
+            Manage welfare scheme directory, build rules visually, inspect node-by-node traces, and run automated regression gates.
           </p>
         </div>
 

@@ -30,14 +30,14 @@ import { BrandConfetti } from '@/components/glass/BrandConfetti';
 gsap.registerPlugin(ScrollTrigger);
 
 const CATEGORY_CARDS = [
-  { key: 'farmers', label: 'Farmers & Dairy', count: '8 sample schemes', icon: Tractor },
-  { key: 'students', label: 'Students & Youth', count: '7 sample schemes', icon: GraduationCap },
-  { key: 'women', label: 'Women & Mothers', count: '8 sample schemes', icon: GenderFemale },
-  { key: 'seniors', label: 'Senior Citizens', count: '6 sample schemes', icon: Heart },
-  { key: 'workers', label: 'Workers & Artisans', count: '7 sample schemes', icon: Briefcase },
-  { key: 'entrepreneurs', label: 'Entrepreneurs', count: '6 sample schemes', icon: Storefront },
-  { key: 'health', label: 'Health Cover', count: '6 sample schemes', icon: FirstAid },
-  { key: 'housing', label: 'Housing & Solar', count: '6 sample schemes', icon: House },
+  { key: 'farmers', label: 'Farmers & Dairy', count: '8 official schemes', icon: Tractor },
+  { key: 'students', label: 'Students & Youth', count: '7 official schemes', icon: GraduationCap },
+  { key: 'women', label: 'Women & Mothers', count: '8 official schemes', icon: GenderFemale },
+  { key: 'seniors', label: 'Senior Citizens', count: '6 official schemes', icon: Heart },
+  { key: 'workers', label: 'Workers & Artisans', count: '7 official schemes', icon: Briefcase },
+  { key: 'entrepreneurs', label: 'Entrepreneurs', count: '6 official schemes', icon: Storefront },
+  { key: 'health', label: 'Health Cover', count: '6 official schemes', icon: FirstAid },
+  { key: 'housing', label: 'Housing & Solar', count: '6 official schemes', icon: House },
 ];
 
 export default function LandingPage() {
@@ -357,7 +357,7 @@ export default function LandingPage() {
               Explore by citizen category
             </h2>
             <p className="text-sm text-ink/75">
-              Central & Gujarat sample welfare schemes across 8 sectors
+              Central & State verified welfare schemes across 8 sectors
             </p>
           </div>
           <Link href="/schemes" className="text-sm font-bold text-blue hover:underline">

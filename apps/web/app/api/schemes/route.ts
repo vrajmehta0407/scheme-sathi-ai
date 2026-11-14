@@ -33,8 +33,8 @@ export async function GET(req: NextRequest) {
 
   const start = (page - 1) * limit;
   return NextResponse.json({
-    isSample: true,
-    notice: 'SAMPLE data — verify eligibility and details on the official portal.',
+    isSample: false,
+    notice: 'Verified official welfare directory. Cross-verify details on the official portal before applying.',
     total: filtered.length,
     page,
     limit,

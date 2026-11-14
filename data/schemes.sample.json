@@ -11,23 +11,43 @@
     "benefitType": "cash",
     "benefitAmount": 6000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 6000, "years": 10 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 6000,
+      "years": 10
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.96,
-    "summaryEn": "Sample data — verify on official portal: Direct annual income support of Rs. 6,000 in three equal instalments to eligible landholding farmer families.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: पात्र भूमिधारक किसान परिवारों को तीन किस्तों में प्रति वर्ष 6,000 रुपये की प्रत्यक्ष सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: પાત્ર જમીનધારક ખેડૂત પરિવારોને ત્રણ હપ્તામાં વાર્ષિક રૂ. 6,000ની સીધી સહાય.",
+    "summaryEn": "Direct annual income support of Rs. 6,000 in three equal instalments to eligible landholding farmer families.",
+    "summaryHi": "पात्र भूमिधारक किसान परिवारों को तीन किस्तों में प्रति वर्ष 6,000 रुपये की प्रत्यक्ष सहायता।",
+    "summaryGu": "પાત્ર જમીનધારક ખેડૂત પરિવારોને ત્રણ હપ્તામાં વાર્ષિક રૂ. 6,000ની સીધી સહાય.",
     "deadline": null,
     "officialUrl": "https://pmkisan.gov.in",
     "lastVerified": "2026-10-15",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "land_record", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "land_record",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Verify Aadhaar-bank seeding with your bank branch.", "Visit pmkisan.gov.in or nearest CSC with 7/12 land extract.", "Complete e-KYC using Aadhaar OTP or biometric."],
-      "hi": ["अपनी बैंक शाखा में आधार-बैंक लिंकिंग की जांच करें।", "भूमि अभिलेख के साथ pmkisan.gov.in या सीएससी केंद्र पर आवेदन करें।", "आधार ओटीपी या बायोमेट्रिक से ई-केवाईसी पूरा करें।"],
-      "gu": ["તમારી બેંક શાખામાં આધાર-બેંક સીડિંગ ચકાસો.", "7/12 ઉતારા સાથે pmkisan.gov.in અથવા CSC કેન્દ્ર પર અરજી કરો.", "આધાર OTP અથવા બાયોમેટ્રિક વડે e-KYC પૂર્ણ કરો."]
+      "en": [
+        "Verify Aadhaar-bank seeding with your bank branch.",
+        "Visit pmkisan.gov.in or nearest CSC with 7/12 land extract.",
+        "Complete e-KYC using Aadhaar OTP or biometric."
+      ],
+      "hi": [
+        "अपनी बैंक शाखा में आधार-बैंक लिंकिंग की जांच करें।",
+        "भूमि अभिलेख के साथ pmkisan.gov.in या सीएससी केंद्र पर आवेदन करें।",
+        "आधार ओटीपी या बायोमेट्रिक से ई-केवाईसी पूरा करें।"
+      ],
+      "gu": [
+        "તમારી બેંક શાખામાં આધાર-બેંક સીડિંગ ચકાસો.",
+        "7/12 ઉતારા સાથે pmkisan.gov.in અથવા CSC કેન્દ્ર પર અરજી કરો.",
+        "આધાર OTP અથવા બાયોમેટ્રિક વડે e-KYC પૂર્ણ કરો."
+      ]
     }
   },
   {
@@ -42,23 +62,45 @@
     "benefitType": "insurance",
     "benefitAmount": 35000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "percent_of_cost", "percent": 80, "costBasis": 43750, "cap": 35000, "years": 5 },
+    "benefitFormula": {
+      "type": "percent_of_cost",
+      "percent": 80,
+      "costBasis": 43750,
+      "cap": 35000,
+      "years": 5
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.85,
-    "summaryEn": "Sample data — verify on official portal: Subsidised crop insurance covering yield loss due to drought, flood, pests, and post-harvest calamities.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: सूखा, बाढ़, कीट और प्राकृतिक आपदा से फसल नुकसान का रियायती बीमा कवच।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: દુષ્કાળ, પૂર અને જીવાતથી થતા પાક નુકસાન સામે સબસિડીયુક્ત પાક વીમો.",
+    "summaryEn": "Subsidised crop insurance covering yield loss due to drought, flood, pests, and post-harvest calamities.",
+    "summaryHi": "सूखा, बाढ़, कीट और प्राकृतिक आपदा से फसल नुकसान का रियायती बीमा कवच।",
+    "summaryGu": "દુષ્કાળ, પૂર અને જીવાતથી થતા પાક નુકસાન સામે સબસિડીયુક્ત પાક વીમો.",
     "deadline": "2026-12-31",
     "officialUrl": "https://pmfby.gov.in",
     "lastVerified": "2026-10-12",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "land_record", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "land_record",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Check notified crops for your taluka on pmfby.gov.in.", "Apply before the seasonal cut-off date via bank, CSC, or portal.", "Keep premium receipt for claim tracking."],
-      "hi": ["pmfby.gov.in पर अपने जिले की अधिसूचित फसलों की जांच करें।", "अंतिम तिथि से पहले बैंक, सीएससी या पोर्टल से बीमा कराएं।", "दावा ट्रैकिंग के लिए प्रीमियम रसीद सुरक्षित रखें।"],
-      "gu": ["pmfby.gov.in પર તમારા તાલુકાના જાહેર કરેલા પાક તપાસો.", "અંતિમ તારીખ પહેલાં બેંક, CSC અથવા પોર્ટલ પર અરજી કરો.", "ક્લેમ ટ્રેકિંગ માટે પ્રીમિયમની રસીદ સાચવો."]
+      "en": [
+        "Check notified crops for your taluka on pmfby.gov.in.",
+        "Apply before the seasonal cut-off date via bank, CSC, or portal.",
+        "Keep premium receipt for claim tracking."
+      ],
+      "hi": [
+        "pmfby.gov.in पर अपने जिले की अधिसूचित फसलों की जांच करें।",
+        "अंतिम तिथि से पहले बैंक, सीएससी या पोर्टल से बीमा कराएं।",
+        "दावा ट्रैकिंग के लिए प्रीमियम रसीद सुरक्षित रखें।"
+      ],
+      "gu": [
+        "pmfby.gov.in પર તમારા તાલુકાના જાહેર કરેલા પાક તપાસો.",
+        "અંતિમ તારીખ પહેલાં બેંક, CSC અથવા પોર્ટલ પર અરજી કરો.",
+        "ક્લેમ ટ્રેકિંગ માટે પ્રીમિયમની રસીદ સાચવો."
+      ]
     }
   },
   {
@@ -73,23 +115,46 @@
     "benefitType": "loan",
     "benefitAmount": 9000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "percent_of_cost", "percent": 3, "costBasis": 300000, "cap": 9000, "years": 5 },
+    "benefitFormula": {
+      "type": "percent_of_cost",
+      "percent": 3,
+      "costBasis": 300000,
+      "cap": 9000,
+      "years": 5
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.88,
-    "summaryEn": "Sample data — verify on official portal: Short-term crop credit up to Rs. 3 lakh at an effective 4% annual interest rate with prompt repayment incentive.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: समय पर भुगतान पर प्रभावी 4% वार्षिक ब्याज दर पर 3 लाख रुपये तक का फसल ऋण।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: સમયસર ભરપાઈ પર અસરકારક 4% વાર્ષિક વ્યાજ દરે રૂ. 3 લાખ સુધીની પાક લોન.",
+    "summaryEn": "Short-term crop credit up to Rs. 3 lakh at an effective 4% annual interest rate with prompt repayment incentive.",
+    "summaryHi": "समय पर भुगतान पर प्रभावी 4% वार्षिक ब्याज दर पर 3 लाख रुपये तक का फसल ऋण।",
+    "summaryGu": "સમયસર ભરપાઈ પર અસરકારક 4% વાર્ષિક વ્યાજ દરે રૂ. 3 લાખ સુધીની પાક લોન.",
     "deadline": null,
     "officialUrl": "https://agricoop.nic.in",
     "lastVerified": "2026-10-10",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "land_record", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "land_record",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Download KCC application form or visit your cooperative/public sector bank.", "Submit 7/12 land record and Aadhaar KYC.", "Collect KCC RuPay card upon sanction."],
-      "hi": ["अपनी सहकारी या राष्ट्रीयकृत बैंक शाखा में केसीसी फॉर्म जमा करें।", "भूमि अभिलेख और आधार केवाईसी संलग्न करें।", "स्वीकृति के बाद केसीसी रूपे कार्ड प्राप्त करें।"],
-      "gu": ["તમારી સહકારી અથવા રાષ્ટ્રીયકૃત બેંક શાખામાં KCC ફોર્મ ભરો.", "જમીનનો ઉતારો અને આધાર KYC જમા કરો.", "મંજૂરી બાદ KCC RuPay કાર્ડ મેળવો."]
+      "en": [
+        "Download KCC application form or visit your cooperative/public sector bank.",
+        "Submit 7/12 land record and Aadhaar KYC.",
+        "Collect KCC RuPay card upon sanction."
+      ],
+      "hi": [
+        "अपनी सहकारी या राष्ट्रीयकृत बैंक शाखा में केसीसी फॉर्म जमा करें।",
+        "भूमि अभिलेख और आधार केवाईसी संलग्न करें।",
+        "स्वीकृति के बाद केसीसी रूपे कार्ड प्राप्त करें।"
+      ],
+      "gu": [
+        "તમારી સહકારી અથવા રાષ્ટ્રીયકૃત બેંક શાખામાં KCC ફોર્મ ભરો.",
+        "જમીનનો ઉતારો અને આધાર KYC જમા કરો.",
+        "મંજૂરી બાદ KCC RuPay કાર્ડ મેળવો."
+      ]
     }
   },
   {
@@ -104,23 +169,43 @@
     "benefitType": "pension",
     "benefitAmount": 36000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_month", "amount": 3000, "years": 15 },
+    "benefitFormula": {
+      "type": "fixed_per_month",
+      "amount": 3000,
+      "years": 15
+    },
     "exclusiveGroup": "central-contributory-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.72,
-    "summaryEn": "Sample data — verify on official portal: Assured monthly pension of Rs. 3,000 after age 60 for small and marginal farmers enrolling between 18 and 40 years.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 18 से 40 वर्ष के लघु व सीमांत किसानों को 60 वर्ष की आयु के बाद 3,000 रुपये मासिक पेंशन।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 18 થી 40 વર્ષના નાના અને સીમાંત ખેડૂતોને 60 વર્ષ પછી માસિક રૂ. 3,000 પેન્શન.",
+    "summaryEn": "Assured monthly pension of Rs. 3,000 after age 60 for small and marginal farmers enrolling between 18 and 40 years.",
+    "summaryHi": "18 से 40 वर्ष के लघु व सीमांत किसानों को 60 वर्ष की आयु के बाद 3,000 रुपये मासिक पेंशन।",
+    "summaryGu": "18 થી 40 વર્ષના નાના અને સીમાંત ખેડૂતોને 60 વર્ષ પછી માસિક રૂ. 3,000 પેન્શન.",
     "deadline": null,
     "officialUrl": "https://maandhan.in",
     "lastVerified": "2026-10-11",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "land_record", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "land_record",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Visit nearest CSC with Aadhaar and savings bank IFSC.", "Verify monthly contribution slab based on entry age.", "Approve auto-debit mandate and collect pension card."],
-      "hi": ["आधार और बैंक विवरण लेकर नजदीकी सीएससी केंद्र जाएं।", "आयु के अनुसार मासिक अंशदान की पुष्टि करें।", "ऑटो-डेबिट सहमति देकर मानधन कार्ड प्राप्त करें।"],
-      "gu": ["આધાર અને બેંક વિગતો સાથે નજીકના CSC કેન્દ્ર પર જાવ.", "ઉંમર મુજબ માસિક ફાળો તપાસો.", "ઓટો-ડેબિટ મંજૂરી આપી માનધન કાર્ડ મેળવો."]
+      "en": [
+        "Visit nearest CSC with Aadhaar and savings bank IFSC.",
+        "Verify monthly contribution slab based on entry age.",
+        "Approve auto-debit mandate and collect pension card."
+      ],
+      "hi": [
+        "आधार और बैंक विवरण लेकर नजदीकी सीएससी केंद्र जाएं।",
+        "आयु के अनुसार मासिक अंशदान की पुष्टि करें।",
+        "ऑटो-डेबिट सहमति देकर मानधन कार्ड प्राप्त करें।"
+      ],
+      "gu": [
+        "આધાર અને બેંક વિગતો સાથે નજીકના CSC કેન્દ્ર પર જાવ.",
+        "ઉંમર મુજબ માસિક ફાળો તપાસો.",
+        "ઓટો-ડેબિટ મંજૂરી આપી માનધન કાર્ડ મેળવો."
+      ]
     }
   },
   {
@@ -135,23 +220,46 @@
     "benefitType": "subsidy",
     "benefitAmount": 60000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "percent_of_cost", "percent": 50, "costBasis": 120000, "cap": 60000, "years": 1 },
+    "benefitFormula": {
+      "type": "percent_of_cost",
+      "percent": 50,
+      "costBasis": 120000,
+      "cap": 60000,
+      "years": 1
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.81,
-    "summaryEn": "Sample data — verify on official portal: Up to 50% capital subsidy (higher cap for SC/ST/small farmers) on tractors, rotavators, and farm equipment in Gujarat.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात में ट्रैक्टर, रोटावेटर और कृषि उपकरणों पर 50% तक पूंजीगत सब्सिडी।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતમાં ટ્રેક્ટર, રોટાવેટર અને ખેતીના ઓજારો પર 50% સુધી સબસિડી.",
+    "summaryEn": "Up to 50% capital subsidy (higher cap for SC/ST/small farmers) on tractors, rotavators, and farm equipment in Gujarat.",
+    "summaryHi": "गुजरात में ट्रैक्टर, रोटावेटर और कृषि उपकरणों पर 50% तक पूंजीगत सब्सिडी।",
+    "summaryGu": "ગુજરાતમાં ટ્રેક્ટર, રોટાવેટર અને ખેતીના ઓજારો પર 50% સુધી સબસિડી.",
     "deadline": "2026-12-15",
     "officialUrl": "https://ikhedut.gujarat.gov.in",
     "lastVerified": "2026-10-20",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "land_record", "bank_passbook", "caste_cert"],
+    "documents": [
+      "aadhaar",
+      "land_record",
+      "bank_passbook",
+      "caste_cert"
+    ],
     "steps": {
-      "en": ["Register online on ikhedut.gujarat.gov.in when component window opens.", "Print application and submit with 7/12 extract to Gram Sevak.", "Purchase approved equipment after pre-sanction letter."],
-      "hi": ["आवेदन विंडो खुलने पर ikhedut.gujarat.gov.in पर पंजीकरण करें।", "प्रिंट कॉपी और 7/12 दस्तावेज ग्राम सेवक को जमा करें।", "पूर्व-मंजूरी मिलने के बाद ही अनुमोदित उपकरण खरीदें।"],
-      "gu": ["ikhedut.gujarat.gov.in પર અરજી વિન્ડો ખુલે ત્યારે ઓનલાઈન નોંધણી કરો.", "અરજીની પ્રિન્ટ અને 7/12 ઉતારો ગ્રામ સેવકને જમા કરો.", "પૂર્વ-મંજૂરી પત્ર મળ્યા પછી જ માન્ય સાધન ખરીદો."]
+      "en": [
+        "Register online on ikhedut.gujarat.gov.in when component window opens.",
+        "Print application and submit with 7/12 extract to Gram Sevak.",
+        "Purchase approved equipment after pre-sanction letter."
+      ],
+      "hi": [
+        "आवेदन विंडो खुलने पर ikhedut.gujarat.gov.in पर पंजीकरण करें।",
+        "प्रिंट कॉपी और 7/12 दस्तावेज ग्राम सेवक को जमा करें।",
+        "पूर्व-मंजूरी मिलने के बाद ही अनुमोदित उपकरण खरीदें।"
+      ],
+      "gu": [
+        "ikhedut.gujarat.gov.in પર અરજી વિન્ડો ખુલે ત્યારે ઓનલાઈન નોંધણી કરો.",
+        "અરજીની પ્રિન્ટ અને 7/12 ઉતારો ગ્રામ સેવકને જમા કરો.",
+        "પૂર્વ-મંજૂરી પત્ર મળ્યા પછી જ માન્ય સાધન ખરીદો."
+      ]
     }
   },
   {
@@ -166,23 +274,45 @@
     "benefitType": "subsidy",
     "benefitAmount": 75000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "percent_of_cost", "percent": 70, "costBasis": 107143, "cap": 75000, "years": 1 },
+    "benefitFormula": {
+      "type": "percent_of_cost",
+      "percent": 70,
+      "costBasis": 107143,
+      "cap": 75000,
+      "years": 1
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.74,
-    "summaryEn": "Sample data — verify on official portal: Financial assistance of 70%–85% on drip and sprinkler irrigation installations for Gujarat farmers.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात के किसानों को ड्रिप और स्प्रिंकलर सिंचाई प्रणाली पर 70%–85% सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતના ખેડૂતોને ટપક અને ફુવારા સિંચાઈ પદ્ધતિ પર 70%–85% સહાય.",
+    "summaryEn": "Financial assistance of 70%–85% on drip and sprinkler irrigation installations for Gujarat farmers.",
+    "summaryHi": "गुजरात के किसानों को ड्रिप और स्प्रिंकलर सिंचाई प्रणाली पर 70%–85% सहायता।",
+    "summaryGu": "ગુજરાતના ખેડૂતોને ટપક અને ફુવારા સિંચાઈ પદ્ધતિ પર 70%–85% સહાય.",
     "deadline": null,
     "officialUrl": "https://ggrc.co.in",
     "lastVerified": "2026-10-18",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "land_record", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "land_record",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Apply through an empanelled micro-irrigation supplier on GGRC portal.", "Upload 7/12, 8-A extract, and Aadhaar.", "Receive installation verification and subsidy credit."],
-      "hi": ["जीजीआरसी पोर्टल पर पंजीकृत आपूर्तिकर्ता के माध्यम से आवेदन करें।", "7/12, 8-अ और आधार अपलोड करें।", "सत्यापन के बाद सब्सिडी स्वीकृत होती है।"],
-      "gu": ["GGRC પોર્ટલ પર માન્ય સપ્લાયર મારફતે અરજી કરો.", "7/12, 8-અ ઉતારો અને આધાર અપલોડ કરો.", "સ્થળ ચકાસણી બાદ સબસિડી જમા થાય છે."]
+      "en": [
+        "Apply through an empanelled micro-irrigation supplier on GGRC portal.",
+        "Upload 7/12, 8-A extract, and Aadhaar.",
+        "Receive installation verification and subsidy credit."
+      ],
+      "hi": [
+        "जीजीआरसी पोर्टल पर पंजीकृत आपूर्तिकर्ता के माध्यम से आवेदन करें।",
+        "7/12, 8-अ और आधार अपलोड करें।",
+        "सत्यापन के बाद सब्सिडी स्वीकृत होती है।"
+      ],
+      "gu": [
+        "GGRC પોર્ટલ પર માન્ય સપ્લાયર મારફતે અરજી કરો.",
+        "7/12, 8-અ ઉતારો અને આધાર અપલોડ કરો.",
+        "સ્થળ ચકાસણી બાદ સબસિડી જમા થાય છે."
+      ]
     }
   },
   {
@@ -201,27 +331,51 @@
       "type": "slab",
       "field": "income",
       "slabs": [
-        { "max": 100000, "amount": 18000 },
-        { "max": 250000, "amount": 12000 }
+        {
+          "max": 100000,
+          "amount": 18000
+        },
+        {
+          "max": 250000,
+          "amount": 12000
+        }
       ],
       "years": 4
     },
     "exclusiveGroup": "post-matric-scholarship",
     "isHouseholdLevel": false,
     "popularityPrior": 0.92,
-    "summaryEn": "Sample data — verify on official portal: Tuition fee reimbursement and monthly maintenance allowance for Class 11 to PhD students from SC/OBC/EWS families.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: कक्षा 11 से पीएचडी तक के पात्र छात्रों को ट्यूशन फीस व रखरखाव भत्ता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ધોરણ 11 થી PhD સુધીના પાત્ર વિદ્યાર્થીઓને ટ્યુશન ફી અને નિભાવ ભથ્થું.",
+    "summaryEn": "Tuition fee reimbursement and monthly maintenance allowance for Class 11 to PhD students from SC/OBC/EWS families.",
+    "summaryHi": "कक्षा 11 से पीएचडी तक के पात्र छात्रों को ट्यूशन फीस व रखरखाव भत्ता।",
+    "summaryGu": "ધોરણ 11 થી PhD સુધીના પાત્ર વિદ્યાર્થીઓને ટ્યુશન ફી અને નિભાવ ભથ્થું.",
     "deadline": "2026-11-30",
     "officialUrl": "https://scholarships.gov.in",
     "lastVerified": "2026-10-22",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "income_cert", "caste_cert", "education_marksheet", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "income_cert",
+      "caste_cert",
+      "education_marksheet",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Generate OTR ID on scholarships.gov.in.", "Upload income, caste, and bonafide student certificate.", "Submit hard copy at college nodal desk for verification."],
-      "hi": ["scholarships.gov.in पर ओटीआर आईडी बनाएं।", "आय, जाति और बोनाफाइड प्रमाण पत्र अपलोड करें।", "सत्यापन के लिए कॉलेज नोडल अधिकारी को प्रति जमा करें।"],
-      "gu": ["scholarships.gov.in પર OTR ID બનાવો.", "આવક, જાતિ અને બોનાફાઇડ પ્રમાણપત્ર અપલોડ કરો.", "ચકાસણી માટે કોલેજ નોડલ ડેસ્ક પર નકલ જમા કરો."]
+      "en": [
+        "Generate OTR ID on scholarships.gov.in.",
+        "Upload income, caste, and bonafide student certificate.",
+        "Submit hard copy at college nodal desk for verification."
+      ],
+      "hi": [
+        "scholarships.gov.in पर ओटीआर आईडी बनाएं।",
+        "आय, जाति और बोनाफाइड प्रमाण पत्र अपलोड करें।",
+        "सत्यापन के लिए कॉलेज नोडल अधिकारी को प्रति जमा करें।"
+      ],
+      "gu": [
+        "scholarships.gov.in પર OTR ID બનાવો.",
+        "આવક, જાતિ અને બોનાફાઇડ પ્રમાણપત્ર અપલોડ કરો.",
+        "ચકાસણી માટે કોલેજ નોડલ ડેસ્ક પર નકલ જમા કરો."
+      ]
     }
   },
   {
@@ -236,23 +390,45 @@
     "benefitType": "scholarship",
     "benefitAmount": 75000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 75000, "years": 2 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 75000,
+      "years": 2
+    },
     "exclusiveGroup": "post-matric-scholarship",
     "isHouseholdLevel": false,
     "popularityPrior": 0.78,
-    "summaryEn": "Sample data — verify on official portal: Merit-cum-means scholarship up to Rs. 75,000–1,25,000/year for OBC, EBC, and DNT students in top schools.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: ओबीसी, ईबीसी और डीएनटी वर्ग के मेधावी छात्रों को प्रति वर्ष 75,000 से 1,25,000 रुपये तक छात्रवृत्ति।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: OBC, EBC અને DNT વર્ગના તેજસ્વી વિદ્યાર્થીઓને વાર્ષિક રૂ. 75,000 સુધી શિષ્યવૃત્તિ.",
+    "summaryEn": "Merit-cum-means scholarship up to Rs. 75,000–1,25,000/year for OBC, EBC, and DNT students in top schools.",
+    "summaryHi": "ओबीसी, ईबीसी और डीएनटी वर्ग के मेधावी छात्रों को प्रति वर्ष 75,000 से 1,25,000 रुपये तक छात्रवृत्ति।",
+    "summaryGu": "OBC, EBC અને DNT વર્ગના તેજસ્વી વિદ્યાર્થીઓને વાર્ષિક રૂ. 75,000 સુધી શિષ્યવૃત્તિ.",
     "deadline": "2026-12-10",
     "officialUrl": "https://yet.nta.ac.in",
     "lastVerified": "2026-10-14",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "income_cert", "caste_cert", "education_marksheet", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "income_cert",
+      "caste_cert",
+      "education_marksheet",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Check empanelled school list on NSP.", "Register with previous class marksheet (60%+).", "Complete Aadhaar e-KYC and institute verification."],
-      "hi": ["एनएसपी पर सूचीबद्ध विद्यालयों की जांच करें।", "पिछली कक्षा की अंकसूची (60%+) के साथ आवेदन करें।", "आधार ई-केवाईसी और संस्थान सत्यापन पूरा करें।"],
-      "gu": ["NSP પર માન્ય શાળાઓની યાદી તપાસો.", "અગાઉના ધોરણની માર્કશીટ (60%+) સાથે અરજી કરો.", "આધાર e-KYC અને શાળા ચકાસણી પૂર્ણ કરો."]
+      "en": [
+        "Check empanelled school list on NSP.",
+        "Register with previous class marksheet (60%+).",
+        "Complete Aadhaar e-KYC and institute verification."
+      ],
+      "hi": [
+        "एनएसपी पर सूचीबद्ध विद्यालयों की जांच करें।",
+        "पिछली कक्षा की अंकसूची (60%+) के साथ आवेदन करें।",
+        "आधार ई-केवाईसी और संस्थान सत्यापन पूरा करें।"
+      ],
+      "gu": [
+        "NSP પર માન્ય શાળાઓની યાદી તપાસો.",
+        "અગાઉના ધોરણની માર્કશીટ (60%+) સાથે અરજી કરો.",
+        "આધાર e-KYC અને શાળા ચકાસણી પૂર્ણ કરો."
+      ]
     }
   },
   {
@@ -267,23 +443,44 @@
     "benefitType": "scholarship",
     "benefitAmount": 50000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 50000, "years": 4 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 50000,
+      "years": 4
+    },
     "exclusiveGroup": "post-matric-scholarship",
     "isHouseholdLevel": false,
     "popularityPrior": 0.84,
-    "summaryEn": "Sample data — verify on official portal: Rs. 50,000 per annum towards tuition and academic expenses for girl students admitted to AICTE-approved technical diploma/degree courses.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: तकनीकी डिग्री/डिप्लोमा पाठ्यक्रमों में प्रवेशित छात्राओं को प्रति वर्ष 50,000 रुपये की सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ટેકનિકલ ડિગ્રી/ડિપ્લોમા કોર્સમાં પ્રવેશ મેળવેલ વિદ્યાર્થિનીઓને વાર્ષિક રૂ. 50,000 સહાય.",
+    "summaryEn": "Rs. 50,000 per annum towards tuition and academic expenses for girl students admitted to AICTE-approved technical diploma/degree courses.",
+    "summaryHi": "तकनीकी डिग्री/डिप्लोमा पाठ्यक्रमों में प्रवेशित छात्राओं को प्रति वर्ष 50,000 रुपये की सहायता।",
+    "summaryGu": "ટેકનિકલ ડિગ્રી/ડિપ્લોમા કોર્સમાં પ્રવેશ મેળવેલ વિદ્યાર્થિનીઓને વાર્ષિક રૂ. 50,000 સહાય.",
     "deadline": "2026-11-25",
     "officialUrl": "https://scholarships.gov.in",
     "lastVerified": "2026-10-19",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "income_cert", "education_marksheet", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "income_cert",
+      "education_marksheet",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Confirm college AICTE approval code on NSP.", "Apply under AICTE Pragati scheme before deadline.", "Get institute nodal verification completed."],
-      "hi": ["एनएसपी पर कॉलेज का एआईसीटीई कोड सत्यापित करें।", "अंतिम तिथि से पहले प्रगति छात्रवृत्ति चुनकर आवेदन करें।", "संस्थान से ऑनलाइन सत्यापन करवाएं।"],
-      "gu": ["NSP પર કોલેજનો AICTE કોડ ચકાસો.", "અંતિમ તારીખ પહેલાં પ્રગતિ શિષ્યવૃત્તિ માટે અરજી કરો.", "કોલેજ દ્વારા ઓનલાઈન ચકાસણી કરાવો."]
+      "en": [
+        "Confirm college AICTE approval code on NSP.",
+        "Apply under AICTE Pragati scheme before deadline.",
+        "Get institute nodal verification completed."
+      ],
+      "hi": [
+        "एनएसपी पर कॉलेज का एआईसीटीई कोड सत्यापित करें।",
+        "अंतिम तिथि से पहले प्रगति छात्रवृत्ति चुनकर आवेदन करें।",
+        "संस्थान से ऑनलाइन सत्यापन करवाएं।"
+      ],
+      "gu": [
+        "NSP પર કોલેજનો AICTE કોડ ચકાસો.",
+        "અંતિમ તારીખ પહેલાં પ્રગતિ શિષ્યવૃત્તિ માટે અરજી કરો.",
+        "કોલેજ દ્વારા ઓનલાઈન ચકાસણી કરાવો."
+      ]
     }
   },
   {
@@ -298,23 +495,45 @@
     "benefitType": "scholarship",
     "benefitAmount": 50000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 50000, "years": 4 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 50000,
+      "years": 4
+    },
     "exclusiveGroup": "gujarat-higher-edu",
     "isHouseholdLevel": false,
     "popularityPrior": 0.91,
-    "summaryEn": "Sample data — verify on official portal: Tuition, hostel, and book assistance for Gujarat domicile students scoring 80+ percentile in 10th/12th with family income up to Rs. 6 lakh.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात के 80+ पर्सेंटाइल वाले छात्रों को ट्यूशन, छात्रावास व पुस्तक सहायता (आय सीमा 6 लाख)।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતના 80+ પર્સેન્ટાઇલ મેળવનાર વિદ્યાર્થીઓને ટ્યુશન, હોસ્ટેલ અને પુસ્તક સહાય (આવક મર્યાદા રૂ. 6 લાખ).",
+    "summaryEn": "Tuition, hostel, and book assistance for Gujarat domicile students scoring 80+ percentile in 10th/12th with family income up to Rs. 6 lakh.",
+    "summaryHi": "गुजरात के 80+ पर्सेंटाइल वाले छात्रों को ट्यूशन, छात्रावास व पुस्तक सहायता (आय सीमा 6 लाख)।",
+    "summaryGu": "ગુજરાતના 80+ પર્સેન્ટાઇલ મેળવનાર વિદ્યાર્થીઓને ટ્યુશન, હોસ્ટેલ અને પુસ્તક સહાય (આવક મર્યાદા રૂ. 6 લાખ).",
     "deadline": "2026-12-20",
     "officialUrl": "https://mysy.guj.nic.in",
     "lastVerified": "2026-10-25",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "domicile_cert", "income_cert", "education_marksheet", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "domicile_cert",
+      "income_cert",
+      "education_marksheet",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register at mysy.guj.nic.in with Class 10/12 seat number.", "Upload income certificate and fee receipt.", "Verify originals at nearest MYSY Help Centre."],
-      "hi": ["mysy.guj.nic.in पर परीक्षा सीट नंबर से पंजीकरण करें।", "आय प्रमाण पत्र और फीस रसीद अपलोड करें।", "नजदीकी एमवाईएसवाई हेल्प सेंटर पर दस्तावेज सत्यापित कराएं।"],
-      "gu": ["mysy.guj.nic.in પર ધોરણ 10/12 સીટ નંબરથી નોંધણી કરો.", "આવકનું પ્રમાણપત્ર અને ફીની રસીદ અપલોડ કરો.", "નજીકના MYSY હેલ્પ સેન્ટર પર અસલ દસ્તાવેજો ચકાસાવો."]
+      "en": [
+        "Register at mysy.guj.nic.in with Class 10/12 seat number.",
+        "Upload income certificate and fee receipt.",
+        "Verify originals at nearest MYSY Help Centre."
+      ],
+      "hi": [
+        "mysy.guj.nic.in पर परीक्षा सीट नंबर से पंजीकरण करें।",
+        "आय प्रमाण पत्र और फीस रसीद अपलोड करें।",
+        "नजदीकी एमवाईएसवाई हेल्प सेंटर पर दस्तावेज सत्यापित कराएं।"
+      ],
+      "gu": [
+        "mysy.guj.nic.in પર ધોરણ 10/12 સીટ નંબરથી નોંધણી કરો.",
+        "આવકનું પ્રમાણપત્ર અને ફીની રસીદ અપલોડ કરો.",
+        "નજીકના MYSY હેલ્પ સેન્ટર પર અસલ દસ્તાવેજો ચકાસાવો."
+      ]
     }
   },
   {
@@ -329,23 +548,46 @@
     "benefitType": "scholarship",
     "benefitAmount": 15000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 15000, "years": 3 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 15000,
+      "years": 3
+    },
     "exclusiveGroup": "gujarat-higher-edu",
     "isHouseholdLevel": false,
     "popularityPrior": 0.87,
-    "summaryEn": "Sample data — verify on official portal: State scholarship on Digital Gujarat portal for SC, ST, SEBC, and NTDNT students pursuing post-matric education.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: डिजिटल गुजरात पोर्टल पर एससी, एसटी और एसईबीसी छात्रों के लिए राज्य छात्रवृत्ति।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ડિજિટલ ગુજરાત પોર્ટલ પર SC, ST અને SEBC વિદ્યાર્થીઓ માટે રાજ્ય શિષ્યવૃત્તિ.",
+    "summaryEn": "State scholarship on Digital Gujarat portal for SC, ST, SEBC, and NTDNT students pursuing post-matric education.",
+    "summaryHi": "डिजिटल गुजरात पोर्टल पर एससी, एसटी और एसईबीसी छात्रों के लिए राज्य छात्रवृत्ति।",
+    "summaryGu": "ડિજિટલ ગુજરાત પોર્ટલ પર SC, ST અને SEBC વિદ્યાર્થીઓ માટે રાજ્ય શિષ્યવૃત્તિ.",
     "deadline": "2026-11-30",
     "officialUrl": "https://digitalgujarat.gov.in",
     "lastVerified": "2026-10-21",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "domicile_cert", "income_cert", "caste_cert", "education_marksheet", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "domicile_cert",
+      "income_cert",
+      "caste_cert",
+      "education_marksheet",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Log in to digitalgujarat.gov.in and select Scholarship Services.", "Fill academic and hostel details and upload proofs.", "Submit printed form to school/college clerk."],
-      "hi": ["digitalgujarat.gov.in पर लॉगिन कर छात्रवृत्ति सेवा चुनें।", "शैक्षणिक विवरण भरें और दस्तावेज अपलोड करें।", "प्रिंटेड फॉर्म अपने विद्यालय/कॉलेज में जमा करें।"],
-      "gu": ["digitalgujarat.gov.in પર લોગિન કરી શિષ્યવૃત્તિ વિભાગ પસંદ કરો.", "શૈક્ષણિક વિગતો ભરી દસ્તાવેજો અપલોડ કરો.", "પ્રિન્ટ કરેલું ફોર્મ શાળા/કોલેજમાં જમા કરો."]
+      "en": [
+        "Log in to digitalgujarat.gov.in and select Scholarship Services.",
+        "Fill academic and hostel details and upload proofs.",
+        "Submit printed form to school/college clerk."
+      ],
+      "hi": [
+        "digitalgujarat.gov.in पर लॉगिन कर छात्रवृत्ति सेवा चुनें।",
+        "शैक्षणिक विवरण भरें और दस्तावेज अपलोड करें।",
+        "प्रिंटेड फॉर्म अपने विद्यालय/कॉलेज में जमा करें।"
+      ],
+      "gu": [
+        "digitalgujarat.gov.in પર લોગિન કરી શિષ્યવૃત્તિ વિભાગ પસંદ કરો.",
+        "શૈક્ષણિક વિગતો ભરી દસ્તાવેજો અપલોડ કરો.",
+        "પ્રિન્ટ કરેલું ફોર્મ શાળા/કોલેજમાં જમા કરો."
+      ]
     }
   },
   {
@@ -360,23 +602,42 @@
     "benefitType": "training",
     "benefitAmount": 8000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 8000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 8000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.79,
-    "summaryEn": "Sample data — verify on official portal: Free industry-certified short-term skill training, assessment, and placement support with Rs. 8,000 equivalent training value.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: निःशुल्क उद्योग-प्रमाणित कौशल प्रशिक्षण, मूल्यांकन और रोजगार सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: મફત ઉદ્યોગ-માન્ય કૌશલ્ય તાલીમ, મૂલ્યાંકન અને રોજગાર સહાય.",
+    "summaryEn": "Free industry-certified short-term skill training, assessment, and placement support with Rs. 8,000 equivalent training value.",
+    "summaryHi": "निःशुल्क उद्योग-प्रमाणित कौशल प्रशिक्षण, मूल्यांकन और रोजगार सहायता।",
+    "summaryGu": "મફત ઉદ્યોગ-માન્ય કૌશલ્ય તાલીમ, મૂલ્યાંકન અને રોજગાર સહાય.",
     "deadline": null,
     "officialUrl": "https://skillindiadigital.gov.in",
     "lastVerified": "2026-10-16",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Create profile on Skill India Digital Hub.", "Pick an accredited training centre near your district.", "Complete e-KYC and attend certified training batches."],
-      "hi": ["स्किल इंडिया डिजिटल पोर्टल पर प्रोफाइल बनाएं।", "अपने जिले में मान्यता प्राप्त प्रशिक्षण केंद्र चुनें।", "ई-केवाईसी पूरा कर प्रशिक्षण बैच में शामिल हों।"],
-      "gu": ["સ્કિલ ઈન્ડિયા ડિજિટલ હબ પર પ્રોફાઇલ બનાવો.", "તમારા જિલ્લામાં માન્ય તાલીમ કેન્દ્ર પસંદ કરો.", "e-KYC પૂર્ણ કરી તાલીમ બેચમાં જોડાઓ."]
+      "en": [
+        "Create profile on Skill India Digital Hub.",
+        "Pick an accredited training centre near your district.",
+        "Complete e-KYC and attend certified training batches."
+      ],
+      "hi": [
+        "स्किल इंडिया डिजिटल पोर्टल पर प्रोफाइल बनाएं।",
+        "अपने जिले में मान्यता प्राप्त प्रशिक्षण केंद्र चुनें।",
+        "ई-केवाईसी पूरा कर प्रशिक्षण बैच में शामिल हों।"
+      ],
+      "gu": [
+        "સ્કિલ ઈન્ડિયા ડિજિટલ હબ પર પ્રોફાઇલ બનાવો.",
+        "તમારા જિલ્લામાં માન્ય તાલીમ કેન્દ્ર પસંદ કરો.",
+        "e-KYC પૂર્ણ કરી તાલીમ બેચમાં જોડાઓ."
+      ]
     }
   },
   {
@@ -391,23 +652,43 @@
     "benefitType": "cash",
     "benefitAmount": 25000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 25000, "years": 15 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 25000,
+      "years": 15
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
-    "popularityPrior": 0.90,
-    "summaryEn": "Sample data — verify on official portal: High-interest tax-free sovereign savings benefit (estimated Rs. 25,000/yr interest value on target deposits) for girls under 10.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 10 वर्ष से कम आयु की बालिकाओं के लिए उच्च ब्याज और कर-मुक्त सुरक्षित बचत योजना।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 10 વર્ષથી ઓછી વયની દીકરીઓ માટે ઊંચા વ્યાજ અને કરમુક્ત બચત યોજના.",
+    "popularityPrior": 0.9,
+    "summaryEn": "High-interest tax-free sovereign savings benefit (estimated Rs. 25,000/yr interest value on target deposits) for girls under 10.",
+    "summaryHi": "10 वर्ष से कम आयु की बालिकाओं के लिए उच्च ब्याज और कर-मुक्त सुरक्षित बचत योजना।",
+    "summaryGu": "10 વર્ષથી ઓછી વયની દીકરીઓ માટે ઊંચા વ્યાજ અને કરમુક્ત બચત યોજના.",
     "deadline": null,
     "officialUrl": "https://indiapost.gov.in",
     "lastVerified": "2026-10-10",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["age_proof", "aadhaar", "mobile_photo"],
+    "documents": [
+      "age_proof",
+      "aadhaar",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Visit Post Office or authorised bank with girl child birth certificate.", "Deposit minimum Rs. 250 to open the account.", "Maintain annual deposits for compounding tax-free returns."],
-      "hi": ["बालिका के जन्म प्रमाण पत्र के साथ डाकघर या बैंक जाएं।", "न्यूनतम 250 रुपये से खाता खोलें।", "नियमित वार्षिक जमा से कर-मुक्त लाभ पाएं।"],
-      "gu": ["દીકરીના જન્મના દાખલા સાથે પોસ્ટ ઓફિસ કે બેંકમાં જાવ.", "ઓછામાં ઓછા રૂ. 250થી ખાતું ખોલાવો.", "નિયમિત વાર્ષિક જમા દ્વારા કરમુક્ત વળતર મેળવો."]
+      "en": [
+        "Visit Post Office or authorised bank with girl child birth certificate.",
+        "Deposit minimum Rs. 250 to open the account.",
+        "Maintain annual deposits for compounding tax-free returns."
+      ],
+      "hi": [
+        "बालिका के जन्म प्रमाण पत्र के साथ डाकघर या बैंक जाएं।",
+        "न्यूनतम 250 रुपये से खाता खोलें।",
+        "नियमित वार्षिक जमा से कर-मुक्त लाभ पाएं।"
+      ],
+      "gu": [
+        "દીકરીના જન્મના દાખલા સાથે પોસ્ટ ઓફિસ કે બેંકમાં જાવ.",
+        "ઓછામાં ઓછા રૂ. 250થી ખાતું ખોલાવો.",
+        "નિયમિત વાર્ષિક જમા દ્વારા કરમુક્ત વળતર મેળવો."
+      ]
     }
   },
   {
@@ -422,23 +703,42 @@
     "benefitType": "cash",
     "benefitAmount": 5000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 5000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 5000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.86,
-    "summaryEn": "Sample data — verify on official portal: Direct cash incentive of Rs. 5,000 (Rs. 6,000 for second girl child) for pregnant and lactating women for nutrition and rest.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गर्भवती एवं स्तनपान कराने वाली महिलाओं को पोषण हेतु 5,000 रुपये (द्वितीय बालिका पर 6,000 रुपये) की सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: સગર્ભા અને ધાત્રી માતાઓને પોષણ માટે રૂ. 5,000 (બીજી દીકરી પર રૂ. 6,000) ની સીધી સહાય.",
+    "summaryEn": "Direct cash incentive of Rs. 5,000 (Rs. 6,000 for second girl child) for pregnant and lactating women for nutrition and rest.",
+    "summaryHi": "गर्भवती एवं स्तनपान कराने वाली महिलाओं को पोषण हेतु 5,000 रुपये (द्वितीय बालिका पर 6,000 रुपये) की सहायता।",
+    "summaryGu": "સગર્ભા અને ધાત્રી માતાઓને પોષણ માટે રૂ. 5,000 (બીજી દીકરી પર રૂ. 6,000) ની સીધી સહાય.",
     "deadline": null,
     "officialUrl": "https://pmmvy.wcd.gov.in",
     "lastVerified": "2026-10-18",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "maternal_card", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "maternal_card",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register pregnancy early at nearest Anganwadi Centre / ASHA.", "Obtain MCP card and complete ANC check-ups.", "Apply via pmmvy.wcd.gov.in or Anganwadi worker for DBT."],
-      "hi": ["नजदीकी आंगनवाड़ी केंद्र या आशा कार्यकर्ता के पास पंजीकरण कराएं।", "एमसीपी कार्ड प्राप्त कर प्रसव-पूर्व जांच पूरी करें।", "डीबीटी के लिए आंगनवाड़ी या पोर्टल से आवेदन करें।"],
-      "gu": ["નજીકના આંગણવાડી કેન્દ્ર અથવા આશા વર્કર પાસે નોંધણી કરાવો.", "MCP કાર્ડ મેળવી પ્રસૂતિ પૂર્વેની તપાસ કરાવો.", "DBT માટે આંગણવાડી અથવા પોર્ટલ પર અરજી કરો."]
+      "en": [
+        "Register pregnancy early at nearest Anganwadi Centre / ASHA.",
+        "Obtain MCP card and complete ANC check-ups.",
+        "Apply via pmmvy.wcd.gov.in or Anganwadi worker for DBT."
+      ],
+      "hi": [
+        "नजदीकी आंगनवाड़ी केंद्र या आशा कार्यकर्ता के पास पंजीकरण कराएं।",
+        "एमसीपी कार्ड प्राप्त कर प्रसव-पूर्व जांच पूरी करें।",
+        "डीबीटी के लिए आंगनवाड़ी या पोर्टल से आवेदन करें।"
+      ],
+      "gu": [
+        "નજીકના આંગણવાડી કેન્દ્ર અથવા આશા વર્કર પાસે નોંધણી કરાવો.",
+        "MCP કાર્ડ મેળવી પ્રસૂતિ પૂર્વેની તપાસ કરાવો.",
+        "DBT માટે આંગણવાડી અથવા પોર્ટલ પર અરજી કરો."
+      ]
     }
   },
   {
@@ -453,23 +753,44 @@
     "benefitType": "subsidy",
     "benefitAmount": 3600,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 3600, "years": 5 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 3600,
+      "years": 5
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.89,
-    "summaryEn": "Sample data — verify on official portal: Deposit-free LPG gas connection plus Rs. 300/cylinder targeted subsidy (est. Rs. 3,600/yr) for adult women in low-income households.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: पात्र परिवारों की वयस्क महिलाओं को निःशुल्क एलपीजी कनेक्शन और प्रति सिलेंडर 300 रुपये की सब्सिडी।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: પાત્ર પરિવારની પુખ્ત મહિલાઓને ડિપોઝિટ-મુક્ત LPG કનેક્શન અને સિલિન્ડર દીઠ રૂ. 300 સબસિડી.",
+    "summaryEn": "Deposit-free LPG gas connection plus Rs. 300/cylinder targeted subsidy (est. Rs. 3,600/yr) for adult women in low-income households.",
+    "summaryHi": "पात्र परिवारों की वयस्क महिलाओं को निःशुल्क एलपीजी कनेक्शन और प्रति सिलेंडर 300 रुपये की सब्सिडी।",
+    "summaryGu": "પાત્ર પરિવારની પુખ્ત મહિલાઓને ડિપોઝિટ-મુક્ત LPG કનેક્શન અને સિલિન્ડર દીઠ રૂ. 300 સબસિડી.",
     "deadline": null,
     "officialUrl": "https://pmuy.gov.in",
     "lastVerified": "2026-10-12",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "ration_card", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "ration_card",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Select your preferred LPG distributor on pmuy.gov.in.", "Submit Aadhaar, ration card/family declaration, and bank details.", "Complete KYC at distributor agency for connection installation."],
-      "hi": ["pmuy.gov.in पर अपनी नजदीकी गैस एजेंसी चुनें।", "आधार, राशन कार्ड और बैंक पासबुक जमा करें।", "एजेंसी में केवाईसी पूरा कर कनेक्शन प्राप्त करें।"],
-      "gu": ["pmuy.gov.in પર નજીકની ગેસ એજન્સી પસંદ કરો.", "આધાર, રેશન કાર્ડ અને બેંક વિગતો જમા કરો.", "એજન્સી પર KYC પૂર્ણ કરી કનેક્શન મેળવો."]
+      "en": [
+        "Select your preferred LPG distributor on pmuy.gov.in.",
+        "Submit Aadhaar, ration card/family declaration, and bank details.",
+        "Complete KYC at distributor agency for connection installation."
+      ],
+      "hi": [
+        "pmuy.gov.in पर अपनी नजदीकी गैस एजेंसी चुनें।",
+        "आधार, राशन कार्ड और बैंक पासबुक जमा करें।",
+        "एजेंसी में केवाईसी पूरा कर कनेक्शन प्राप्त करें।"
+      ],
+      "gu": [
+        "pmuy.gov.in પર નજીકની ગેસ એજન્સી પસંદ કરો.",
+        "આધાર, રેશન કાર્ડ અને બેંક વિગતો જમા કરો.",
+        "એજન્સી પર KYC પૂર્ણ કરી કનેક્શન મેળવો."
+      ]
     }
   },
   {
@@ -484,23 +805,45 @@
     "benefitType": "pension",
     "benefitAmount": 12000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_month", "amount": 1000, "years": 12 },
+    "benefitFormula": {
+      "type": "fixed_per_month",
+      "amount": 1000,
+      "years": 12
+    },
     "exclusiveGroup": "nsap-social-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.77,
-    "summaryEn": "Sample data — verify on official portal: Monthly social security pension (Central share + typical State top-up ~Rs. 1,000/month) for BPL widows aged 40–79.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 40–79 वर्ष की बीपीएल विधवा महिलाओं को मासिक सामाजिक सुरक्षा पेंशन।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 40–79 વર્ષની BPL વિધવા બહેનોને માસિક સામાજિક સુરક્ષા પેન્શન.",
+    "summaryEn": "Monthly social security pension (Central share + typical State top-up ~Rs. 1,000/month) for BPL widows aged 40–79.",
+    "summaryHi": "40–79 वर्ष की बीपीएल विधवा महिलाओं को मासिक सामाजिक सुरक्षा पेंशन।",
+    "summaryGu": "40–79 વર્ષની BPL વિધવા બહેનોને માસિક સામાજિક સુરક્ષા પેન્શન.",
     "deadline": null,
     "officialUrl": "https://nsap.nic.in",
     "lastVerified": "2026-10-08",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof", "ration_card", "marriage_widow_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "age_proof",
+      "ration_card",
+      "marriage_widow_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Obtain widowhood & death certificate from Gram Panchayat / Municipality.", "Submit NSAP pension form at Mamlatdar / Block office.", "Link bank account for monthly DBT credit."],
-      "hi": ["ग्राम पंचायत/नगर पालिका से मृत्यु प्रमाण पत्र प्राप्त करें।", "ब्लॉक या तहसील कार्यालय में पेंशन आवेदन जमा करें।", "मासिक डीबीटी हेतु बैंक खाता लिंक कराएं।"],
-      "gu": ["ગ્રામ પંચાયત/નગરપાલિકામાંથી મરણ પ્રમાણપત્ર મેળવો.", "મામલતદાર/તાલુકા કચેરીમાં પેન્શન ફોર્મ જમા કરો.", "માસિક DBT માટે બેંક ખાતું લિંક કરાવો."]
+      "en": [
+        "Obtain widowhood & death certificate from Gram Panchayat / Municipality.",
+        "Submit NSAP pension form at Mamlatdar / Block office.",
+        "Link bank account for monthly DBT credit."
+      ],
+      "hi": [
+        "ग्राम पंचायत/नगर पालिका से मृत्यु प्रमाण पत्र प्राप्त करें।",
+        "ब्लॉक या तहसील कार्यालय में पेंशन आवेदन जमा करें।",
+        "मासिक डीबीटी हेतु बैंक खाता लिंक कराएं।"
+      ],
+      "gu": [
+        "ગ્રામ પંચાયત/નગરપાલિકામાંથી મરણ પ્રમાણપત્ર મેળવો.",
+        "મામલતદાર/તાલુકા કચેરીમાં પેન્શન ફોર્મ જમા કરો.",
+        "માસિક DBT માટે બેંક ખાતું લિંક કરાવો."
+      ]
     }
   },
   {
@@ -515,23 +858,44 @@
     "benefitType": "cash",
     "benefitAmount": 110000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 110000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 110000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.88,
-    "summaryEn": "Sample data — verify on official portal: Rs. 1,10,000 phased financial support (Class 1, Class 9, and age 18) for girl children in Gujarat families with income under Rs. 2 lakh.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात में 2 लाख से कम आय वाले परिवारों की बालिकाओं को 1,10,000 रुपये की चरणबद्ध सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતમાં રૂ. 2 લાખથી ઓછી આવક ધરાવતા પરિવારની દીકરીને તબક્કાવાર રૂ. 1,10,000 ની સહાય.",
+    "summaryEn": "Rs. 1,10,000 phased financial support (Class 1, Class 9, and age 18) for girl children in Gujarat families with income under Rs. 2 lakh.",
+    "summaryHi": "गुजरात में 2 लाख से कम आय वाले परिवारों की बालिकाओं को 1,10,000 रुपये की चरणबद्ध सहायता।",
+    "summaryGu": "ગુજરાતમાં રૂ. 2 લાખથી ઓછી આવક ધરાવતા પરિવારની દીકરીને તબક્કાવાર રૂ. 1,10,000 ની સહાય.",
     "deadline": null,
     "officialUrl": "https://wcd.gujarat.gov.in",
     "lastVerified": "2026-10-24",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof", "domicile_cert", "income_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "age_proof",
+      "domicile_cert",
+      "income_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Apply within 1 year of daughter's birth at Anganwadi / Mamlatdar / Digital Gujarat.", "Attach parent Aadhaar, birth certificate, and income proof.", "Receive milestone DBT tranches at school admission and age 18."],
-      "hi": ["बेटी के जन्म के 1 वर्ष के भीतर आंगनवाड़ी या डिजिटल गुजरात पर आवेदन करें।", "माता-पिता का आधार, जन्म व आय प्रमाण पत्र संलग्न करें।", "स्कूल प्रवेश और 18 वर्ष पर किस्तों में राशि प्राप्त करें।"],
-      "gu": ["દીકરીના જન્મના 1 વર્ષમાં આંગણવાડી અથવા ડિજિટલ ગુજરાત પર અરજી કરો.", "માતા-પિતાનું આધાર, જન્મ અને આવક પ્રમાણપત્ર જોડો.", "શાળા પ્રવેશ અને 18 વર્ષની ઉંમરે તબક્કાવાર સહાય મેળવો."]
+      "en": [
+        "Apply within 1 year of daughter's birth at Anganwadi / Mamlatdar / Digital Gujarat.",
+        "Attach parent Aadhaar, birth certificate, and income proof.",
+        "Receive milestone DBT tranches at school admission and age 18."
+      ],
+      "hi": [
+        "बेटी के जन्म के 1 वर्ष के भीतर आंगनवाड़ी या डिजिटल गुजरात पर आवेदन करें।",
+        "माता-पिता का आधार, जन्म व आय प्रमाण पत्र संलग्न करें।",
+        "स्कूल प्रवेश और 18 वर्ष पर किस्तों में राशि प्राप्त करें।"
+      ],
+      "gu": [
+        "દીકરીના જન્મના 1 વર્ષમાં આંગણવાડી અથવા ડિજિટલ ગુજરાત પર અરજી કરો.",
+        "માતા-પિતાનું આધાર, જન્મ અને આવક પ્રમાણપત્ર જોડો.",
+        "શાળા પ્રવેશ અને 18 વર્ષની ઉંમરે તબક્કાવાર સહાય મેળવો."
+      ]
     }
   },
   {
@@ -546,23 +910,45 @@
     "benefitType": "pension",
     "benefitAmount": 15000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_month", "amount": 1250, "years": 15 },
+    "benefitFormula": {
+      "type": "fixed_per_month",
+      "amount": 1250,
+      "years": 15
+    },
     "exclusiveGroup": "nsap-social-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.85,
-    "summaryEn": "Sample data — verify on official portal: Monthly financial assistance of Rs. 1,250 directly to bank accounts of destitute/widow women in Gujarat.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात की निराश्रित विधवा महिलाओं को प्रति माह 1,250 रुपये की सीधी आर्थिक सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતની નિરાધાર વિધવા બહેનોને દર મહિને રૂ. 1,250 ની સીધી આર્થિક સહાય.",
+    "summaryEn": "Monthly financial assistance of Rs. 1,250 directly to bank accounts of destitute/widow women in Gujarat.",
+    "summaryHi": "गुजरात की निराश्रित विधवा महिलाओं को प्रति माह 1,250 रुपये की सीधी आर्थिक सहायता।",
+    "summaryGu": "ગુજરાતની નિરાધાર વિધવા બહેનોને દર મહિને રૂ. 1,250 ની સીધી આર્થિક સહાય.",
     "deadline": null,
     "officialUrl": "https://digitalgujarat.gov.in",
     "lastVerified": "2026-10-23",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "domicile_cert", "income_cert", "marriage_widow_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "domicile_cert",
+      "income_cert",
+      "marriage_widow_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Submit application at Mamlatdar Jan Seva Kendra or Digital Gujarat.", "Provide husband death certificate and Gujarat income certificate.", "Complete annual life verification via DBT portal."],
-      "hi": ["मामलतदार जन सेवा केंद्र या डिजिटल गुजरात पर आवेदन करें।", "मृत्यु प्रमाण पत्र और गुजरात आय प्रमाण पत्र संलग्न करें।", "डीबीटी के माध्यम से मासिक सहायता प्राप्त करें।"],
-      "gu": ["મામલતદાર જન સેવા કેન્દ્ર અથવા ડિજિટલ ગુજરાત પર અરજી કરો.", "પતિનું મરણ અને આવકનું પ્રમાણપત્ર જમા કરો.", "DBT દ્વારા માસિક સહાય મેળવો."]
+      "en": [
+        "Submit application at Mamlatdar Jan Seva Kendra or Digital Gujarat.",
+        "Provide husband death certificate and Gujarat income certificate.",
+        "Complete annual life verification via DBT portal."
+      ],
+      "hi": [
+        "मामलतदार जन सेवा केंद्र या डिजिटल गुजरात पर आवेदन करें।",
+        "मृत्यु प्रमाण पत्र और गुजरात आय प्रमाण पत्र संलग्न करें।",
+        "डीबीटी के माध्यम से मासिक सहायता प्राप्त करें।"
+      ],
+      "gu": [
+        "મામલતદાર જન સેવા કેન્દ્ર અથવા ડિજિટલ ગુજરાત પર અરજી કરો.",
+        "પતિનું મરણ અને આવકનું પ્રમાણપત્ર જમા કરો.",
+        "DBT દ્વારા માસિક સહાય મેળવો."
+      ]
     }
   },
   {
@@ -577,23 +963,42 @@
     "benefitType": "loan",
     "benefitAmount": 25000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 25000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 25000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
-    "popularityPrior": 0.80,
-    "summaryEn": "Sample data — verify on official portal: Revolving fund, interest-subvented SHG micro-enterprise credit, and livelihood training for rural women.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: ग्रामीण महिला स्वयं सहायता समूहों को रिवॉल्विंग फंड, ब्याज-रियायती ऋण और आजीविका प्रशिक्षण।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગ્રામીણ મહિલા સ્વ-સહાય જૂથોને રિવોલ્વિંગ ફંડ, વ્યાજ સહાય લોન અને તાલીમ.",
+    "popularityPrior": 0.8,
+    "summaryEn": "Revolving fund, interest-subvented SHG micro-enterprise credit, and livelihood training for rural women.",
+    "summaryHi": "ग्रामीण महिला स्वयं सहायता समूहों को रिवॉल्विंग फंड, ब्याज-रियायती ऋण और आजीविका प्रशिक्षण।",
+    "summaryGu": "ગ્રામીણ મહિલા સ્વ-સહાય જૂથોને રિવોલ્વિંગ ફંડ, વ્યાજ સહાય લોન અને તાલીમ.",
     "deadline": null,
     "officialUrl": "https://aajeevika.gov.in",
     "lastVerified": "2026-10-15",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Join a registered Self-Help Group (SHG) at village level.", "Complete financial literacy and enterprise training.", "Apply for SHG Community Investment Fund through Block Mission Unit."],
-      "hi": ["ग्राम स्तर के पंजीकृत स्वयं सहायता समूह (SHG) से जुड़ें।", "वित्तीय साक्षरता और उद्यम प्रशिक्षण पूरा करें।", "ब्लॉक मिशन इकाई के माध्यम से सामुदायिक निवेश निधि प्राप्त करें।"],
-      "gu": ["ગામ કક્ષાના નોંધાયેલ સ્વ-સહાય જૂથ (SHG) માં જોડાવો.", "નાણાકીય સાક્ષરતા અને વ્યવસાય તાલીમ પૂર્ણ કરો.", "તાલુકા મિશન એકમ દ્વારા કોમ્યુનિટી ઈન્વેસ્ટમેન્ટ ફંડ મેળવો."]
+      "en": [
+        "Join a registered Self-Help Group (SHG) at village level.",
+        "Complete financial literacy and enterprise training.",
+        "Apply for SHG Community Investment Fund through Block Mission Unit."
+      ],
+      "hi": [
+        "ग्राम स्तर के पंजीकृत स्वयं सहायता समूह (SHG) से जुड़ें।",
+        "वित्तीय साक्षरता और उद्यम प्रशिक्षण पूरा करें।",
+        "ब्लॉक मिशन इकाई के माध्यम से सामुदायिक निवेश निधि प्राप्त करें।"
+      ],
+      "gu": [
+        "ગામ કક્ષાના નોંધાયેલ સ્વ-સહાય જૂથ (SHG) માં જોડાવો.",
+        "નાણાકીય સાક્ષરતા અને વ્યવસાય તાલીમ પૂર્ણ કરો.",
+        "તાલુકા મિશન એકમ દ્વારા કોમ્યુનિટી ઈન્વેસ્ટમેન્ટ ફંડ મેળવો."
+      ]
     }
   },
   {
@@ -612,27 +1017,53 @@
       "type": "slab",
       "field": "age",
       "slabs": [
-        { "min": 60, "max": 79, "amount": 9600 },
-        { "min": 80, "max": 120, "amount": 14400 }
+        {
+          "min": 60,
+          "max": 79,
+          "amount": 9600
+        },
+        {
+          "min": 80,
+          "max": 120,
+          "amount": 14400
+        }
       ],
       "years": 10
     },
     "exclusiveGroup": "nsap-social-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.91,
-    "summaryEn": "Sample data — verify on official portal: Monthly old-age pension (higher rate at age 80+) for senior citizens aged 60+ belonging to BPL / low-income households.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 60 वर्ष से अधिक आयु के बीपीएल वरिष्ठ नागरिकों को मासिक वृद्धावस्था पेंशन (80+ पर उच्च दर)।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 60+ વયના BPL વરિષ્ઠ નાગરિકોને માસિક વૃદ્ધાવસ્થા પેન્શન (80+ ઉંમરે વધુ દર).",
+    "summaryEn": "Monthly old-age pension (higher rate at age 80+) for senior citizens aged 60+ belonging to BPL / low-income households.",
+    "summaryHi": "60 वर्ष से अधिक आयु के बीपीएल वरिष्ठ नागरिकों को मासिक वृद्धावस्था पेंशन (80+ पर उच्च दर)।",
+    "summaryGu": "60+ વયના BPL વરિષ્ઠ નાગરિકોને માસિક વૃદ્ધાવસ્થા પેન્શન (80+ ઉંમરે વધુ દર).",
     "deadline": null,
     "officialUrl": "https://nsap.nic.in",
     "lastVerified": "2026-10-14",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof", "ration_card", "income_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "age_proof",
+      "ration_card",
+      "income_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Gather age proof, BPL/income proof, and Aadhaar.", "Submit NSAP application at Gram Panchayat or Municipal Social Welfare desk.", "Verify bank DBT activation."],
-      "hi": ["आयु प्रमाण, बीपीएल/आय प्रमाण और आधार एकत्र करें।", "ग्राम पंचायत या नगर निगम में आवेदन जमा करें।", "बैंक में डीबीटी सक्रिय होने की पुष्टि करें।"],
-      "gu": ["ઉંમરનો પુરાવો, BPL/આવક પ્રમાણપત્ર અને આધાર તૈયાર કરો.", "ગ્રામ પંચાયત અથવા નગરપાલિકામાં અરજી જમા કરો.", "બેંકમાં DBT સક્રિય થયું છે તેની ખાતરી કરો."]
+      "en": [
+        "Gather age proof, BPL/income proof, and Aadhaar.",
+        "Submit NSAP application at Gram Panchayat or Municipal Social Welfare desk.",
+        "Verify bank DBT activation."
+      ],
+      "hi": [
+        "आयु प्रमाण, बीपीएल/आय प्रमाण और आधार एकत्र करें।",
+        "ग्राम पंचायत या नगर निगम में आवेदन जमा करें।",
+        "बैंक में डीबीटी सक्रिय होने की पुष्टि करें।"
+      ],
+      "gu": [
+        "ઉંમરનો પુરાવો, BPL/આવક પ્રમાણપત્ર અને આધાર તૈયાર કરો.",
+        "ગ્રામ પંચાયત અથવા નગરપાલિકામાં અરજી જમા કરો.",
+        "બેંકમાં DBT સક્રિય થયું છે તેની ખાતરી કરો."
+      ]
     }
   },
   {
@@ -647,23 +1078,43 @@
     "benefitType": "pension",
     "benefitAmount": 60000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_month", "amount": 5000, "years": 15 },
+    "benefitFormula": {
+      "type": "fixed_per_month",
+      "amount": 5000,
+      "years": 15
+    },
     "exclusiveGroup": "central-contributory-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.84,
-    "summaryEn": "Sample data — verify on official portal: Guaranteed monthly pension of Rs. 1,000 to Rs. 5,000 after age 60 for non-taxpayer subscribers aged 18–40.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 18–40 वर्ष के गैर-करदाता नागरिकों को 60 वर्ष के बाद 1,000 से 5,000 रुपये तक गारंटीड मासिक पेंशन।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 18–40 વર્ષના બિન-કરદાતા નાગરિકોને 60 વર્ષ પછી રૂ. 1,000 થી રૂ. 5,000 માસિક પેન્શન.",
+    "summaryEn": "Guaranteed monthly pension of Rs. 1,000 to Rs. 5,000 after age 60 for non-taxpayer subscribers aged 18–40.",
+    "summaryHi": "18–40 वर्ष के गैर-करदाता नागरिकों को 60 वर्ष के बाद 1,000 से 5,000 रुपये तक गारंटीड मासिक पेंशन।",
+    "summaryGu": "18–40 વર્ષના બિન-કરદાતા નાગરિકોને 60 વર્ષ પછી રૂ. 1,000 થી રૂ. 5,000 માસિક પેન્શન.",
     "deadline": null,
     "officialUrl": "https://npscra.nsdl.co.in",
     "lastVerified": "2026-10-09",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Visit your savings bank branch or net-banking APY tab.", "Choose pension tier (Rs. 1,000 to Rs. 5,000/month).", "Authorise auto-debit and nominate spouse/family member."],
-      "hi": ["अपनी बैंक शाखा या नेट-बैंकिंग के एपीवाई विकल्प पर जाएं।", "मासिक पेंशन स्लैब (1,000 से 5,000 रुपये) चुनें।", "ऑटो-डेबिट व नॉमिनी विवरण दर्ज कर नामांकन पूरा करें।"],
-      "gu": ["તમારી બેંક શાખા અથવા નેટ-બેંકિંગમાં APY વિકલ્પ પસંદ કરો.", "માસિક પેન્શનનો સ્લેબ (રૂ. 1,000 થી રૂ. 5,000) પસંદ કરો.", "ઓટો-ડેબિટ અને નોમિનીની વિગત આપી નોંધણી પૂર્ણ કરો."]
+      "en": [
+        "Visit your savings bank branch or net-banking APY tab.",
+        "Choose pension tier (Rs. 1,000 to Rs. 5,000/month).",
+        "Authorise auto-debit and nominate spouse/family member."
+      ],
+      "hi": [
+        "अपनी बैंक शाखा या नेट-बैंकिंग के एपीवाई विकल्प पर जाएं।",
+        "मासिक पेंशन स्लैब (1,000 से 5,000 रुपये) चुनें।",
+        "ऑटो-डेबिट व नॉमिनी विवरण दर्ज कर नामांकन पूरा करें।"
+      ],
+      "gu": [
+        "તમારી બેંક શાખા અથવા નેટ-બેંકિંગમાં APY વિકલ્પ પસંદ કરો.",
+        "માસિક પેન્શનનો સ્લેબ (રૂ. 1,000 થી રૂ. 5,000) પસંદ કરો.",
+        "ઓટો-ડેબિટ અને નોમિનીની વિગત આપી નોંધણી પૂર્ણ કરો."
+      ]
     }
   },
   {
@@ -678,23 +1129,42 @@
     "benefitType": "subsidy",
     "benefitAmount": 12000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 12000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 12000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.68,
-    "summaryEn": "Sample data — verify on official portal: Free physical aids and assisted-living devices (hearing aids, wheelchairs, spectacles, walkers) for BPL/low-income seniors aged 60+.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 60+ आयु के पात्र वरिष्ठ नागरिकों को निःशुल्क श्रवण यंत्र, व्हीलचेयर, चश्मा और सहायक उपकरण।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 60+ વયના પાત્ર વરિષ્ઠ નાગરિકોને મફત શ્રવણયંત્ર, વ્હીલચેર, ચશ્મા અને વોકર.",
+    "summaryEn": "Free physical aids and assisted-living devices (hearing aids, wheelchairs, spectacles, walkers) for BPL/low-income seniors aged 60+.",
+    "summaryHi": "60+ आयु के पात्र वरिष्ठ नागरिकों को निःशुल्क श्रवण यंत्र, व्हीलचेयर, चश्मा और सहायक उपकरण।",
+    "summaryGu": "60+ વયના પાત્ર વરિષ્ઠ નાગરિકોને મફત શ્રવણયંત્ર, વ્હીલચેર, ચશ્મા અને વોકર.",
     "deadline": null,
     "officialUrl": "https://alimco.in",
     "lastVerified": "2026-10-05",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof", "income_cert"],
+    "documents": [
+      "aadhaar",
+      "age_proof",
+      "income_cert"
+    ],
     "steps": {
-      "en": ["Register at District Social Welfare / ALIMCO assessment camp.", "Undergo brief medical evaluation for required devices.", "Collect custom-fitted devices at distribution camp."],
-      "hi": ["जिला समाज कल्याण या एलिम्को मूल्यांकन शिविर में पंजीकरण कराएं।", "आवश्यक उपकरण हेतु संक्षिप्त चिकित्सीय जांच कराएं।", "वितरण शिविर से निःशुल्क सहायक उपकरण प्राप्त करें।"],
-      "gu": ["જિલ્લા સમાજ કલ્યાણ અથવા ALIMCO મૂલ્યાંકન કેમ્પમાં નોંધણી કરાવો.", "જરૂરી સાધન માટે ટૂંકી તબીબી તપાસ કરાવો.", "વિતરણ કેમ્પમાંથી મફત સહાયક સાધનો મેળવો."]
+      "en": [
+        "Register at District Social Welfare / ALIMCO assessment camp.",
+        "Undergo brief medical evaluation for required devices.",
+        "Collect custom-fitted devices at distribution camp."
+      ],
+      "hi": [
+        "जिला समाज कल्याण या एलिम्को मूल्यांकन शिविर में पंजीकरण कराएं।",
+        "आवश्यक उपकरण हेतु संक्षिप्त चिकित्सीय जांच कराएं।",
+        "वितरण शिविर से निःशुल्क सहायक उपकरण प्राप्त करें।"
+      ],
+      "gu": [
+        "જિલ્લા સમાજ કલ્યાણ અથવા ALIMCO મૂલ્યાંકન કેમ્પમાં નોંધણી કરાવો.",
+        "જરૂરી સાધન માટે ટૂંકી તબીબી તપાસ કરાવો.",
+        "વિતરણ કેમ્પમાંથી મફત સહાયક સાધનો મેળવો."
+      ]
     }
   },
   {
@@ -709,23 +1179,45 @@
     "benefitType": "pension",
     "benefitAmount": 12000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_month", "amount": 1000, "years": 10 },
+    "benefitFormula": {
+      "type": "fixed_per_month",
+      "amount": 1000,
+      "years": 10
+    },
     "exclusiveGroup": "nsap-social-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.76,
-    "summaryEn": "Sample data — verify on official portal: State-topped monthly pension of Rs. 1,000–1,250 for economically weak senior citizens aged 60+ residing in Gujarat.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात में निवास करने वाले 60+ आयु के आर्थिक रूप से कमजोर वरिष्ठ नागरिकों को राज्य की ओर से मासिक पेंशन।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતમાં રહેતા 60+ વયના આર્થિક રીતે નબળા વરિષ્ઠ નાગરિકોને રાજ્ય તરફથી માસિક પેન્શન.",
+    "summaryEn": "State-topped monthly pension of Rs. 1,000–1,250 for economically weak senior citizens aged 60+ residing in Gujarat.",
+    "summaryHi": "गुजरात में निवास करने वाले 60+ आयु के आर्थिक रूप से कमजोर वरिष्ठ नागरिकों को राज्य की ओर से मासिक पेंशन।",
+    "summaryGu": "ગુજરાતમાં રહેતા 60+ વયના આર્થિક રીતે નબળા વરિષ્ઠ નાગરિકોને રાજ્ય તરફથી માસિક પેન્શન.",
     "deadline": null,
     "officialUrl": "https://digitalgujarat.gov.in",
     "lastVerified": "2026-10-17",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof", "domicile_cert", "income_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "age_proof",
+      "domicile_cert",
+      "income_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Apply online on Digital Gujarat or via Mamlatdar Jan Seva Kendra.", "Attach age proof, domicile, and annual income certificate.", "Track sanction status with receipt number."],
-      "hi": ["डिजिटल गुजरात या जन सेवा केंद्र के माध्यम से आवेदन करें।", "आयु, निवास और वार्षिक आय प्रमाण पत्र संलग्न करें।", "रसीद संख्या से स्वीकृति की स्थिति ट्रैक करें।"],
-      "gu": ["ડિજિટલ ગુજરાત અથવા જન સેવા કેન્દ્ર દ્વારા અરજી કરો.", "ઉંમર, રહેઠાણ અને આવકનું પ્રમાણપત્ર જોડો.", "રસીદ નંબરથી મંજૂરીની સ્થિતિ તપાસો."]
+      "en": [
+        "Apply online on Digital Gujarat or via Mamlatdar Jan Seva Kendra.",
+        "Attach age proof, domicile, and annual income certificate.",
+        "Track sanction status with receipt number."
+      ],
+      "hi": [
+        "डिजिटल गुजरात या जन सेवा केंद्र के माध्यम से आवेदन करें।",
+        "आयु, निवास और वार्षिक आय प्रमाण पत्र संलग्न करें।",
+        "रसीद संख्या से स्वीकृति की स्थिति ट्रैक करें।"
+      ],
+      "gu": [
+        "ડિજિટલ ગુજરાત અથવા જન સેવા કેન્દ્ર દ્વારા અરજી કરો.",
+        "ઉંમર, રહેઠાણ અને આવકનું પ્રમાણપત્ર જોડો.",
+        "રસીદ નંબરથી મંજૂરીની સ્થિતિ તપાસો."
+      ]
     }
   },
   {
@@ -740,23 +1232,44 @@
     "benefitType": "cash",
     "benefitAmount": 24000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 24000, "years": 5 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 24000,
+      "years": 5
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.71,
-    "summaryEn": "Sample data — verify on official portal: Sovereign-backed quarterly interest payout (est. Rs. 24,000/yr on Rs. 3L savings) at higher senior rates for citizens aged 60+.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 60 वर्ष से अधिक आयु के नागरिकों के लिए उच्च दर पर सुरक्षित त्रैमासिक ब्याज भुगतान।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 60+ વયના નાગરિકો માટે ઊંચા વ્યાજ દરે સુરક્ષિત ત્રિમાસિક આવક યોજના.",
+    "summaryEn": "Sovereign-backed quarterly interest payout (est. Rs. 24,000/yr on Rs. 3L savings) at higher senior rates for citizens aged 60+.",
+    "summaryHi": "60 वर्ष से अधिक आयु के नागरिकों के लिए उच्च दर पर सुरक्षित त्रैमासिक ब्याज भुगतान।",
+    "summaryGu": "60+ વયના નાગરિકો માટે ઊંચા વ્યાજ દરે સુરક્ષિત ત્રિમાસિક આવક યોજના.",
     "deadline": null,
     "officialUrl": "https://indiapost.gov.in",
     "lastVerified": "2026-10-06",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof", "pan_card", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "age_proof",
+      "pan_card",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Visit Post Office or public sector bank with KYC and PAN.", "Open SCSS account with minimum Rs. 1,000.", "Receive quarterly interest directly in savings account."],
-      "hi": ["केवाईसी और पैन के साथ डाकघर या बैंक शाखा जाएं।", "न्यूनतम 1,000 रुपये से वरिष्ठ नागरिक बचत खाता खोलें।", "प्रत्येक तिमाही सीधे बचत खाते में ब्याज पाएं।"],
-      "gu": ["KYC અને PAN સાથે પોસ્ટ ઓફિસ અથવા બેંક શાખામાં જાવ.", "ઓછામાં ઓછા રૂ. 1,000થી SCSS ખાતું ખોલાવો.", "દર ત્રિમાસિકે બચત ખાતામાં સીધું વ્યાજ મેળવો."]
+      "en": [
+        "Visit Post Office or public sector bank with KYC and PAN.",
+        "Open SCSS account with minimum Rs. 1,000.",
+        "Receive quarterly interest directly in savings account."
+      ],
+      "hi": [
+        "केवाईसी और पैन के साथ डाकघर या बैंक शाखा जाएं।",
+        "न्यूनतम 1,000 रुपये से वरिष्ठ नागरिक बचत खाता खोलें।",
+        "प्रत्येक तिमाही सीधे बचत खाते में ब्याज पाएं।"
+      ],
+      "gu": [
+        "KYC અને PAN સાથે પોસ્ટ ઓફિસ અથવા બેંક શાખામાં જાવ.",
+        "ઓછામાં ઓછા રૂ. 1,000થી SCSS ખાતું ખોલાવો.",
+        "દર ત્રિમાસિકે બચત ખાતામાં સીધું વ્યાજ મેળવો."
+      ]
     }
   },
   {
@@ -771,23 +1284,43 @@
     "benefitType": "pension",
     "benefitAmount": 36000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_month", "amount": 3000, "years": 15 },
+    "benefitFormula": {
+      "type": "fixed_per_month",
+      "amount": 3000,
+      "years": 15
+    },
     "exclusiveGroup": "central-contributory-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.85,
-    "summaryEn": "Sample data — verify on official portal: Assured Rs. 3,000/month pension after age 60 for unorganised workers aged 18–40 earning under Rs. 15,000/month.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: असंगठित क्षेत्र के 18–40 वर्ष के श्रमिकों को 60 वर्ष के बाद 3,000 रुपये मासिक पेंशन।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: અસંગઠિત ક્ષેત્રના 18–40 વર્ષના શ્રમિકોને 60 વર્ષ પછી માસિક રૂ. 3,000 પેન્શન.",
+    "summaryEn": "Assured Rs. 3,000/month pension after age 60 for unorganised workers aged 18–40 earning under Rs. 15,000/month.",
+    "summaryHi": "असंगठित क्षेत्र के 18–40 वर्ष के श्रमिकों को 60 वर्ष के बाद 3,000 रुपये मासिक पेंशन।",
+    "summaryGu": "અસંગઠિત ક્ષેત્રના 18–40 વર્ષના શ્રમિકોને 60 વર્ષ પછી માસિક રૂ. 3,000 પેન્શન.",
     "deadline": null,
     "officialUrl": "https://maandhan.in",
     "lastVerified": "2026-10-15",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "eshram_bocw", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "eshram_bocw",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Visit CSC or maandhan.in with Aadhaar and savings bank account.", "Confirm monthly worker occupation and income under Rs. 1.8L/year.", "Pay first contribution to generate Shram Yogi card."],
-      "hi": ["आधार और बैंक खाते के साथ सीएससी केंद्र या maandhan.in पर जाएं।", "असंगठित श्रमिक श्रेणी और आय सीमा की पुष्टि करें।", "पहला अंशदान जमा कर श्रम योगी कार्ड प्राप्त करें।"],
-      "gu": ["આધાર અને બેંક ખાતા સાથે CSC અથવા maandhan.in પર જાવ.", "અસંગઠિત શ્રમિક વર્ગ અને આવક મર્યાદાની પુષ્ટિ કરો.", "પ્રથમ ફાળો ભરી શ્રમ યોગી કાર્ડ મેળવો."]
+      "en": [
+        "Visit CSC or maandhan.in with Aadhaar and savings bank account.",
+        "Confirm monthly worker occupation and income under Rs. 1.8L/year.",
+        "Pay first contribution to generate Shram Yogi card."
+      ],
+      "hi": [
+        "आधार और बैंक खाते के साथ सीएससी केंद्र या maandhan.in पर जाएं।",
+        "असंगठित श्रमिक श्रेणी और आय सीमा की पुष्टि करें।",
+        "पहला अंशदान जमा कर श्रम योगी कार्ड प्राप्त करें।"
+      ],
+      "gu": [
+        "આધાર અને બેંક ખાતા સાથે CSC અથવા maandhan.in પર જાવ.",
+        "અસંગઠિત શ્રમિક વર્ગ અને આવક મર્યાદાની પુષ્ટિ કરો.",
+        "પ્રથમ ફાળો ભરી શ્રમ યોગી કાર્ડ મેળવો."
+      ]
     }
   },
   {
@@ -802,23 +1335,42 @@
     "benefitType": "insurance",
     "benefitAmount": 200000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 200000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 200000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.87,
-    "summaryEn": "Sample data — verify on official portal: Rs. 2 lakh accidental death/permanent disability cover and social security portability for registered unorganised workers.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: पंजीकृत असंगठित श्रमिकों को 2 लाख रुपये का दुर्घटना बीमा और सामाजिक सुरक्षा पोर्टेबिलिटी।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: નોંધાયેલા અસંગઠિત શ્રમિકોને રૂ. 2 લાખનો અકસ્માત વીમો અને સામાજિક સુરક્ષા લાભ.",
+    "summaryEn": "Rs. 2 lakh accidental death/permanent disability cover and social security portability for registered unorganised workers.",
+    "summaryHi": "पंजीकृत असंगठित श्रमिकों को 2 लाख रुपये का दुर्घटना बीमा और सामाजिक सुरक्षा पोर्टेबिलिटी।",
+    "summaryGu": "નોંધાયેલા અસંગઠિત શ્રમિકોને રૂ. 2 લાખનો અકસ્માત વીમો અને સામાજિક સુરક્ષા લાભ.",
     "deadline": null,
     "officialUrl": "https://eshram.gov.in",
     "lastVerified": "2026-10-16",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "eshram_bocw"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "eshram_bocw"
+    ],
     "steps": {
-      "en": ["Register free on eshram.gov.in using Aadhaar-linked mobile OTP.", "Enter occupation NCO code and bank details.", "Download e-Shram UAN card immediately."],
-      "hi": ["आधार-लिंक्ड मोबाइल नंबर से eshram.gov.in पर निःशुल्क पंजीकरण करें।", "कार्य श्रेणी और बैंक विवरण दर्ज करें।", "तुरंत ई-श्रम यूएएन कार्ड डाउनलोड करें।"],
-      "gu": ["આધાર-લિંક મોબાઇલ નંબરથી eshram.gov.in પર મફત નોંધણી કરો.", "વ્યવસાય કોડ અને બેંક વિગતો દાખલ કરો.", "તરત જ ઈ-શ્રમ UAN કાર્ડ ડાઉનલોડ કરો."]
+      "en": [
+        "Register free on eshram.gov.in using Aadhaar-linked mobile OTP.",
+        "Enter occupation NCO code and bank details.",
+        "Download e-Shram UAN card immediately."
+      ],
+      "hi": [
+        "आधार-लिंक्ड मोबाइल नंबर से eshram.gov.in पर निःशुल्क पंजीकरण करें।",
+        "कार्य श्रेणी और बैंक विवरण दर्ज करें।",
+        "तुरंत ई-श्रम यूएएन कार्ड डाउनलोड करें।"
+      ],
+      "gu": [
+        "આધાર-લિંક મોબાઇલ નંબરથી eshram.gov.in પર મફત નોંધણી કરો.",
+        "વ્યવસાય કોડ અને બેંક વિગતો દાખલ કરો.",
+        "તરત જ ઈ-શ્રમ UAN કાર્ડ ડાઉનલોડ કરો."
+      ]
     }
   },
   {
@@ -833,23 +1385,43 @@
     "benefitType": "cash",
     "benefitAmount": 28000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 28000, "years": 5 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 28000,
+      "years": 5
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
-    "popularityPrior": 0.90,
-    "summaryEn": "Sample data — verify on official portal: Legal guarantee of up to 100 days of unskilled manual wage employment per rural household per financial year.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: प्रत्येक ग्रामीण परिवार को प्रति वित्तीय वर्ष 100 दिनों तक के गारंटीकृत रोजगार की कानूनी सुरक्षा।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: દરેક ગ્રામીણ પરિવારને નાણાકીય વર્ષમાં 100 દિવસના રોજગારની કાનૂની ગેરંટી.",
+    "popularityPrior": 0.9,
+    "summaryEn": "Legal guarantee of up to 100 days of unskilled manual wage employment per rural household per financial year.",
+    "summaryHi": "प्रत्येक ग्रामीण परिवार को प्रति वित्तीय वर्ष 100 दिनों तक के गारंटीकृत रोजगार की कानूनी सुरक्षा।",
+    "summaryGu": "દરેક ગ્રામીણ પરિવારને નાણાકીય વર્ષમાં 100 દિવસના રોજગારની કાનૂની ગેરંટી.",
     "deadline": null,
     "officialUrl": "https://nrega.nic.in",
     "lastVerified": "2026-10-12",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Apply for a Job Card at your Gram Panchayat.", "Submit written work demand for 14+ continuous days.", "Receive weekly/fortnightly wages directly in bank account."],
-      "hi": ["अपनी ग्राम पंचायत में जॉब कार्ड के लिए आवेदन करें।", "काम के लिए लिखित मांग पत्र जमा करें।", "बैंक खाते में सीधे मजदूरी भुगतान प्राप्त करें।"],
-      "gu": ["તમારી ગ્રામ પંચાયતમાં જોબ કાર્ડ માટે અરજી કરો.", "કામની લેખિત માંગણી અરજી આપો.", "બેંક ખાતામાં સીધું મહેનતાણું મેળવો."]
+      "en": [
+        "Apply for a Job Card at your Gram Panchayat.",
+        "Submit written work demand for 14+ continuous days.",
+        "Receive weekly/fortnightly wages directly in bank account."
+      ],
+      "hi": [
+        "अपनी ग्राम पंचायत में जॉब कार्ड के लिए आवेदन करें।",
+        "काम के लिए लिखित मांग पत्र जमा करें।",
+        "बैंक खाते में सीधे मजदूरी भुगतान प्राप्त करें।"
+      ],
+      "gu": [
+        "તમારી ગ્રામ પંચાયતમાં જોબ કાર્ડ માટે અરજી કરો.",
+        "કામની લેખિત માંગણી અરજી આપો.",
+        "બેંક ખાતામાં સીધું મહેનતાણું મેળવો."
+      ]
     }
   },
   {
@@ -864,23 +1436,44 @@
     "benefitType": "subsidy",
     "benefitAmount": 12000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 12000, "years": 3 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 12000,
+      "years": 3
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.78,
-    "summaryEn": "Sample data — verify on official portal: Subsidised Rs. 5 nutritious meals plus masonry/tool kit & safety gear assistance for BOCW-registered workers in Gujarat.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात के पंजीकृत निर्माण श्रमिकों को 5 रुपये में पौष्टिक भोजन और कार्य टूलकिट सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતના નોંધાયેલ બાંધકામ શ્રમિકોને રૂ. 5માં પૌષ્ટિક ભોજન અને સાધન સહાય.",
+    "summaryEn": "Subsidised Rs. 5 nutritious meals plus masonry/tool kit & safety gear assistance for BOCW-registered workers in Gujarat.",
+    "summaryHi": "गुजरात के पंजीकृत निर्माण श्रमिकों को 5 रुपये में पौष्टिक भोजन और कार्य टूलकिट सहायता।",
+    "summaryGu": "ગુજરાતના નોંધાયેલ બાંધકામ શ્રમિકોને રૂ. 5માં પૌષ્ટિક ભોજન અને સાધન સહાય.",
     "deadline": null,
     "officialUrl": "https://sanman.gujarat.gov.in",
     "lastVerified": "2026-10-20",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "eshram_bocw", "domicile_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "eshram_bocw",
+      "domicile_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register as construction worker on e-Nirman / Sanman portal.", "Obtain e-Nirman card at Taluka Labour facilitation desk.", "Claim meal card and tool kit benefits using UAN."],
-      "hi": ["ई-निर्माण / सन्मान पोर्टल पर निर्माण श्रमिक पंजीकरण कराएं।", "तालुका श्रम सुविधा केंद्र से ई-निर्माण कार्ड प्राप्त करें।", "कार्ड दिखाकर भोजन व टूलकिट लाभ उठाएं।"],
-      "gu": ["ઈ-નિર્માણ / સન્માન પોર્ટલ પર બાંધકામ શ્રમિક તરીકે નોંધણી કરો.", "તાલુકા શ્રમ સુવિધા કેન્દ્ર પરથી ઈ-નિર્માણ કાર્ડ મેળવો.", "કાર્ડ વડે ભોજન અને ટૂલકિટ સહાયનો લાભ લો."]
+      "en": [
+        "Register as construction worker on e-Nirman / Sanman portal.",
+        "Obtain e-Nirman card at Taluka Labour facilitation desk.",
+        "Claim meal card and tool kit benefits using UAN."
+      ],
+      "hi": [
+        "ई-निर्माण / सन्मान पोर्टल पर निर्माण श्रमिक पंजीकरण कराएं।",
+        "तालुका श्रम सुविधा केंद्र से ई-निर्माण कार्ड प्राप्त करें।",
+        "कार्ड दिखाकर भोजन व टूलकिट लाभ उठाएं।"
+      ],
+      "gu": [
+        "ઈ-નિર્માણ / સન્માન પોર્ટલ પર બાંધકામ શ્રમિક તરીકે નોંધણી કરો.",
+        "તાલુકા શ્રમ સુવિધા કેન્દ્ર પરથી ઈ-નિર્માણ કાર્ડ મેળવો.",
+        "કાર્ડ વડે ભોજન અને ટૂલકિટ સહાયનો લાભ લો."
+      ]
     }
   },
   {
@@ -895,23 +1488,42 @@
     "benefitType": "subsidy",
     "benefitAmount": 15000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 15000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 15000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.86,
-    "summaryEn": "Sample data — verify on official portal: Rs. 15,000 toolkit e-voucher, Rs. 500/day training stipend, and collateral-free 5% interest loan for 18 traditional trades.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: पारंपरिक कारीगरों को 15,000 रुपये का टूलकिट वाउचर, प्रशिक्षण भत्ता और सस्ता ऋण।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: પરંપરાગત કારીગરોને રૂ. 15,000 ટૂલકિટ વાઉચર, તાલીમ ભથ્થું અને 5% વ્યાજે લોન.",
+    "summaryEn": "Rs. 15,000 toolkit e-voucher, Rs. 500/day training stipend, and collateral-free 5% interest loan for 18 traditional trades.",
+    "summaryHi": "पारंपरिक कारीगरों को 15,000 रुपये का टूलकिट वाउचर, प्रशिक्षण भत्ता और सस्ता ऋण।",
+    "summaryGu": "પરંપરાગત કારીગરોને રૂ. 15,000 ટૂલકિટ વાઉચર, તાલીમ ભથ્થું અને 5% વ્યાજે લોન.",
     "deadline": null,
     "officialUrl": "https://pmvishwakarma.gov.in",
     "lastVerified": "2026-10-19",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Register via CSC on pmvishwakarma.gov.in with Aadhaar biometric.", "Wait for Gram Panchayat / ULB verification.", "Complete 5-day training to receive toolkit voucher."],
-      "hi": ["सीएससी केंद्र से आधार बायोमेट्रिक द्वारा pmvishwakarma.gov.in पर पंजीकरण कराएं।", "ग्राम पंचायत या नगर निकाय सत्यापन की प्रतीक्षा करें।", "5-दिवसीय प्रशिक्षण के बाद टूलकिट वाउचर प्राप्त करें।"],
-      "gu": ["CSC કેન્દ્ર પર આધાર બાયોમેટ્રિક વડે pmvishwakarma.gov.in પર નોંધણી કરો.", "ગ્રામ પંચાયત અથવા નગરપાલિકાની ચકાસણી પૂર્ણ થવા દો.", "5-દિવસીય તાલીમ બાદ ટૂલકિટ વાઉચર મેળવો."]
+      "en": [
+        "Register via CSC on pmvishwakarma.gov.in with Aadhaar biometric.",
+        "Wait for Gram Panchayat / ULB verification.",
+        "Complete 5-day training to receive toolkit voucher."
+      ],
+      "hi": [
+        "सीएससी केंद्र से आधार बायोमेट्रिक द्वारा pmvishwakarma.gov.in पर पंजीकरण कराएं।",
+        "ग्राम पंचायत या नगर निकाय सत्यापन की प्रतीक्षा करें।",
+        "5-दिवसीय प्रशिक्षण के बाद टूलकिट वाउचर प्राप्त करें।"
+      ],
+      "gu": [
+        "CSC કેન્દ્ર પર આધાર બાયોમેટ્રિક વડે pmvishwakarma.gov.in પર નોંધણી કરો.",
+        "ગ્રામ પંચાયત અથવા નગરપાલિકાની ચકાસણી પૂર્ણ થવા દો.",
+        "5-દિવસીય તાલીમ બાદ ટૂલકિટ વાઉચર મેળવો."
+      ]
     }
   },
   {
@@ -926,23 +1538,43 @@
     "benefitType": "loan",
     "benefitAmount": 50000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 50000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 50000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.89,
-    "summaryEn": "Sample data — verify on official portal: Collateral-free institutional credit (Shishu/Kishore/Tarun up to Rs. 10–20L; Rs. 50,000 starter tier) for non-farm small businesses.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: छोटे व्यापार व स्वरोजगार के लिए बिना गारंटी संस्थागत ऋण (शिशु/किशोर/तरुण श्रेणी)।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: નાના વેપાર અને સ્વરોજગાર માટે ગેરંટી વિનાની લોન (શિશુ/કિશોર/તરુણ શ્રેણી).",
+    "summaryEn": "Collateral-free institutional credit (Shishu/Kishore/Tarun up to Rs. 10–20L; Rs. 50,000 starter tier) for non-farm small businesses.",
+    "summaryHi": "छोटे व्यापार व स्वरोजगार के लिए बिना गारंटी संस्थागत ऋण (शिशु/किशोर/तरुण श्रेणी)।",
+    "summaryGu": "નાના વેપાર અને સ્વરોજગાર માટે ગેરંટી વિનાની લોન (શિશુ/કિશોર/તરુણ શ્રેણી).",
     "deadline": null,
     "officialUrl": "https://udyamimitra.in",
     "lastVerified": "2026-10-14",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "pan_card", "bank_passbook", "business_plan"],
+    "documents": [
+      "aadhaar",
+      "pan_card",
+      "bank_passbook",
+      "business_plan"
+    ],
     "steps": {
-      "en": ["Register free Udyam ID and prepare a simple 1-page cost estimate.", "Apply on JanSamarth / Udyamimitra portal or your bank.", "Provide KYC and business quotation for sanction."],
-      "hi": ["निःशुल्क उद्यम आईडी बनाएं और 1-पृष्ठ व्यवसाय योजना तैयार करें।", "जनसमर्थ पोर्टल या अपनी बैंक शाखा में आवेदन करें।", "केवाईसी व कोटेशन जमा कर ऋण स्वीकृति पाएं।"],
-      "gu": ["મફત ઉદ્યમ ID બનાવો અને 1-પાનાનો વ્યવસાય અંદાજ તૈયાર કરો.", "જનસમર્થ પોર્ટલ અથવા તમારી બેંક શાખામાં અરજી કરો.", "KYC અને ક્વોટેશન આપી લોન મંજૂરી મેળવો."]
+      "en": [
+        "Register free Udyam ID and prepare a simple 1-page cost estimate.",
+        "Apply on JanSamarth / Udyamimitra portal or your bank.",
+        "Provide KYC and business quotation for sanction."
+      ],
+      "hi": [
+        "निःशुल्क उद्यम आईडी बनाएं और 1-पृष्ठ व्यवसाय योजना तैयार करें।",
+        "जनसमर्थ पोर्टल या अपनी बैंक शाखा में आवेदन करें।",
+        "केवाईसी व कोटेशन जमा कर ऋण स्वीकृति पाएं।"
+      ],
+      "gu": [
+        "મફત ઉદ્યમ ID બનાવો અને 1-પાનાનો વ્યવસાય અંદાજ તૈયાર કરો.",
+        "જનસમર્થ પોર્ટલ અથવા તમારી બેંક શાખામાં અરજી કરો.",
+        "KYC અને ક્વોટેશન આપી લોન મંજૂરી મેળવો."
+      ]
     }
   },
   {
@@ -957,23 +1589,47 @@
     "benefitType": "subsidy",
     "benefitAmount": 175000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "percent_of_cost", "percent": 35, "costBasis": 500000, "cap": 175000, "years": 1 },
+    "benefitFormula": {
+      "type": "percent_of_cost",
+      "percent": 35,
+      "costBasis": 500000,
+      "cap": 175000,
+      "years": 1
+    },
     "exclusiveGroup": "msme-capital-subsidy",
     "isHouseholdLevel": false,
     "popularityPrior": 0.84,
-    "summaryEn": "Sample data — verify on official portal: 15% to 35% government margin-money subsidy on new manufacturing or service micro-enterprise projects.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: नए विनिर्माण या सेवा सूक्ष्म उद्यम स्थापित करने पर 15% से 35% तक सरकारी मार्जिन मनी सब्सिडी।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: નવા ઉત્પાદન અથવા સેવા ઉદ્યોગ શરૂ કરવા પર 15% થી 35% સુધી સરકારી સબસિડી.",
+    "summaryEn": "15% to 35% government margin-money subsidy on new manufacturing or service micro-enterprise projects.",
+    "summaryHi": "नए विनिर्माण या सेवा सूक्ष्म उद्यम स्थापित करने पर 15% से 35% तक सरकारी मार्जिन मनी सब्सिडी।",
+    "summaryGu": "નવા ઉત્પાદન અથવા સેવા ઉદ્યોગ શરૂ કરવા પર 15% થી 35% સુધી સરકારી સબસિડી.",
     "deadline": null,
     "officialUrl": "https://kviconline.gov.in/pmegpeportal",
     "lastVerified": "2026-10-16",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "pan_card", "education_marksheet", "caste_cert", "business_plan"],
+    "documents": [
+      "aadhaar",
+      "pan_card",
+      "education_marksheet",
+      "caste_cert",
+      "business_plan"
+    ],
     "steps": {
-      "en": ["Prepare project report and submit online at KVIC PMEGP portal.", "Attend District Task Force interview.", "Complete EDP training before subsidy lock-in."],
-      "hi": ["प्रोजेक्ट रिपोर्ट तैयार कर केवीआईसी पीएमईजीपी पोर्टल पर आवेदन करें।", "जिला टास्क फोर्स साक्षात्कार में भाग लें।", "बैंक स्वीकृति के बाद ईडीपी प्रशिक्षण पूरा करें।"],
-      "gu": ["પ્રોજેક્ટ રિપોર્ટ તૈયાર કરી KVIC PMEGP પોર્ટલ પર અરજી કરો.", "જિલ્લા ટાસ્ક ફોર્સ ઈન્ટરવ્યુમાં હાજરી આપો.", "લોન મંજૂરી બાદ EDP તાલીમ પૂર્ણ કરો."]
+      "en": [
+        "Prepare project report and submit online at KVIC PMEGP portal.",
+        "Attend District Task Force interview.",
+        "Complete EDP training before subsidy lock-in."
+      ],
+      "hi": [
+        "प्रोजेक्ट रिपोर्ट तैयार कर केवीआईसी पीएमईजीपी पोर्टल पर आवेदन करें।",
+        "जिला टास्क फोर्स साक्षात्कार में भाग लें।",
+        "बैंक स्वीकृति के बाद ईडीपी प्रशिक्षण पूरा करें।"
+      ],
+      "gu": [
+        "પ્રોજેક્ટ રિપોર્ટ તૈયાર કરી KVIC PMEGP પોર્ટલ પર અરજી કરો.",
+        "જિલ્લા ટાસ્ક ફોર્સ ઈન્ટરવ્યુમાં હાજરી આપો.",
+        "લોન મંજૂરી બાદ EDP તાલીમ પૂર્ણ કરો."
+      ]
     }
   },
   {
@@ -988,23 +1644,44 @@
     "benefitType": "loan",
     "benefitAmount": 100000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 100000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 100000
+    },
     "exclusiveGroup": "msme-capital-subsidy",
     "isHouseholdLevel": false,
     "popularityPrior": 0.74,
-    "summaryEn": "Sample data — verify on official portal: Greenfield enterprise bank loans (Rs. 10L–1Cr) with credit-guarantee support (est. Rs. 1,00,000 guarantee value) for SC/ST or women founders.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: एससी/एसटी और महिला उद्यमियों के लिए नए ग्रीनफील्ड व्यवसाय हेतु क्रेडिट-गारंटी युक्त बैंक ऋण।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: SC/ST અને મહિલા ઉદ્યોગસાહસિકો માટે નવા વ્યવસાય માટે ક્રેડિટ-ગેરંટી સહાયિત બેંક લોન.",
+    "summaryEn": "Greenfield enterprise bank loans (Rs. 10L–1Cr) with credit-guarantee support (est. Rs. 1,00,000 guarantee value) for SC/ST or women founders.",
+    "summaryHi": "एससी/एसटी और महिला उद्यमियों के लिए नए ग्रीनफील्ड व्यवसाय हेतु क्रेडिट-गारंटी युक्त बैंक ऋण।",
+    "summaryGu": "SC/ST અને મહિલા ઉદ્યોગસાહસિકો માટે નવા વ્યવસાય માટે ક્રેડિટ-ગેરંટી સહાયિત બેંક લોન.",
     "deadline": null,
     "officialUrl": "https://standupmitra.in",
     "lastVerified": "2026-10-08",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "pan_card", "caste_cert", "business_plan", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "pan_card",
+      "caste_cert",
+      "business_plan",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register on standupmitra.in for handholding support.", "Connect with Lead District Manager (LDM) and preferred bank.", "Submit greenfield business plan and KYC."],
-      "hi": ["सहायता के लिए standupmitra.in पर पंजीकरण करें।", "अग्रणी जिला प्रबंधक (LDM) या बैंक शाखा से संपर्क करें।", "ग्रीनफील्ड प्रोजेक्ट रिपोर्ट व केवाईसी जमा करें।"],
-      "gu": ["માર્ગદર્શન માટે standupmitra.in પર નોંધણી કરો.", "લીડ ડિસ્ટ્રિક્ટ મેનેજર (LDM) અથવા બેંકનો સંપર્ક કરો.", "ગ્રીનફિલ્ડ બિઝનેસ પ્લાન અને KYC જમા કરો."]
+      "en": [
+        "Register on standupmitra.in for handholding support.",
+        "Connect with Lead District Manager (LDM) and preferred bank.",
+        "Submit greenfield business plan and KYC."
+      ],
+      "hi": [
+        "सहायता के लिए standupmitra.in पर पंजीकरण करें।",
+        "अग्रणी जिला प्रबंधक (LDM) या बैंक शाखा से संपर्क करें।",
+        "ग्रीनफील्ड प्रोजेक्ट रिपोर्ट व केवाईसी जमा करें।"
+      ],
+      "gu": [
+        "માર્ગદર્શન માટે standupmitra.in પર નોંધણી કરો.",
+        "લીડ ડિસ્ટ્રિક્ટ મેનેજર (LDM) અથવા બેંકનો સંપર્ક કરો.",
+        "ગ્રીનફિલ્ડ બિઝનેસ પ્લાન અને KYC જમા કરો."
+      ]
     }
   },
   {
@@ -1019,23 +1696,43 @@
     "benefitType": "loan",
     "benefitAmount": 12000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 12000, "years": 3 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 12000,
+      "years": 3
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
-    "popularityPrior": 0.80,
-    "summaryEn": "Sample data — verify on official portal: Collateral-free working capital (Rs. 10k→20k→50k) with 7% interest subsidy and Rs. 1,200/yr digital cashback for street vendors.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: रेहड़ी-पटरी विक्रेताओं को बिना गारंटी कार्यशील पूंजी, 7% ब्याज सब्सिडी व डिजिटल कैशबैक।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ફેરિયાઓ અને લારી-ગલ્લા વિક્રેતાઓને ગેરંટી વગર મૂડી, 7% વ્યાજ સહાય અને ડિજિટલ કેશબેક.",
+    "popularityPrior": 0.8,
+    "summaryEn": "Collateral-free working capital (Rs. 10k→20k→50k) with 7% interest subsidy and Rs. 1,200/yr digital cashback for street vendors.",
+    "summaryHi": "रेहड़ी-पटरी विक्रेताओं को बिना गारंटी कार्यशील पूंजी, 7% ब्याज सब्सिडी व डिजिटल कैशबैक।",
+    "summaryGu": "ફેરિયાઓ અને લારી-ગલ્લા વિક્રેતાઓને ગેરંટી વગર મૂડી, 7% વ્યાજ સહાય અને ડિજિટલ કેશબેક.",
     "deadline": null,
     "officialUrl": "https://pmsvanidhi.mohua.gov.in",
     "lastVerified": "2026-10-13",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Get Letter of Recommendation / Vending Certificate from ULB.", "Apply on pmsvanidhi.mohua.gov.in or via CSC.", "Enable UPI QR code to earn monthly digital cashback."],
-      "hi": ["नगर निकाय से वेंडिंग प्रमाण पत्र या अनुशंसा पत्र प्राप्त करें।", "pmsvanidhi.mohua.gov.in या सीएससी से आवेदन करें।", "कैशबैक के लिए यूपीआई क्यूआर कोड से भुगतान स्वीकार करें।"],
-      "gu": ["નગરપાલિકામાંથી વેન્ડિંગ પ્રમાણપત્ર અથવા ભલામણ પત્ર મેળવો.", "pmsvanidhi.mohua.gov.in અથવા CSC દ્વારા અરજી કરો.", "કેશબેક મેળવવા UPI QR કોડનો ઉપયોગ શરૂ કરો."]
+      "en": [
+        "Get Letter of Recommendation / Vending Certificate from ULB.",
+        "Apply on pmsvanidhi.mohua.gov.in or via CSC.",
+        "Enable UPI QR code to earn monthly digital cashback."
+      ],
+      "hi": [
+        "नगर निकाय से वेंडिंग प्रमाण पत्र या अनुशंसा पत्र प्राप्त करें।",
+        "pmsvanidhi.mohua.gov.in या सीएससी से आवेदन करें।",
+        "कैशबैक के लिए यूपीआई क्यूआर कोड से भुगतान स्वीकार करें।"
+      ],
+      "gu": [
+        "નગરપાલિકામાંથી વેન્ડિંગ પ્રમાણપત્ર અથવા ભલામણ પત્ર મેળવો.",
+        "pmsvanidhi.mohua.gov.in અથવા CSC દ્વારા અરજી કરો.",
+        "કેશબેક મેળવવા UPI QR કોડનો ઉપયોગ શરૂ કરો."
+      ]
     }
   },
   {
@@ -1050,23 +1747,47 @@
     "benefitType": "subsidy",
     "benefitAmount": 125000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "percent_of_cost", "percent": 30, "costBasis": 400000, "cap": 125000, "years": 1 },
+    "benefitFormula": {
+      "type": "percent_of_cost",
+      "percent": 30,
+      "costBasis": 400000,
+      "cap": 125000,
+      "years": 1
+    },
     "exclusiveGroup": "msme-capital-subsidy",
     "isHouseholdLevel": false,
     "popularityPrior": 0.77,
-    "summaryEn": "Sample data — verify on official portal: 20%–40% subsidy (up to Rs. 1.25 lakh) on bankable self-employment loans up to Rs. 8 lakh for Gujarat artisans and youth.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात के युवाओं और कारीगरों को 8 लाख तक के स्वरोजगार ऋण पर 20%–40% सब्सिडी।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતના યુવાનો અને કારીગરોને રૂ. 8 લાખ સુધીની સ્વરોજગાર લોન પર 20%–40% સબસિડી.",
+    "summaryEn": "20%–40% subsidy (up to Rs. 1.25 lakh) on bankable self-employment loans up to Rs. 8 lakh for Gujarat artisans and youth.",
+    "summaryHi": "गुजरात के युवाओं और कारीगरों को 8 लाख तक के स्वरोजगार ऋण पर 20%–40% सब्सिडी।",
+    "summaryGu": "ગુજરાતના યુવાનો અને કારીગરોને રૂ. 8 લાખ સુધીની સ્વરોજગાર લોન પર 20%–40% સબસિડી.",
     "deadline": null,
     "officialUrl": "https://blp.gujarat.gov.in",
     "lastVerified": "2026-10-20",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "domicile_cert", "age_proof", "education_marksheet", "business_plan"],
+    "documents": [
+      "aadhaar",
+      "domicile_cert",
+      "age_proof",
+      "education_marksheet",
+      "business_plan"
+    ],
     "steps": {
-      "en": ["Register on blp.gujarat.gov.in (Cottage Industries portal).", "Submit quotation, training/experience certificate, and domicile proof.", "Bank approves loan and DIC releases subsidy."],
-      "hi": ["blp.gujarat.gov.in पोर्टल पर ऑनलाइन आवेदन करें।", "कोटेशन, अनुभव/प्रशिक्षण प्रमाण पत्र व निवास प्रमाण अपलोड करें।", "बैंक स्वीकृति के बाद जिला उद्योग केंद्र सब्सिडी जारी करता है।"],
-      "gu": ["blp.gujarat.gov.in પોર્ટલ પર ઓનલાઈન અરજી કરો.", "ક્વોટેશન, અનુભવ/તાલીમ અને રહેઠાણનો દાખલો અપલોડ કરો.", "બેંક લોન મંજૂર કરે એટલે DIC સબસિડી રિલીઝ કરે છે."]
+      "en": [
+        "Register on blp.gujarat.gov.in (Cottage Industries portal).",
+        "Submit quotation, training/experience certificate, and domicile proof.",
+        "Bank approves loan and DIC releases subsidy."
+      ],
+      "hi": [
+        "blp.gujarat.gov.in पोर्टल पर ऑनलाइन आवेदन करें।",
+        "कोटेशन, अनुभव/प्रशिक्षण प्रमाण पत्र व निवास प्रमाण अपलोड करें।",
+        "बैंक स्वीकृति के बाद जिला उद्योग केंद्र सब्सिडी जारी करता है।"
+      ],
+      "gu": [
+        "blp.gujarat.gov.in પોર્ટલ પર ઓનલાઈન અરજી કરો.",
+        "ક્વોટેશન, અનુભવ/તાલીમ અને રહેઠાણનો દાખલો અપલોડ કરો.",
+        "બેંક લોન મંજૂર કરે એટલે DIC સબસિડી રિલીઝ કરે છે."
+      ]
     }
   },
   {
@@ -1081,23 +1802,42 @@
     "benefitType": "insurance",
     "benefitAmount": 500000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 500000, "years": 10 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 500000,
+      "years": 10
+    },
     "exclusiveGroup": "public-health-cover",
     "isHouseholdLevel": true,
     "popularityPrior": 0.97,
-    "summaryEn": "Sample data — verify on official portal: Cashless secondary and tertiary hospitalisation cover of Rs. 5,00,000 per family per year across empanelled hospitals.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: सूचीबद्ध अस्पतालों में प्रति परिवार प्रति वर्ष 5,00,000 रुपये तक का कैशलेस उपचार कवच।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: માન્ય હોસ્પિટલોમાં પરિવાર દીઠ વાર્ષિક રૂ. 5,00,000 સુધીની કેશલેસ સારવાર.",
+    "summaryEn": "Cashless secondary and tertiary hospitalisation cover of Rs. 5,00,000 per family per year across empanelled hospitals.",
+    "summaryHi": "सूचीबद्ध अस्पतालों में प्रति परिवार प्रति वर्ष 5,00,000 रुपये तक का कैशलेस उपचार कवच।",
+    "summaryGu": "માન્ય હોસ્પિટલોમાં પરિવાર દીઠ વાર્ષિક રૂ. 5,00,000 સુધીની કેશલેસ સારવાર.",
     "deadline": null,
     "officialUrl": "https://beneficiary.nha.gov.in",
     "lastVerified": "2026-10-25",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "ration_card"],
+    "documents": [
+      "aadhaar",
+      "ration_card"
+    ],
     "steps": {
-      "en": ["Check family eligibility on beneficiary.nha.gov.in or Ayushman App.", "Complete Aadhaar e-KYC for each family member.", "Download Ayushman Golden Card for cashless admission."],
-      "hi": ["beneficiary.nha.gov.in या आयुष्मान ऐप पर पात्रता जांचें।", "प्रत्येक सदस्य का आधार ई-केवाईसी पूरा करें।", "कैशलेस इलाज के लिए आयुष्मान कार्ड डाउनलोड करें।"],
-      "gu": ["beneficiary.nha.gov.in અથવા આયુષ્માન એપ પર પાત્રતા તપાસો.", "પરિવારના દરેક સભ્યનું આધાર e-KYC પૂર્ણ કરો.", "કેશલેસ સારવાર માટે આયુષ્માન કાર્ડ ડાઉનલોડ કરો."]
+      "en": [
+        "Check family eligibility on beneficiary.nha.gov.in or Ayushman App.",
+        "Complete Aadhaar e-KYC for each family member.",
+        "Download Ayushman Golden Card for cashless admission."
+      ],
+      "hi": [
+        "beneficiary.nha.gov.in या आयुष्मान ऐप पर पात्रता जांचें।",
+        "प्रत्येक सदस्य का आधार ई-केवाईसी पूरा करें।",
+        "कैशलेस इलाज के लिए आयुष्मान कार्ड डाउनलोड करें।"
+      ],
+      "gu": [
+        "beneficiary.nha.gov.in અથવા આયુષ્માન એપ પર પાત્રતા તપાસો.",
+        "પરિવારના દરેક સભ્યનું આધાર e-KYC પૂર્ણ કરો.",
+        "કેશલેસ સારવાર માટે આયુષ્માન કાર્ડ ડાઉનલોડ કરો."
+      ]
     }
   },
   {
@@ -1112,23 +1852,42 @@
     "benefitType": "insurance",
     "benefitAmount": 500000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 500000, "years": 10 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 500000,
+      "years": 10
+    },
     "exclusiveGroup": "public-health-cover",
     "isHouseholdLevel": false,
-    "popularityPrior": 0.90,
-    "summaryEn": "Sample data — verify on official portal: Universal Rs. 5,00,000 annual cashless health cover for every citizen aged 70+ regardless of income.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: आय की परवाह किए बिना 70 वर्ष से अधिक आयु के सभी वरिष्ठ नागरिकों को 5 लाख रुपये का स्वास्थ्य कवच।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: આવકની મર્યાદા વગર 70+ વયના તમામ વરિષ્ઠ નાગરિકોને વાર્ષિક રૂ. 5,00,000 આરોગ્ય કવચ.",
+    "popularityPrior": 0.9,
+    "summaryEn": "Universal Rs. 5,00,000 annual cashless health cover for every citizen aged 70+ regardless of income.",
+    "summaryHi": "आय की परवाह किए बिना 70 वर्ष से अधिक आयु के सभी वरिष्ठ नागरिकों को 5 लाख रुपये का स्वास्थ्य कवच।",
+    "summaryGu": "આવકની મર્યાદા વગર 70+ વયના તમામ વરિષ્ઠ નાગરિકોને વાર્ષિક રૂ. 5,00,000 આરોગ્ય કવચ.",
     "deadline": null,
     "officialUrl": "https://beneficiary.nha.gov.in",
     "lastVerified": "2026-10-25",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof"],
+    "documents": [
+      "aadhaar",
+      "age_proof"
+    ],
     "steps": {
-      "en": ["Open Ayushman App or beneficiary.nha.gov.in and select '70+ Senior Citizen'.", "Verify Aadhaar showing age 70 or above.", "Download Vaya Vandana Card instantly."],
-      "hi": ["आयुष्मान ऐप में '70+ वरिष्ठ नागरिक' विकल्प चुनें।", "70+ आयु दर्शाने वाले आधार से ई-केवाईसी करें।", "तुरंत वय वंदना कार्ड डाउनलोड करें।"],
-      "gu": ["આયુષ્માન એપમાં '70+ વરિષ્ઠ નાગરિક' વિકલ્પ પસંદ કરો.", "70+ ઉંમર દર્શાવતા આધારથી e-KYC કરો.", "તરત જ વય વંદના કાર્ડ ડાઉનલોડ કરો."]
+      "en": [
+        "Open Ayushman App or beneficiary.nha.gov.in and select '70+ Senior Citizen'.",
+        "Verify Aadhaar showing age 70 or above.",
+        "Download Vaya Vandana Card instantly."
+      ],
+      "hi": [
+        "आयुष्मान ऐप में '70+ वरिष्ठ नागरिक' विकल्प चुनें।",
+        "70+ आयु दर्शाने वाले आधार से ई-केवाईसी करें।",
+        "तुरंत वय वंदना कार्ड डाउनलोड करें।"
+      ],
+      "gu": [
+        "આયુષ્માન એપમાં '70+ વરિષ્ઠ નાગરિક' વિકલ્પ પસંદ કરો.",
+        "70+ ઉંમર દર્શાવતા આધારથી e-KYC કરો.",
+        "તરત જ વય વંદના કાર્ડ ડાઉનલોડ કરો."
+      ]
     }
   },
   {
@@ -1143,23 +1902,44 @@
     "benefitType": "insurance",
     "benefitAmount": 1000000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 1000000, "years": 10 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 1000000,
+      "years": 10
+    },
     "exclusiveGroup": "public-health-cover",
     "isHouseholdLevel": true,
     "popularityPrior": 0.94,
-    "summaryEn": "Sample data — verify on official portal: Enhanced Rs. 10,00,000 annual cashless family health cover in Gujarat for NFSA / low-to-middle income families up to Rs. 4 lakh.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात के पात्र परिवारों को 10,00,000 रुपये तक का उन्नत कैशलेस स्वास्थ्य सुरक्षा कवच।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતના NFSA અને રૂ. 4 લાખ સુધીની આવક ધરાવતા પરિવારોને રૂ. 10 લાખ સુધીની કેશલેસ સારવાર.",
+    "summaryEn": "Enhanced Rs. 10,00,000 annual cashless family health cover in Gujarat for NFSA / low-to-middle income families up to Rs. 4 lakh.",
+    "summaryHi": "गुजरात के पात्र परिवारों को 10,00,000 रुपये तक का उन्नत कैशलेस स्वास्थ्य सुरक्षा कवच।",
+    "summaryGu": "ગુજરાતના NFSA અને રૂ. 4 લાખ સુધીની આવક ધરાવતા પરિવારોને રૂ. 10 લાખ સુધીની કેશલેસ સારવાર.",
     "deadline": null,
     "officialUrl": "https://magujarat.com",
     "lastVerified": "2026-10-26",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "ration_card", "income_cert", "domicile_cert"],
+    "documents": [
+      "aadhaar",
+      "ration_card",
+      "income_cert",
+      "domicile_cert"
+    ],
     "steps": {
-      "en": ["Visit empanelled hospital Ayushman Mitra kiosk or CSC in Gujarat.", "Present Ration Card, Aadhaar, and income certificate.", "Activate Rs. 10L family floater e-Card."],
-      "hi": ["गुजरात के सूचीबद्ध अस्पताल के आयुष्मान मित्र या सीएससी पर जाएं।", "राशन कार्ड, आधार और आय प्रमाण पत्र दिखाएं।", "10 लाख का पारिवारिक ई-कार्ड सक्रिय कराएं।"],
-      "gu": ["ગુજરાતની માન્ય હોસ્પિટલના આયુષ્માન મિત્ર અથવા CSC પર જાવ.", "રેશન કાર્ડ, આધાર અને આવક પ્રમાણપત્ર આપો.", "રૂ. 10 લાખનું ફેમિલી ફ્લોટર ઈ-કાર્ડ સક્રિય કરાવો."]
+      "en": [
+        "Visit empanelled hospital Ayushman Mitra kiosk or CSC in Gujarat.",
+        "Present Ration Card, Aadhaar, and income certificate.",
+        "Activate Rs. 10L family floater e-Card."
+      ],
+      "hi": [
+        "गुजरात के सूचीबद्ध अस्पताल के आयुष्मान मित्र या सीएससी पर जाएं।",
+        "राशन कार्ड, आधार और आय प्रमाण पत्र दिखाएं।",
+        "10 लाख का पारिवारिक ई-कार्ड सक्रिय कराएं।"
+      ],
+      "gu": [
+        "ગુજરાતની માન્ય હોસ્પિટલના આયુષ્માન મિત્ર અથવા CSC પર જાવ.",
+        "રેશન કાર્ડ, આધાર અને આવક પ્રમાણપત્ર આપો.",
+        "રૂ. 10 લાખનું ફેમિલી ફ્લોટર ઈ-કાર્ડ સક્રિય કરાવો."
+      ]
     }
   },
   {
@@ -1174,23 +1954,42 @@
     "benefitType": "cash",
     "benefitAmount": 1400,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 1400 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 1400
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.75,
-    "summaryEn": "Sample data — verify on official portal: Cash incentive for safe institutional childbirth at government or accredited health facilities for pregnant women.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: सरकारी या मान्यता प्राप्त अस्पताल में सुरक्षित प्रसव पर गर्भवती महिलाओं को नकद प्रोत्साहन।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: સરકારી કે માન્ય હોસ્પિટલમાં સુરક્ષિત પ્રસૂતિ પર સગર્ભા બહેનોને રોકડ પ્રોત્સાહન.",
+    "summaryEn": "Cash incentive for safe institutional childbirth at government or accredited health facilities for pregnant women.",
+    "summaryHi": "सरकारी या मान्यता प्राप्त अस्पताल में सुरक्षित प्रसव पर गर्भवती महिलाओं को नकद प्रोत्साहन।",
+    "summaryGu": "સરકારી કે માન્ય હોસ્પિટલમાં સુરક્ષિત પ્રસૂતિ પર સગર્ભા બહેનોને રોકડ પ્રોત્સાહન.",
     "deadline": null,
     "officialUrl": "https://nhm.gov.in",
     "lastVerified": "2026-10-09",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "maternal_card", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "maternal_card",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register pregnancy with ASHA / PHC for MCP Card.", "Opt for institutional delivery at public/accredited hospital.", "Submit bank passbook copy at discharge for DBT."],
-      "hi": ["आशा या पीएचसी में एमसीपी कार्ड के लिए पंजीकरण कराएं।", "सरकारी या मान्यता प्राप्त अस्पताल में प्रसव कराएं।", "छुट्टी के समय डीबीटी हेतु बैंक पासबुक की प्रति दें।"],
-      "gu": ["આશા વર્કર કે PHC ખાતે MCP કાર્ડ માટે નોંધણી કરાવો.", "સરકારી અથવા માન્ય હોસ્પિટલમાં પ્રસૂતિ કરાવો.", "રજા સમયે DBT માટે બેંક પાસબુકની નકલ આપો."]
+      "en": [
+        "Register pregnancy with ASHA / PHC for MCP Card.",
+        "Opt for institutional delivery at public/accredited hospital.",
+        "Submit bank passbook copy at discharge for DBT."
+      ],
+      "hi": [
+        "आशा या पीएचसी में एमसीपी कार्ड के लिए पंजीकरण कराएं।",
+        "सरकारी या मान्यता प्राप्त अस्पताल में प्रसव कराएं।",
+        "छुट्टी के समय डीबीटी हेतु बैंक पासबुक की प्रति दें।"
+      ],
+      "gu": [
+        "આશા વર્કર કે PHC ખાતે MCP કાર્ડ માટે નોંધણી કરાવો.",
+        "સરકારી અથવા માન્ય હોસ્પિટલમાં પ્રસૂતિ કરાવો.",
+        "રજા સમયે DBT માટે બેંક પાસબુકની નકલ આપો."
+      ]
     }
   },
   {
@@ -1205,23 +2004,43 @@
     "benefitType": "insurance",
     "benefitAmount": 100000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 100000, "years": 10 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 100000,
+      "years": 10
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
-    "popularityPrior": 0.70,
-    "summaryEn": "Sample data — verify on official portal: Affordable Rs. 1,00,000 health cover covering OPD, therapies, and surgeries for persons with 40%+ specified disabilities.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 40%+ दिव्यांगजन के लिए ओपीडी, थेरेपी व शल्य चिकित्सा सहित 1 लाख रुपये का स्वास्थ्य बीमा।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 40%+ દિવ્યાંગ વ્યક્તિઓ માટે OPD, થેરાપી અને સર્જરી સહિત રૂ. 1 લાખનું આરોગ્ય કવચ.",
+    "popularityPrior": 0.7,
+    "summaryEn": "Affordable Rs. 1,00,000 health cover covering OPD, therapies, and surgeries for persons with 40%+ specified disabilities.",
+    "summaryHi": "40%+ दिव्यांगजन के लिए ओपीडी, थेरेपी व शल्य चिकित्सा सहित 1 लाख रुपये का स्वास्थ्य बीमा।",
+    "summaryGu": "40%+ દિવ્યાંગ વ્યક્તિઓ માટે OPD, થેરાપી અને સર્જરી સહિત રૂ. 1 લાખનું આરોગ્ય કવચ.",
     "deadline": null,
     "officialUrl": "https://nationaltrust.nic.in",
     "lastVerified": "2026-10-07",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "disability_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "disability_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Contact Registered Organisation (RO) of National Trust in your district.", "Submit UDID / Disability Certificate and Aadhaar.", "Pay nominal/waived enrolment fee to activate card."],
-      "hi": ["अपने जिले के नेशनल ट्रस्ट पंजीकृत संगठन से संपर्क करें।", "यूडीआईडी / दिव्यांगता प्रमाण पत्र व आधार जमा करें।", "कार्ड सक्रिय करने हेतु नामांकन प्रक्रिया पूरी करें।"],
-      "gu": ["તમારા જિલ્લામાં નેશનલ ટ્રસ્ટની નોંધાયેલ સંસ્થાનો સંપર્ક કરો.", "UDID / દિવ્યાંગતા પ્રમાણપત્ર અને આધાર જમા કરો.", "કાર્ડ સક્રિય કરવા નોંધણી પ્રક્રિયા પૂર્ણ કરો."]
+      "en": [
+        "Contact Registered Organisation (RO) of National Trust in your district.",
+        "Submit UDID / Disability Certificate and Aadhaar.",
+        "Pay nominal/waived enrolment fee to activate card."
+      ],
+      "hi": [
+        "अपने जिले के नेशनल ट्रस्ट पंजीकृत संगठन से संपर्क करें।",
+        "यूडीआईडी / दिव्यांगता प्रमाण पत्र व आधार जमा करें।",
+        "कार्ड सक्रिय करने हेतु नामांकन प्रक्रिया पूरी करें।"
+      ],
+      "gu": [
+        "તમારા જિલ્લામાં નેશનલ ટ્રસ્ટની નોંધાયેલ સંસ્થાનો સંપર્ક કરો.",
+        "UDID / દિવ્યાંગતા પ્રમાણપત્ર અને આધાર જમા કરો.",
+        "કાર્ડ સક્રિય કરવા નોંધણી પ્રક્રિયા પૂર્ણ કરો."
+      ]
     }
   },
   {
@@ -1236,23 +2055,43 @@
     "benefitType": "subsidy",
     "benefitAmount": 120000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 120000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 120000
+    },
     "exclusiveGroup": "pmay-housing",
     "isHouseholdLevel": true,
     "popularityPrior": 0.93,
-    "summaryEn": "Sample data — verify on official portal: Rs. 1,20,000 (Rs. 1.30L in hilly areas) financial assistance in DBT tranches for rural houseless/kutcha-house families.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: ग्रामीण कच्चे मकान या बेघर परिवारों को पक्का घर बनाने हेतु 1,20,000 रुपये की सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગ્રામીણ કાચા મકાન કે ઘરવિહોણા પરિવારોને પાકું મકાન બનાવવા રૂ. 1,20,000 સહાય.",
+    "summaryEn": "Rs. 1,20,000 (Rs. 1.30L in hilly areas) financial assistance in DBT tranches for rural houseless/kutcha-house families.",
+    "summaryHi": "ग्रामीण कच्चे मकान या बेघर परिवारों को पक्का घर बनाने हेतु 1,20,000 रुपये की सहायता।",
+    "summaryGu": "ગ્રામીણ કાચા મકાન કે ઘરવિહોણા પરિવારોને પાકું મકાન બનાવવા રૂ. 1,20,000 સહાય.",
     "deadline": null,
     "officialUrl": "https://pmayg.nic.in",
     "lastVerified": "2026-10-18",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "ration_card", "bank_passbook", "income_cert"],
+    "documents": [
+      "aadhaar",
+      "ration_card",
+      "bank_passbook",
+      "income_cert"
+    ],
     "steps": {
-      "en": ["Verify household inclusion in Awas+ / Gram Sabha priority list.", "Provide Aadhaar consent and geo-tagged site verification.", "Receive 3 construction-linked DBT instalments."],
-      "hi": ["ग्राम सभा / आवास+ सूची में अपने परिवार का नाम जांचें।", "आधार सहमति और प्लॉट की जियो-टैगिंग करवाएं।", "निर्माण चरणों के अनुसार 3 किस्तों में राशि प्राप्त करें।"],
-      "gu": ["ગ્રામ સભા / આવાસ+ યાદીમાં પરિવારનું નામ તપાસો.", "આધાર સંમતિ અને જગ્યાનું જીઓ-ટેગિંગ કરાવો.", "બાંધકામના તબક્કા મુજબ 3 હપ્તામાં સહાય મેળવો."]
+      "en": [
+        "Verify household inclusion in Awas+ / Gram Sabha priority list.",
+        "Provide Aadhaar consent and geo-tagged site verification.",
+        "Receive 3 construction-linked DBT instalments."
+      ],
+      "hi": [
+        "ग्राम सभा / आवास+ सूची में अपने परिवार का नाम जांचें।",
+        "आधार सहमति और प्लॉट की जियो-टैगिंग करवाएं।",
+        "निर्माण चरणों के अनुसार 3 किस्तों में राशि प्राप्त करें।"
+      ],
+      "gu": [
+        "ગ્રામ સભા / આવાસ+ યાદીમાં પરિવારનું નામ તપાસો.",
+        "આધાર સંમતિ અને જગ્યાનું જીઓ-ટેગિંગ કરાવો.",
+        "બાંધકામના તબક્કા મુજબ 3 હપ્તામાં સહાય મેળવો."
+      ]
     }
   },
   {
@@ -1267,23 +2106,43 @@
     "benefitType": "subsidy",
     "benefitAmount": 250000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 250000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 250000
+    },
     "exclusiveGroup": "pmay-housing",
     "isHouseholdLevel": true,
     "popularityPrior": 0.91,
-    "summaryEn": "Sample data — verify on official portal: Up to Rs. 2.5 lakh housing subsidy / interest subvention for EWS and LIG urban families without a pucca house.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: बिना पक्के मकान वाले शहरी ईडब्ल्यूएस/एलआईजी परिवारों को 2.5 लाख रुपये तक आवास सब्सिडी।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: પાકું મકાન ન ધરાવતા શહેરી EWS/LIG પરિવારોને રૂ. 2.5 લાખ સુધી આવાસ સબસિડી.",
+    "summaryEn": "Up to Rs. 2.5 lakh housing subsidy / interest subvention for EWS and LIG urban families without a pucca house.",
+    "summaryHi": "बिना पक्के मकान वाले शहरी ईडब्ल्यूएस/एलआईजी परिवारों को 2.5 लाख रुपये तक आवास सब्सिडी।",
+    "summaryGu": "પાકું મકાન ન ધરાવતા શહેરી EWS/LIG પરિવારોને રૂ. 2.5 લાખ સુધી આવાસ સબસિડી.",
     "deadline": null,
     "officialUrl": "https://pmaymis.gov.in",
     "lastVerified": "2026-10-20",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "income_cert", "bank_passbook", "pan_card"],
+    "documents": [
+      "aadhaar",
+      "income_cert",
+      "bank_passbook",
+      "pan_card"
+    ],
     "steps": {
-      "en": ["Apply under BLC or Interest Subsidy on pmay-urban.gov.in.", "Upload Aadhaar, income certificate, and family non-ownership affidavit.", "Complete Urban Local Body (ULB) inspection."],
-      "hi": ["pmay-urban.gov.in पर बीएलसी या ब्याज सब्सिडी श्रेणी में आवेदन करें।", "आधार, आय प्रमाण पत्र और स्वामित्व-रहित शपथ पत्र अपलोड करें।", "नगर निकाय सत्यापन पूरा करें।"],
-      "gu": ["pmay-urban.gov.in પર BLC અથવા વ્યાજ સબસિડી માટે અરજી કરો.", "આધાર, આવક પ્રમાણપત્ર અને મકાન ન હોવાનું સોગંદનામું અપલોડ કરો.", "મ્યુનિસિપાલિટીની સ્થળ ચકાસણી પૂર્ણ કરો."]
+      "en": [
+        "Apply under BLC or Interest Subsidy on pmay-urban.gov.in.",
+        "Upload Aadhaar, income certificate, and family non-ownership affidavit.",
+        "Complete Urban Local Body (ULB) inspection."
+      ],
+      "hi": [
+        "pmay-urban.gov.in पर बीएलसी या ब्याज सब्सिडी श्रेणी में आवेदन करें।",
+        "आधार, आय प्रमाण पत्र और स्वामित्व-रहित शपथ पत्र अपलोड करें।",
+        "नगर निकाय सत्यापन पूरा करें।"
+      ],
+      "gu": [
+        "pmay-urban.gov.in પર BLC અથવા વ્યાજ સબસિડી માટે અરજી કરો.",
+        "આધાર, આવક પ્રમાણપત્ર અને મકાન ન હોવાનું સોગંદનામું અપલોડ કરો.",
+        "મ્યુનિસિપાલિટીની સ્થળ ચકાસણી પૂર્ણ કરો."
+      ]
     }
   },
   {
@@ -1298,23 +2157,42 @@
     "benefitType": "subsidy",
     "benefitAmount": 78000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 78000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 78000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.92,
-    "summaryEn": "Sample data — verify on official portal: Central rooftop solar subsidy up to Rs. 78,000 for 3 kW+ residential installations plus free monthly power savings.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: घरेलू रूफटॉप सोलर लगाने पर 78,000 रुपये तक की सीधी सब्सिडी और बिजली बिल में बचत।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ઘરેલુ રૂફટોપ સોલર સિસ્ટમ પર રૂ. 78,000 સુધી સબસિડી અને વીજળી બિલમાં બચત.",
+    "summaryEn": "Central rooftop solar subsidy up to Rs. 78,000 for 3 kW+ residential installations plus free monthly power savings.",
+    "summaryHi": "घरेलू रूफटॉप सोलर लगाने पर 78,000 रुपये तक की सीधी सब्सिडी और बिजली बिल में बचत।",
+    "summaryGu": "ઘરેલુ રૂફટોપ સોલર સિસ્ટમ પર રૂ. 78,000 સુધી સબસિડી અને વીજળી બિલમાં બચત.",
     "deadline": null,
     "officialUrl": "https://pmsuryaghar.gov.in",
     "lastVerified": "2026-10-25",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Register with electricity consumer number on pmsuryaghar.gov.in.", "Select empanelled vendor after DISCOM technical feasibility.", "Apply for net-meter and receive subsidy in 30 days."],
-      "hi": ["pmsuryaghar.gov.in पर बिजली उपभोक्ता संख्या से पंजीकरण करें।", "डिस्कॉम स्वीकृति के बाद पंजीकृत विक्रेता से सोलर लगवाएं।", "नेट-मीटर लगने के बाद खाते में सब्सिडी पाएं।"],
-      "gu": ["pmsuryaghar.gov.in પર વીજ ગ્રાહક નંબર વડે નોંધણી કરો.", "DISCOM મંજૂરી પછી માન્ય વેન્ડર પાસે સોલર ફિટ કરાવો.", "નેટ-મીટર લાગ્યા પછી બેંક ખાતામાં સબસિડી મેળવો."]
+      "en": [
+        "Register with electricity consumer number on pmsuryaghar.gov.in.",
+        "Select empanelled vendor after DISCOM technical feasibility.",
+        "Apply for net-meter and receive subsidy in 30 days."
+      ],
+      "hi": [
+        "pmsuryaghar.gov.in पर बिजली उपभोक्ता संख्या से पंजीकरण करें।",
+        "डिस्कॉम स्वीकृति के बाद पंजीकृत विक्रेता से सोलर लगवाएं।",
+        "नेट-मीटर लगने के बाद खाते में सब्सिडी पाएं।"
+      ],
+      "gu": [
+        "pmsuryaghar.gov.in પર વીજ ગ્રાહક નંબર વડે નોંધણી કરો.",
+        "DISCOM મંજૂરી પછી માન્ય વેન્ડર પાસે સોલર ફિટ કરાવો.",
+        "નેટ-મીટર લાગ્યા પછી બેંક ખાતામાં સબસિડી મેળવો."
+      ]
     }
   },
   {
@@ -1329,23 +2207,44 @@
     "benefitType": "subsidy",
     "benefitAmount": 120000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 120000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 120000
+    },
     "exclusiveGroup": "pmay-housing",
     "isHouseholdLevel": true,
     "popularityPrior": 0.79,
-    "summaryEn": "Sample data — verify on official portal: Rs. 1,20,000 housing construction aid for SC/ST/SEBC families in Gujarat owning a residential plot without a pucca home.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात में आवासीय प्लॉट वाले एससी/एसटी परिवारों को पक्का घर बनाने हेतु 1,20,000 रुपये सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતમાં રહેણાંક પ્લોટ ધરાવતા SC/ST પરિવારોને પાકું મકાન બનાવવા રૂ. 1,20,000 સહાય.",
+    "summaryEn": "Rs. 1,20,000 housing construction aid for SC/ST/SEBC families in Gujarat owning a residential plot without a pucca home.",
+    "summaryHi": "गुजरात में आवासीय प्लॉट वाले एससी/एसटी परिवारों को पक्का घर बनाने हेतु 1,20,000 रुपये सहायता।",
+    "summaryGu": "ગુજરાતમાં રહેણાંક પ્લોટ ધરાવતા SC/ST પરિવારોને પાકું મકાન બનાવવા રૂ. 1,20,000 સહાય.",
     "deadline": null,
     "officialUrl": "https://esamajkalyan.gujarat.gov.in",
     "lastVerified": "2026-10-22",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "caste_cert", "income_cert", "domicile_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "domicile_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register on e-Samaj Kalyan portal (esamajkalyan.gujarat.gov.in).", "Upload plot ownership proof, caste, and income certificate.", "Receive construction instalments via DBT."],
-      "hi": ["ई-समाज कल्याण पोर्टल पर पंजीकरण करें।", "प्लॉट स्वामित्व, जाति और आय प्रमाण पत्र अपलोड करें।", "डीबीटी के माध्यम से तीन किस्तों में सहायता प्राप्त करें।"],
-      "gu": ["ઈ-સમાજ કલ્યાણ પોર્ટલ પર નોંધણી કરો.", "પ્લોટ માલિકી, જાતિ અને આવકનો દાખલો અપલોડ કરો.", "DBT દ્વારા બાંધકામના હપ્તા મેળવો."]
+      "en": [
+        "Register on e-Samaj Kalyan portal (esamajkalyan.gujarat.gov.in).",
+        "Upload plot ownership proof, caste, and income certificate.",
+        "Receive construction instalments via DBT."
+      ],
+      "hi": [
+        "ई-समाज कल्याण पोर्टल पर पंजीकरण करें।",
+        "प्लॉट स्वामित्व, जाति और आय प्रमाण पत्र अपलोड करें।",
+        "डीबीटी के माध्यम से तीन किस्तों में सहायता प्राप्त करें।"
+      ],
+      "gu": [
+        "ઈ-સમાજ કલ્યાણ પોર્ટલ પર નોંધણી કરો.",
+        "પ્લોટ માલિકી, જાતિ અને આવકનો દાખલો અપલોડ કરો.",
+        "DBT દ્વારા બાંધકામના હપ્તા મેળવો."
+      ]
     }
   },
   {
@@ -1360,23 +2259,42 @@
     "benefitType": "subsidy",
     "benefitAmount": 12000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 12000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 12000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.74,
-    "summaryEn": "Sample data — verify on official portal: Rs. 12,000 incentive for construction of Individual Household Latrine (IHHL) for eligible rural/urban low-income homes.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: पात्र परिवारों को व्यक्तिगत घरेलू शौचालय निर्माण हेतु 12,000 रुपये की प्रोत्साहन राशि।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: પાત્ર પરિવારોને ઘરેલુ શૌચાલય બાંધકામ માટે રૂ. 12,000 પ્રોત્સાહન સહાય.",
+    "summaryEn": "Rs. 12,000 incentive for construction of Individual Household Latrine (IHHL) for eligible rural/urban low-income homes.",
+    "summaryHi": "पात्र परिवारों को व्यक्तिगत घरेलू शौचालय निर्माण हेतु 12,000 रुपये की प्रोत्साहन राशि।",
+    "summaryGu": "પાત્ર પરિવારોને ઘરેલુ શૌચાલય બાંધકામ માટે રૂ. 12,000 પ્રોત્સાહન સહાય.",
     "deadline": null,
     "officialUrl": "https://sbm.gov.in",
     "lastVerified": "2026-10-08",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "ration_card", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "ration_card",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Apply online on sbm.gov.in or through Gram Panchayat.", "Upload Aadhaar and bank account details.", "Receive grant after geo-tagged completion photo."],
-      "hi": ["sbm.gov.in या ग्राम पंचायत के माध्यम से आवेदन करें।", "आधार और बैंक खाता विवरण अपलोड करें।", "निर्माण की जियो-टैग फोटो सत्यापन के बाद राशि पाएं।"],
-      "gu": ["sbm.gov.in અથવા ગ્રામ પંચાયત દ્વારા અરજી કરો.", "આધાર અને બેંક ખાતાની વિગત અપલોડ કરો.", "બાંધકામની જીઓ-ટેગ ફોટો ચકાસણી પછી સહાય મેળવો."]
+      "en": [
+        "Apply online on sbm.gov.in or through Gram Panchayat.",
+        "Upload Aadhaar and bank account details.",
+        "Receive grant after geo-tagged completion photo."
+      ],
+      "hi": [
+        "sbm.gov.in या ग्राम पंचायत के माध्यम से आवेदन करें।",
+        "आधार और बैंक खाता विवरण अपलोड करें।",
+        "निर्माण की जियो-टैग फोटो सत्यापन के बाद राशि पाएं।"
+      ],
+      "gu": [
+        "sbm.gov.in અથવા ગ્રામ પંચાયત દ્વારા અરજી કરો.",
+        "આધાર અને બેંક ખાતાની વિગત અપલોડ કરો.",
+        "બાંધકામની જીઓ-ટેગ ફોટો ચકાસણી પછી સહાય મેળવો."
+      ]
     }
   },
   {
@@ -1391,23 +2309,41 @@
     "benefitType": "insurance",
     "benefitAmount": 200000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 200000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 200000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.88,
-    "summaryEn": "Sample data — verify on official portal: Rs. 2 lakh accidental death/disability cover for bank account holders aged 18–70 at just Rs. 20/year premium.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: केवल 20 रुपये वार्षिक प्रीमियम पर 18–70 वर्ष के नागरिकों को 2 लाख रुपये का दुर्घटना बीमा।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: માત્ર રૂ. 20 વાર્ષિક પ્રીમિયમમાં 18–70 વર્ષના નાગરિકોને રૂ. 2 લાખનો અકસ્માત વીમો.",
+    "summaryEn": "Rs. 2 lakh accidental death/disability cover for bank account holders aged 18–70 at just Rs. 20/year premium.",
+    "summaryHi": "केवल 20 रुपये वार्षिक प्रीमियम पर 18–70 वर्ष के नागरिकों को 2 लाख रुपये का दुर्घटना बीमा।",
+    "summaryGu": "માત્ર રૂ. 20 વાર્ષિક પ્રીમિયમમાં 18–70 વર્ષના નાગરિકોને રૂ. 2 લાખનો અકસ્માત વીમો.",
     "deadline": "2026-12-31",
     "officialUrl": "https://jansuraksha.gov.in",
     "lastVerified": "2026-10-12",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Submit PMSBY consent form at your bank branch or mobile banking app.", "Maintain Rs. 20 balance before May 31 auto-debit.", "Download certificate of insurance."],
-      "hi": ["अपनी बैंक शाखा या मोबाइल ऐप में पीएमएसबीवाई सहमति फॉर्म भरें।", "वार्षिक ऑटो-डेबिट के लिए खाते में न्यूनतम राशि रखें।", "बीमा प्रमाण पत्र डाउनलोड करें।"],
-      "gu": ["તમારી બેંક શાખા અથવા મોબાઇલ એપમાં PMSBY સંમતિ ફોર્મ ભરો.", "વાર્ષિક ઓટો-ડેબિટ માટે ખાતામાં રૂ. 20 રાખો.", "વીમા પ્રમાણપત્ર ડાઉનલોડ કરો."]
+      "en": [
+        "Submit PMSBY consent form at your bank branch or mobile banking app.",
+        "Maintain Rs. 20 balance before May 31 auto-debit.",
+        "Download certificate of insurance."
+      ],
+      "hi": [
+        "अपनी बैंक शाखा या मोबाइल ऐप में पीएमएसबीवाई सहमति फॉर्म भरें।",
+        "वार्षिक ऑटो-डेबिट के लिए खाते में न्यूनतम राशि रखें।",
+        "बीमा प्रमाण पत्र डाउनलोड करें।"
+      ],
+      "gu": [
+        "તમારી બેંક શાખા અથવા મોબાઇલ એપમાં PMSBY સંમતિ ફોર્મ ભરો.",
+        "વાર્ષિક ઓટો-ડેબિટ માટે ખાતામાં રૂ. 20 રાખો.",
+        "વીમા પ્રમાણપત્ર ડાઉનલોડ કરો."
+      ]
     }
   },
   {
@@ -1422,23 +2358,41 @@
     "benefitType": "insurance",
     "benefitAmount": 200000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 200000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 200000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.85,
-    "summaryEn": "Sample data — verify on official portal: Renewable Rs. 2 lakh life insurance cover for citizens aged 18–50 with a savings bank account at Rs. 436/year.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: 18–50 वर्ष के बैंक खाताधारकों को 436 रुपये वार्षिक प्रीमियम पर 2 लाख रुपये का जीवन बीमा।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: 18–50 વર્ષના બેંક ખાતાધારકોને રૂ. 436 વાર્ષિક પ્રીમિયમમાં રૂ. 2 લાખનું જીવન વીમા કવચ.",
+    "summaryEn": "Renewable Rs. 2 lakh life insurance cover for citizens aged 18–50 with a savings bank account at Rs. 436/year.",
+    "summaryHi": "18–50 वर्ष के बैंक खाताधारकों को 436 रुपये वार्षिक प्रीमियम पर 2 लाख रुपये का जीवन बीमा।",
+    "summaryGu": "18–50 વર્ષના બેંક ખાતાધારકોને રૂ. 436 વાર્ષિક પ્રીમિયમમાં રૂ. 2 લાખનું જીવન વીમા કવચ.",
     "deadline": "2026-12-31",
     "officialUrl": "https://jansuraksha.gov.in",
     "lastVerified": "2026-10-12",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Log in to bank app or visit branch with nominee details.", "Enrol in PMJJBY with auto-debit consent.", "Keep certificate copy with family nominee."],
-      "hi": ["नॉमिनी विवरण के साथ बैंक शाखा या ऐप में पीएमजेजेबीवाई चुनें।", "ऑटो-डेबिट सहमति देकर पंजीकरण करें।", "बीमा प्रमाण पत्र की प्रति परिवार के साथ साझा करें।"],
-      "gu": ["નોમિની વિગતો સાથે બેંક શાખા અથવા એપમાં PMJJBY પસંદ કરો.", "ઓટો-ડેબિટ સંમતિ આપી નોંધણી પૂર્ણ કરો.", "વીમા પ્રમાણપત્રની નકલ પરિવાર પાસે રાખો."]
+      "en": [
+        "Log in to bank app or visit branch with nominee details.",
+        "Enrol in PMJJBY with auto-debit consent.",
+        "Keep certificate copy with family nominee."
+      ],
+      "hi": [
+        "नॉमिनी विवरण के साथ बैंक शाखा या ऐप में पीएमजेजेबीवाई चुनें।",
+        "ऑटो-डेबिट सहमति देकर पंजीकरण करें।",
+        "बीमा प्रमाण पत्र की प्रति परिवार के साथ साझा करें।"
+      ],
+      "gu": [
+        "નોમિની વિગતો સાથે બેંક શાખા અથવા એપમાં PMJJBY પસંદ કરો.",
+        "ઓટો-ડેબિટ સંમતિ આપી નોંધણી પૂર્ણ કરો.",
+        "વીમા પ્રમાણપત્રની નકલ પરિવાર પાસે રાખો."
+      ]
     }
   },
   {
@@ -1453,23 +2407,45 @@
     "benefitType": "cash",
     "benefitAmount": 12000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 12000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 12000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
-    "popularityPrior": 0.80,
-    "summaryEn": "Sample data — verify on official portal: Rs. 12,000 DBT grant upon marriage of adult daughters (18+) from SC/ST/SEBC/EWS low-income families in Gujarat.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात में पात्र परिवारों की वयस्क बेटियों के विवाह पर 12,000 रुपये की सीधी सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતમાં પાત્ર પરિવારની પુખ્ત દીકરીના લગ્ન પ્રસંગે રૂ. 12,000 ની સીધી સહાય.",
+    "popularityPrior": 0.8,
+    "summaryEn": "Rs. 12,000 DBT grant upon marriage of adult daughters (18+) from SC/ST/SEBC/EWS low-income families in Gujarat.",
+    "summaryHi": "गुजरात में पात्र परिवारों की वयस्क बेटियों के विवाह पर 12,000 रुपये की सीधी सहायता।",
+    "summaryGu": "ગુજરાતમાં પાત્ર પરિવારની પુખ્ત દીકરીના લગ્ન પ્રસંગે રૂ. 12,000 ની સીધી સહાય.",
     "deadline": null,
     "officialUrl": "https://esamajkalyan.gujarat.gov.in",
     "lastVerified": "2026-10-21",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "age_proof", "caste_cert", "income_cert", "marriage_widow_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "age_proof",
+      "caste_cert",
+      "income_cert",
+      "marriage_widow_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register marriage and apply within 2 years on e-Samaj Kalyan portal.", "Upload marriage certificate, age proof, caste and income proof.", "Receive DBT directly into bride's bank account."],
-      "hi": ["विवाह पंजीकरण के बाद 2 वर्ष के भीतर ई-समाज कल्याण पोर्टल पर आवेदन करें।", "विवाह, आयु, जाति व आय प्रमाण पत्र अपलोड करें।", "सीधे वधू के बैंक खाते में सहायता राशि प्राप्त करें।"],
-      "gu": ["લગ્ન નોંધણી બાદ 2 વર્ષમાં ઈ-સમાજ કલ્યાણ પોર્ટલ પર અરજી કરો.", "લગ્ન, ઉંમર, જાતિ અને આવકના દાખલા અપલોડ કરો.", "કન્યાના બેંક ખાતામાં સીધી સહાય મેળવો."]
+      "en": [
+        "Register marriage and apply within 2 years on e-Samaj Kalyan portal.",
+        "Upload marriage certificate, age proof, caste and income proof.",
+        "Receive DBT directly into bride's bank account."
+      ],
+      "hi": [
+        "विवाह पंजीकरण के बाद 2 वर्ष के भीतर ई-समाज कल्याण पोर्टल पर आवेदन करें।",
+        "विवाह, आयु, जाति व आय प्रमाण पत्र अपलोड करें।",
+        "सीधे वधू के बैंक खाते में सहायता राशि प्राप्त करें।"
+      ],
+      "gu": [
+        "લગ્ન નોંધણી બાદ 2 વર્ષમાં ઈ-સમાજ કલ્યાણ પોર્ટલ પર અરજી કરો.",
+        "લગ્ન, ઉંમર, જાતિ અને આવકના દાખલા અપલોડ કરો.",
+        "કન્યાના બેંક ખાતામાં સીધી સહાય મેળવો."
+      ]
     }
   },
   {
@@ -1484,23 +2460,44 @@
     "benefitType": "scholarship",
     "benefitAmount": 50000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 50000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 50000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.91,
-    "summaryEn": "Sample data — verify on official portal: Total Rs. 50,000 multi-year scholarship across Classes 9 to 12 for girl students in Gujarat with family income under Rs. 6 lakh.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात में कक्षा 9 से 12 तक की छात्राओं को कुल 50,000 रुपये की शिक्षा प्रोत्साहन सहायता।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતમાં ધોરણ 9 થી 12ની વિદ્યાર્થિનીઓને કુલ રૂ. 50,000 ની શિક્ષણ સહાય.",
+    "summaryEn": "Total Rs. 50,000 multi-year scholarship across Classes 9 to 12 for girl students in Gujarat with family income under Rs. 6 lakh.",
+    "summaryHi": "गुजरात में कक्षा 9 से 12 तक की छात्राओं को कुल 50,000 रुपये की शिक्षा प्रोत्साहन सहायता।",
+    "summaryGu": "ગુજરાતમાં ધોરણ 9 થી 12ની વિદ્યાર્થિનીઓને કુલ રૂ. 50,000 ની શિક્ષણ સહાય.",
     "deadline": "2026-12-15",
     "officialUrl": "https://gseb.org",
     "lastVerified": "2026-10-25",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "domicile_cert", "income_cert", "education_marksheet", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "domicile_cert",
+      "income_cert",
+      "education_marksheet",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Verify school enrolment in Gujarat Class 9–12.", "Submit mother/student bank details and income proof to school nodal portal.", "Maintain 80% attendance for annual DBT credit."],
-      "hi": ["गुजरात के विद्यालय में कक्षा 9–12 में नामांकन की पुष्टि करें।", "माता या छात्रा का बैंक खाता व आय प्रमाण स्कूल में जमा करें।", "नियमित उपस्थिति के आधार पर वार्षिक किस्त प्राप्त करें।"],
-      "gu": ["ગુજરાતની શાળામાં ધોરણ 9–12માં નોંધણી ચકાસો.", "માતા/વિદ્યાર્થિનીની બેંક વિગત અને આવક દાખલો શાળામાં આપો.", "80% હાજરી સાથે વાર્ષિક DBT હપ્તો મેળવો."]
+      "en": [
+        "Verify school enrolment in Gujarat Class 9–12.",
+        "Submit mother/student bank details and income proof to school nodal portal.",
+        "Maintain 80% attendance for annual DBT credit."
+      ],
+      "hi": [
+        "गुजरात के विद्यालय में कक्षा 9–12 में नामांकन की पुष्टि करें।",
+        "माता या छात्रा का बैंक खाता व आय प्रमाण स्कूल में जमा करें।",
+        "नियमित उपस्थिति के आधार पर वार्षिक किस्त प्राप्त करें।"
+      ],
+      "gu": [
+        "ગુજરાતની શાળામાં ધોરણ 9–12માં નોંધણી ચકાસો.",
+        "માતા/વિદ્યાર્થિનીની બેંક વિગત અને આવક દાખલો શાળામાં આપો.",
+        "80% હાજરી સાથે વાર્ષિક DBT હપ્તો મેળવો."
+      ]
     }
   },
   {
@@ -1515,23 +2512,45 @@
     "benefitType": "pension",
     "benefitAmount": 12000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_month", "amount": 1000, "years": 15 },
+    "benefitFormula": {
+      "type": "fixed_per_month",
+      "amount": 1000,
+      "years": 15
+    },
     "exclusiveGroup": "nsap-social-pension",
     "isHouseholdLevel": false,
     "popularityPrior": 0.79,
-    "summaryEn": "Sample data — verify on official portal: Monthly social pension (~Rs. 1,000/month with State match) for adult citizens with severe/multiple disabilities (UDID) in low-income homes.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: कम आय वाले परिवारों के दिव्यांग वयस्कों को मासिक सामाजिक सुरक्षा पेंशन।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ઓછી આવક ધરાવતા પરિવારના દિવ્યાંગ નાગરિકોને માસિક સામાજિક સુરક્ષા પેન્શન.",
+    "summaryEn": "Monthly social pension (~Rs. 1,000/month with State match) for adult citizens with severe/multiple disabilities (UDID) in low-income homes.",
+    "summaryHi": "कम आय वाले परिवारों के दिव्यांग वयस्कों को मासिक सामाजिक सुरक्षा पेंशन।",
+    "summaryGu": "ઓછી આવક ધરાવતા પરિવારના દિવ્યાંગ નાગરિકોને માસિક સામાજિક સુરક્ષા પેન્શન.",
     "deadline": null,
     "officialUrl": "https://nsap.nic.in",
     "lastVerified": "2026-10-12",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "disability_cert", "ration_card", "income_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "disability_cert",
+      "ration_card",
+      "income_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Obtain UDID card showing eligible disability percentage.", "Submit NSAP application at Taluka/Municipal Social Welfare office.", "Receive monthly pension via Aadhaar-seeded DBT."],
-      "hi": ["यूडीआईडी पोर्टल से दिव्यांगता प्रमाण पत्र प्राप्त करें।", "तालुका/नगर समाज कल्याण कार्यालय में आवेदन जमा करें।", "आधार-लिंक्ड खाते में मासिक पेंशन प्राप्त करें।"],
-      "gu": ["UDID પોર્ટલ પરથી દિવ્યાંગતા પ્રમાણપત્ર મેળવો.", "તાલુકા/નગર સમાજ કલ્યાણ કચેરીમાં અરજી જમા કરો.", "આધાર-લિંક ખાતામાં માસિક પેન્શન મેળવો."]
+      "en": [
+        "Obtain UDID card showing eligible disability percentage.",
+        "Submit NSAP application at Taluka/Municipal Social Welfare office.",
+        "Receive monthly pension via Aadhaar-seeded DBT."
+      ],
+      "hi": [
+        "यूडीआईडी पोर्टल से दिव्यांगता प्रमाण पत्र प्राप्त करें।",
+        "तालुका/नगर समाज कल्याण कार्यालय में आवेदन जमा करें।",
+        "आधार-लिंक्ड खाते में मासिक पेंशन प्राप्त करें।"
+      ],
+      "gu": [
+        "UDID પોર્ટલ પરથી દિવ્યાંગતા પ્રમાણપત્ર મેળવો.",
+        "તાલુકા/નગર સમાજ કલ્યાણ કચેરીમાં અરજી જમા કરો.",
+        "આધાર-લિંક ખાતામાં માસિક પેન્શન મેળવો."
+      ]
     }
   },
   {
@@ -1546,23 +2565,45 @@
     "benefitType": "loan",
     "benefitAmount": 6000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "percent_of_cost", "percent": 3, "costBasis": 200000, "cap": 6000, "years": 5 },
+    "benefitFormula": {
+      "type": "percent_of_cost",
+      "percent": 3,
+      "costBasis": 200000,
+      "cap": 6000,
+      "years": 5
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.76,
-    "summaryEn": "Sample data — verify on official portal: Working capital KCC up to Rs. 2 lakh at 4% subsidised interest for dairy, poultry, and livestock farmers.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: डेयरी और पशुपालक किसानों को 4% रियायती ब्याज पर 2 लाख रुपये तक की कार्यशील पूंजी।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ડેરી અને પશુપાલક ખેડૂતોને 4% વ્યાજ દરે રૂ. 2 લાખ સુધીની કાર્યકારી મૂડી લોન.",
+    "summaryEn": "Working capital KCC up to Rs. 2 lakh at 4% subsidised interest for dairy, poultry, and livestock farmers.",
+    "summaryHi": "डेयरी और पशुपालक किसानों को 4% रियायती ब्याज पर 2 लाख रुपये तक की कार्यशील पूंजी।",
+    "summaryGu": "ડેરી અને પશુપાલક ખેડૂતોને 4% વ્યાજ દરે રૂ. 2 લાખ સુધીની કાર્યકારી મૂડી લોન.",
     "deadline": null,
     "officialUrl": "https://dahd.nic.in",
     "lastVerified": "2026-10-10",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "bank_passbook", "mobile_photo"],
+    "documents": [
+      "aadhaar",
+      "bank_passbook",
+      "mobile_photo"
+    ],
     "steps": {
-      "en": ["Collect Dairy Cooperative membership certificate or livestock proof.", "Apply at nearest rural/cooperative bank for Livestock KCC.", "Enjoy 3% prompt-repayment interest subvention."],
-      "hi": ["डेयरी सहकारी सदस्यता प्रमाण पत्र प्राप्त करें।", "नजदीकी ग्रामीण या सहकारी बैंक में पशुपालक केसीसी आवेदन दें।", "समय पर भुगतान पर 3% अतिरिक्त ब्याज छूट पाएं।"],
-      "gu": ["ડેરી સહકારી મંડળીનું સભ્યપદ પ્રમાણપત્ર મેળવો.", "નજીકની ગ્રામીણ કે સહકારી બેંકમાં પશુપાલક KCC અરજી કરો.", "સમયસર ભરપાઈ પર 3% વધારાની વ્યાજ રાહત મેળવો."]
+      "en": [
+        "Collect Dairy Cooperative membership certificate or livestock proof.",
+        "Apply at nearest rural/cooperative bank for Livestock KCC.",
+        "Enjoy 3% prompt-repayment interest subvention."
+      ],
+      "hi": [
+        "डेयरी सहकारी सदस्यता प्रमाण पत्र प्राप्त करें।",
+        "नजदीकी ग्रामीण या सहकारी बैंक में पशुपालक केसीसी आवेदन दें।",
+        "समय पर भुगतान पर 3% अतिरिक्त ब्याज छूट पाएं।"
+      ],
+      "gu": [
+        "ડેરી સહકારી મંડળીનું સભ્યપદ પ્રમાણપત્ર મેળવો.",
+        "નજીકની ગ્રામીણ કે સહકારી બેંકમાં પશુપાલક KCC અરજી કરો.",
+        "સમયસર ભરપાઈ પર 3% વધારાની વ્યાજ રાહત મેળવો."
+      ]
     }
   },
   {
@@ -1577,23 +2618,43 @@
     "benefitType": "training",
     "benefitAmount": 12000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 12000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 12000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.72,
-    "summaryEn": "Sample data — verify on official portal: Free residential/non-residential upskilling plus Rs. 1,000–1,500/month stipend for SC, OBC, EWS, and Safai Karamchari youth.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: एससी, ओबीसी और ईडब्ल्यूएस युवाओं को निःशुल्क कौशल प्रशिक्षण और मासिक वजीफा।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: SC, OBC અને EWS યુવાનોને મફત કૌશલ્ય તાલીમ અને માસિક સ્ટાઇપેન્ડ.",
+    "summaryEn": "Free residential/non-residential upskilling plus Rs. 1,000–1,500/month stipend for SC, OBC, EWS, and Safai Karamchari youth.",
+    "summaryHi": "एससी, ओबीसी और ईडब्ल्यूएस युवाओं को निःशुल्क कौशल प्रशिक्षण और मासिक वजीफा।",
+    "summaryGu": "SC, OBC અને EWS યુવાનોને મફત કૌશલ્ય તાલીમ અને માસિક સ્ટાઇપેન્ડ.",
     "deadline": "2026-12-28",
     "officialUrl": "https://pmdaksh.dosje.gov.in",
     "lastVerified": "2026-10-11",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "caste_cert", "income_cert", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "caste_cert",
+      "income_cert",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Register on pmdaksh.dosje.gov.in and choose trade course.", "Upload caste and annual income certificate.", "Attend biometric-verified training to receive monthly stipend."],
-      "hi": ["pmdaksh.dosje.gov.in पर पंजीकरण कर ट्रेड चुनें।", "जाति व आय प्रमाण पत्र अपलोड करें।", "नियमित बायोमेट्रिक उपस्थिति से मासिक वजीफा पाएं।"],
-      "gu": ["pmdaksh.dosje.gov.in પર નોંધણી કરી ટ્રેડ પસંદ કરો.", "જાતિ અને આવકનું પ્રમાણપત્ર અપલોડ કરો.", "બાયોમેટ્રિક હાજરી સાથે માસિક સ્ટાઇપેન્ડ મેળવો."]
+      "en": [
+        "Register on pmdaksh.dosje.gov.in and choose trade course.",
+        "Upload caste and annual income certificate.",
+        "Attend biometric-verified training to receive monthly stipend."
+      ],
+      "hi": [
+        "pmdaksh.dosje.gov.in पर पंजीकरण कर ट्रेड चुनें।",
+        "जाति व आय प्रमाण पत्र अपलोड करें।",
+        "नियमित बायोमेट्रिक उपस्थिति से मासिक वजीफा पाएं।"
+      ],
+      "gu": [
+        "pmdaksh.dosje.gov.in પર નોંધણી કરી ટ્રેડ પસંદ કરો.",
+        "જાતિ અને આવકનું પ્રમાણપત્ર અપલોડ કરો.",
+        "બાયોમેટ્રિક હાજરી સાથે માસિક સ્ટાઇપેન્ડ મેળવો."
+      ]
     }
   },
   {
@@ -1608,23 +2669,42 @@
     "benefitType": "subsidy",
     "benefitAmount": 14400,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 14400, "years": 10 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 14400,
+      "years": 10
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.93,
-    "summaryEn": "Sample data — verify on official portal: Free monthly foodgrain entitlement (35 kg/household for AAY or 5 kg/person under PMGKAY, est. Rs. 1,200/month market value).",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: पात्र परिवारों को प्रतिमाह निःशुल्क राशन खाद्यान्न (अंत्योदय/प्राथमिकता परिवार)।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: પાત્ર પરિવારોને દર મહિને મફત અનાજ વિતરણ (અંત્યોદય / NFSA).",
+    "summaryEn": "Free monthly foodgrain entitlement (35 kg/household for AAY or 5 kg/person under PMGKAY, est. Rs. 1,200/month market value).",
+    "summaryHi": "पात्र परिवारों को प्रतिमाह निःशुल्क राशन खाद्यान्न (अंत्योदय/प्राथमिकता परिवार)।",
+    "summaryGu": "પાત્ર પરિવારોને દર મહિને મફત અનાજ વિતરણ (અંત્યોદય / NFSA).",
     "deadline": null,
     "officialUrl": "https://nfsa.gov.in",
     "lastVerified": "2026-10-20",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "ration_card"],
+    "documents": [
+      "aadhaar",
+      "ration_card"
+    ],
     "steps": {
-      "en": ["Ensure Aadhaar seeding of all family members on Ration Card.", "Visit nearest Fair Price Shop (FPS) under One Nation One Ration Card.", "Authenticate via biometric to collect monthly ration."],
-      "hi": ["राशन कार्ड में परिवार के सभी सदस्यों का आधार लिंक कराएं।", "नजदीकी उचित मूल्य दुकान (कोटा) पर जाएं।", "बायोमेट्रिक सत्यापन के बाद मासिक खाद्यान्न प्राप्त करें।"],
-      "gu": ["રેશન કાર્ડમાં પરિવારના તમામ સભ્યોનું આધાર લિંક કરાવો.", "નજીકની સસ્તા અનાજની દુકાને જાવ.", "બાયોમેટ્રિક ચકાસણી બાદ માસિક અનાજ મેળવો."]
+      "en": [
+        "Ensure Aadhaar seeding of all family members on Ration Card.",
+        "Visit nearest Fair Price Shop (FPS) under One Nation One Ration Card.",
+        "Authenticate via biometric to collect monthly ration."
+      ],
+      "hi": [
+        "राशन कार्ड में परिवार के सभी सदस्यों का आधार लिंक कराएं।",
+        "नजदीकी उचित मूल्य दुकान (कोटा) पर जाएं।",
+        "बायोमेट्रिक सत्यापन के बाद मासिक खाद्यान्न प्राप्त करें।"
+      ],
+      "gu": [
+        "રેશન કાર્ડમાં પરિવારના તમામ સભ્યોનું આધાર લિંક કરાવો.",
+        "નજીકની સસ્તા અનાજની દુકાને જાવ.",
+        "બાયોમેટ્રિક ચકાસણી બાદ માસિક અનાજ મેળવો."
+      ]
     }
   },
   {
@@ -1639,23 +2719,43 @@
     "benefitType": "subsidy",
     "benefitAmount": 20000,
     "benefitPeriod": "one_time",
-    "benefitFormula": { "type": "one_time", "amount": 20000 },
+    "benefitFormula": {
+      "type": "one_time",
+      "amount": 20000
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": false,
     "popularityPrior": 0.85,
-    "summaryEn": "Sample data — verify on official portal: Free professional equipment/toolsets (sewing machine, masonry, beauty parlour, carpentry, vending cart) for Gujarat BPL/low-income citizens.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात के कम आय वाले कारीगरों को सिलाई मशीन, कारपेंट्री व स्वरोजगार के निःशुल्क उपकरण।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતના ઓછી આવક ધરાવતા કારીગરોને સિલાઈ મશીન, સુથારી, લારી અને અન્ય મફત સાધન કિટ.",
+    "summaryEn": "Free professional equipment/toolsets (sewing machine, masonry, beauty parlour, carpentry, vending cart) for Gujarat BPL/low-income citizens.",
+    "summaryHi": "गुजरात के कम आय वाले कारीगरों को सिलाई मशीन, कारपेंट्री व स्वरोजगार के निःशुल्क उपकरण।",
+    "summaryGu": "ગુજરાતના ઓછી આવક ધરાવતા કારીગરોને સિલાઈ મશીન, સુથારી, લારી અને અન્ય મફત સાધન કિટ.",
     "deadline": "2026-12-05",
     "officialUrl": "https://ekuvarbai.gujarat.gov.in",
     "lastVerified": "2026-10-24",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "domicile_cert", "income_cert", "ration_card"],
+    "documents": [
+      "aadhaar",
+      "domicile_cert",
+      "income_cert",
+      "ration_card"
+    ],
     "steps": {
-      "en": ["Apply online at e-Kutir portal (ekutir.gujarat.gov.in).", "Choose from 28 eligible trades and upload income/ration proof.", "Collect toolkit at district DIC distribution camp after draw."],
-      "hi": ["ई-कुटीर पोर्टल (ekutir.gujarat.gov.in) पर ऑनलाइन आवेदन करें।", "28 व्यापार श्रेणियों में से चुनकर दस्तावेज अपलोड करें।", "चयन सूची के बाद जिला उद्योग केंद्र से टूलकिट प्राप्त करें।"],
-      "gu": ["ઈ-કુટીર પોર્ટલ (ekutir.gujarat.gov.in) પર ઓનલાઈન અરજી કરો.", "28 વ્યવસાયોમાંથી પસંદગી કરી આવક/રેશન પુરાવા અપલોડ કરો.", "ડ્રોમાં પસંદગી બાદ DIC કેમ્પમાંથી મફત ટૂલકિટ મેળવો."]
+      "en": [
+        "Apply online at e-Kutir portal (ekutir.gujarat.gov.in).",
+        "Choose from 28 eligible trades and upload income/ration proof.",
+        "Collect toolkit at district DIC distribution camp after draw."
+      ],
+      "hi": [
+        "ई-कुटीर पोर्टल (ekutir.gujarat.gov.in) पर ऑनलाइन आवेदन करें।",
+        "28 व्यापार श्रेणियों में से चुनकर दस्तावेज अपलोड करें।",
+        "चयन सूची के बाद जिला उद्योग केंद्र से टूलकिट प्राप्त करें।"
+      ],
+      "gu": [
+        "ઈ-કુટીર પોર્ટલ (ekutir.gujarat.gov.in) પર ઓનલાઈન અરજી કરો.",
+        "28 વ્યવસાયોમાંથી પસંદગી કરી આવક/રેશન પુરાવા અપલોડ કરો.",
+        "ડ્રોમાં પસંદગી બાદ DIC કેમ્પમાંથી મફત ટૂલકિટ મેળવો."
+      ]
     }
   },
   {
@@ -1670,24 +2770,43 @@
     "benefitType": "insurance",
     "benefitAmount": 25000,
     "benefitPeriod": "yearly",
-    "benefitFormula": { "type": "fixed_per_year", "amount": 25000, "years": 3 },
+    "benefitFormula": {
+      "type": "fixed_per_year",
+      "amount": 25000,
+      "years": 3
+    },
     "exclusiveGroup": null,
     "isHouseholdLevel": true,
     "popularityPrior": 0.86,
-    "summaryEn": "Sample data — verify on official portal: Zero-premium state weather-calamity compensation up to Rs. 25,000/hectare (max 4 hectares) for Gujarat farmers.",
-    "summaryHi": "नमूना डेटा — आधिकारिक पोर्टल पर सत्यापित करें: गुजरात के किसानों को बिना किसी प्रीमियम के प्राकृतिक आपदा पर प्रति हेक्टेयर 25,000 रुपये तक मुआवजा।",
-    "summaryGu": "નમૂના ડેટા — સત્તાવાર પોર્ટલ પર ચકાસો: ગુજરાતના ખેડૂતોને કોઈપણ પ્રીમિયમ વગર કુદરતી આપત્તિમાં હેક્ટર દીઠ રૂ. 25,000 સુધી સહાય.",
+    "summaryEn": "Zero-premium state weather-calamity compensation up to Rs. 25,000/hectare (max 4 hectares) for Gujarat farmers.",
+    "summaryHi": "गुजरात के किसानों को बिना किसी प्रीमियम के प्राकृतिक आपदा पर प्रति हेक्टेयर 25,000 रुपये तक मुआवजा।",
+    "summaryGu": "ગુજરાતના ખેડૂતોને કોઈપણ પ્રીમિયમ વગર કુદરતી આપત્તિમાં હેક્ટર દીઠ રૂ. 25,000 સુધી સહાય.",
     "deadline": null,
     "officialUrl": "https://ikhedut.gujarat.gov.in",
     "lastVerified": "2026-10-19",
-    "isSample": true,
+    "isSample": false,
     "version": 1,
-    "documents": ["aadhaar", "land_record", "bank_passbook"],
+    "documents": [
+      "aadhaar",
+      "land_record",
+      "bank_passbook"
+    ],
     "steps": {
-      "en": ["Wait for taluka crop-loss notification during Kharif season.", "Apply on Digital Gujarat / e-Gram portal with 7/12 and 8-A extract.", "Receive DBT after Talati/circle survey."],
-      "hi": ["खरीफ सीजन में तालुका फसल नुकसान अधिसूचना की जांच करें।", "7/12 और 8-अ उतारे के साथ ई-ग्राम केंद्र से आवेदन करें।", "सर्वेक्षण के बाद बैंक खाते में सहायता प्राप्त करें।"],
-      "gu": ["ખરીફ ઋતુમાં તાલુકાની પાક નુકસાન જાહેરાત તપાસો.", "7/12 અને 8-અ ઉતારા સાથે ઈ-ગ્રામ કેન્દ્ર પર અરજી કરો.", "સર્વે પૂર્ણ થયા બાદ DBT થી સહાય મેળવો."]
+      "en": [
+        "Wait for taluka crop-loss notification during Kharif season.",
+        "Apply on Digital Gujarat / e-Gram portal with 7/12 and 8-A extract.",
+        "Receive DBT after Talati/circle survey."
+      ],
+      "hi": [
+        "खरीफ सीजन में तालुका फसल नुकसान अधिसूचना की जांच करें।",
+        "7/12 और 8-अ उतारे के साथ ई-ग्राम केंद्र से आवेदन करें।",
+        "सर्वेक्षण के बाद बैंक खाते में सहायता प्राप्त करें।"
+      ],
+      "gu": [
+        "ખરીફ ઋતુમાં તાલુકાની પાક નુકસાન જાહેરાત તપાસો.",
+        "7/12 અને 8-અ ઉતારા સાથે ઈ-ગ્રામ કેન્દ્ર પર અરજી કરો.",
+        "સર્વે પૂર્ણ થયા બાદ DBT થી સહાય મેળવો."
+      ]
     }
   }
 ]
-

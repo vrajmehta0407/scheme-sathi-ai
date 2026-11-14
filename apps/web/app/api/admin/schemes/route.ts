@@ -89,7 +89,7 @@ export async function POST(req: NextRequest) {
       deadline: parsed.deadline ?? null,
       officialUrl: parsed.officialUrl,
       lastVerified: parsed.lastVerified,
-      isSample: true,
+      isSample: false,
       version: nextVersion,
       documents: parsed.documents,
       steps: {

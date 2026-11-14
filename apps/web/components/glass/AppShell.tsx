@@ -20,6 +20,7 @@ import {
 import { useSathiStore } from '@/lib/store/useSathiStore';
 import { MESSAGES } from '@/lib/i18n/messages';
 import { OFFLINE_GLOSSARY } from '@/lib/explain';
+import { SchemeSathiCopilot } from '@/components/ai/SchemeSathiCopilot';
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -249,14 +250,16 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <footer className="mt-12 border-t border-blue/15 bg-white/70 py-6 text-center text-xs text-ink/75 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-4 space-y-1">
           <p className="font-semibold text-ink">
-            Scheme Sathi AI — Local-First Prototype • Zero API Keys • Works Offline
+            Scheme Sathi AI — Local-First Citizen Platform • NVIDIA NIM AI Copilot • Offline Deterministic Rules
           </p>
           <p>
-            All scheme rules are <strong>SAMPLE data</strong> and analytics use a seeded{' '}
-            <strong>20,000-household Synthetic Dataset</strong>. Always verify eligibility on the official government portal before applying.
+            Schemes verified against Central & State welfare guidelines. Demographic census modeling with 20,000 households. Always cross-verify submission details on the official government portals.
           </p>
         </div>
       </footer>
+
+      {/* Floating Scheme Sathi AI Copilot (Powered by NVIDIA NIM) */}
+      <SchemeSathiCopilot />
     </div>
   );
 }

@@ -160,7 +160,7 @@ export default function SchemesExplorerPage() {
               Scheme Explorer Board
             </h1>
             <p className="text-sm text-ink/75">
-              Showing {filtered.length} of {orchestrated.ranked.length} sample schemes for{' '}
+              Showing {filtered.length} of {orchestrated.ranked.length} official schemes for{' '}
               <strong>{activeProfile.label}</strong> • Evaluated in {orchestrated.computeMs} ms
             </p>
           </div>

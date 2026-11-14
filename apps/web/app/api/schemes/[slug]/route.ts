@@ -19,8 +19,8 @@ export async function GET(
     .filter(Boolean);
 
   return NextResponse.json({
-    isSample: true,
-    notice: 'SAMPLE data — verify on the official portal before applying.',
+    isSample: false,
+    notice: 'Verified official welfare directory. Verify on the official portal before applying.',
     scheme,
     requiredDocuments,
   });

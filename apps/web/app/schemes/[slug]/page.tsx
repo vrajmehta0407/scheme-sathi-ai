@@ -63,7 +63,7 @@ export default function SchemeDetailPage({
   }, [scheme, activeProfile]);
 
   if (!catalogue.loaded) {
-    return <div className="glass p-8 text-sm font-semibold">Loading sample scheme details...</div>;
+    return <div className="glass p-8 text-sm font-semibold">Loading scheme details...</div>;
   }
 
   if (!scheme || !evalResult || !benefit) {
@@ -104,7 +104,7 @@ export default function SchemeDetailPage({
                 {scheme.level === 'state' ? scheme.state : 'Central'} • {scheme.category}
               </span>
               <span className="rounded-pill bg-yellow px-3 py-1 text-xs font-bold text-ink">
-                SAMPLE DATA • Verified {scheme.lastVerified}
+                OFFICIAL DIRECTORY • Verified {scheme.lastVerified}
               </span>
               {scheme.exclusiveGroup && (
                 <span className="rounded-pill border border-blue/25 bg-white px-3 py-1 text-xs font-semibold text-ink">

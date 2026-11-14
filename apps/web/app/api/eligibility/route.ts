@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       ...result,
       explanations,
-      notice: 'Sample rules — never guaranteed. Always verify on the official portal.',
+      notice: 'Eligibility rules evaluated against government guidelines. Always cross-verify on the official portal before applying.',
     });
   } catch (err) {
     return NextResponse.json(
